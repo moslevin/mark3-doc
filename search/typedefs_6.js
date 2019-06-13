@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['semaphore_5ft',['Semaphore_t',['../mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834',1,'mark3c.h']]]
+  ['notify_5ft',['Notify_t',['../mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3',1,'mark3c.h']]]
 ];

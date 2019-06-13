@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: /home/moslevin/projects/github/mark3/kernel/src/arch/avr/atmega1284p/gcc/threadport.cpp File Reference</title>
+<title>Mark3 Realtime Kernel: /home/moslevin/projects/m3-repo/kernel/src/arch/avr/atmega1284p/gcc/threadport.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,7 +81,8 @@ $(document).ready(function(){initNavTree('threadport_8cpp.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">threadport.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -110,22 +111,65 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aee67e5cf473bee49b9e5814be88e08b2"><td class="memItemLeft" align="right" valign="top"><a id="aee67e5cf473bee49b9e5814be88e08b2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#aee67e5cf473bee49b9e5814be88e08b2">Mark3::ISR</a> (INT2_vect) __attribute__((signal</td></tr>
-<tr class="memdesc:aee67e5cf473bee49b9e5814be88e08b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR(INT2 _vect) SWI using INT2 - used to trigger a context switch. <br /></td></tr>
+<tr class="memitem:a667434bde64da48e932d29f871a015c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a667434bde64da48e932d29f871a015c4">Mark3::Thread_Switch</a> (void)</td></tr>
+<tr class="separator:a667434bde64da48e932d29f871a015c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee67e5cf473bee49b9e5814be88e08b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#aee67e5cf473bee49b9e5814be88e08b2">Mark3::ISR</a> (INT2_vect) __attribute__((signal</td></tr>
+<tr class="memdesc:aee67e5cf473bee49b9e5814be88e08b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR(INT2 _vect) SWI using INT2 - used to trigger a context switch.  <a href="namespace_mark3.html#aee67e5cf473bee49b9e5814be88e08b2">More...</a><br /></td></tr>
 <tr class="separator:aee67e5cf473bee49b9e5814be88e08b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6cd20b088ec0207d400fe3703d899478"><td class="memItemLeft" align="right" valign="top"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadport_8cpp.html#a6cd20b088ec0207d400fe3703d899478">g_kwSFR</a> = 0</td></tr>
+<tr class="separator:a6cd20b088ec0207d400fe3703d899478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ba85bfa92f0996558034a883893cc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadport_8cpp.html#a67ba85bfa92f0996558034a883893cc8">g_kwCriticalCount</a> = 0</td></tr>
+<tr class="separator:a67ba85bfa92f0996558034a883893cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c038c0b534018ed75b934063809265"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ac1c038c0b534018ed75b934063809265">Mark3::naked</a></td></tr>
+<tr class="separator:ac1c038c0b534018ed75b934063809265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ATMega1284p Multithreading. </p>
 
 <p class="definition">Definition in file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="a67ba85bfa92f0996558034a883893cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ba85bfa92f0996558034a883893cc8">&#9670;&nbsp;</a></span>g_kwCriticalCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> g_kwCriticalCount = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00036">36</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cd20b088ec0207d400fe3703d899478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd20b088ec0207d400fe3703d899478">&#9670;&nbsp;</a></span>g_kwSFR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> g_kwSFR = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00035">35</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dc43877d82dd332f9fb2071fcca799d6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_3dd30a497388ee684638f120a124721c.html">src</a></li><li class="navelem"><a class="el" href="dir_92743408a41bb08453a7c583adc761b3.html">arch</a></li><li class="navelem"><a class="el" href="dir_e545c6747f0a62c90efb0107f5bdce45.html">avr</a></li><li class="navelem"><a class="el" href="dir_15d36ccd0d5c99a3927df5e66e3d21e0.html">atmega1284p</a></li><li class="navelem"><a class="el" href="dir_bf83e40eaac91a1884d1f182836d1220.html">gcc</a></li><li class="navelem"><a class="el" href="threadport_8cpp.html">threadport.cpp</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

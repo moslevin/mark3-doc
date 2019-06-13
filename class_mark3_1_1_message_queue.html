@@ -89,10 +89,17 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_message_queue.html',''
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_message_queue.html" title="The MessageQueue class. Implements a mechanism used to send/receive data between threads. Allows threads to block, waiting for messages to be sent from other contexts. ">MessageQueue</a> class. Implements a mechanism used to send/receive data between threads. Allows threads to block, waiting for messages to be sent from other contexts.  
+ <a href="class_mark3_1_1_message_queue.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="message_8h_source.html">message.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a55f6b72492069a5a033f68add5c39546"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#a55f6b72492069a5a033f68add5c39546">operator new</a> (size_t sz, void *pv)</td></tr>
+<tr class="separator:a55f6b72492069a5a033f68add5c39546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9192d353fb0ec9fe0ed8c7217521aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#a4e9192d353fb0ec9fe0ed8c7217521aa">~MessageQueue</a> ()</td></tr>
+<tr class="separator:a4e9192d353fb0ec9fe0ed8c7217521aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13bcd82471b5e651121b14d4ff210fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#a13bcd82471b5e651121b14d4ff210fe0">Init</a> ()</td></tr>
 <tr class="memdesc:a13bcd82471b5e651121b14d4ff210fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init.  <a href="#a13bcd82471b5e651121b14d4ff210fe0">More...</a><br /></td></tr>
 <tr class="separator:a13bcd82471b5e651121b14d4ff210fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,21 +124,47 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae71e5bcea36835fc0daeb7f9d77b6a5a"><td class="memItemLeft" align="right" valign="top"><a id="ae71e5bcea36835fc0daeb7f9d77b6a5a"></a>
-<a class="el" href="class_mark3_1_1_semaphore.html">Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#ae71e5bcea36835fc0daeb7f9d77b6a5a">m_clSemaphore</a></td></tr>
-<tr class="memdesc:ae71e5bcea36835fc0daeb7f9d77b6a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counting semaphore used to manage thread blocking. <br /></td></tr>
+<tr class="memitem:ae71e5bcea36835fc0daeb7f9d77b6a5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_semaphore.html">Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#ae71e5bcea36835fc0daeb7f9d77b6a5a">m_clSemaphore</a></td></tr>
+<tr class="memdesc:ae71e5bcea36835fc0daeb7f9d77b6a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counting semaphore used to manage thread blocking.  <a href="#ae71e5bcea36835fc0daeb7f9d77b6a5a">More...</a><br /></td></tr>
 <tr class="separator:ae71e5bcea36835fc0daeb7f9d77b6a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edf5bcc2fb5f3d7aca9755dd707f8ef"><td class="memItemLeft" align="right" valign="top"><a id="a0edf5bcc2fb5f3d7aca9755dd707f8ef"></a>
-<a class="el" href="class_mark3_1_1_double_link_list.html">DoubleLinkList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#a0edf5bcc2fb5f3d7aca9755dd707f8ef">m_clLinkList</a></td></tr>
-<tr class="memdesc:a0edf5bcc2fb5f3d7aca9755dd707f8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">List object used to store messages. <br /></td></tr>
-<tr class="separator:a0edf5bcc2fb5f3d7aca9755dd707f8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e5066244d20b29fc2a591091737664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_typed_double_link_list.html">TypedDoubleLinkList</a>&lt; <a class="el" href="class_mark3_1_1_message.html">Message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html#a38e5066244d20b29fc2a591091737664">m_clLinkList</a></td></tr>
+<tr class="memdesc:a38e5066244d20b29fc2a591091737664"><td class="mdescLeft">&#160;</td><td class="mdescRight">List object used to store messages.  <a href="#a38e5066244d20b29fc2a591091737664">More...</a><br /></td></tr>
+<tr class="separator:a38e5066244d20b29fc2a591091737664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>List of messages, used as the channel for sending and receiving messages between threads. </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_message_queue.html" title="The MessageQueue class. Implements a mechanism used to send/receive data between threads. Allows threads to block, waiting for messages to be sent from other contexts. ">MessageQueue</a> class. Implements a mechanism used to send/receive data between threads. Allows threads to block, waiting for messages to be sent from other contexts. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab8_messages_2main_8cpp-example.html#_a3">lab8_messages/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00207">207</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00210">210</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4e9192d353fb0ec9fe0ed8c7217521aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9192d353fb0ec9fe0ed8c7217521aa">&#9670;&nbsp;</a></span>~MessageQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mark3::MessageQueue::~MessageQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00214">214</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a847b181f74126fd22c68996452eac042"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a847b181f74126fd22c68996452eac042">&#9670;&nbsp;</a></span>GetCount()</h2>
 
@@ -151,7 +184,7 @@ Private Attributes</h2></td></tr>
 <p>Return the number of messages pending in the "receive" queue.</p>
 <dl class="section return"><dt>Returns</dt><dd>Count of pending messages in the queue. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00120">120</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00108">108</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
 
 </div>
 </div>
@@ -174,7 +207,45 @@ Private Attributes</h2></td></tr>
 <p>Init. </p>
 <p>Initialize the message queue prior to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00065">65</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00058">58</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a55f6b72492069a5a033f68add5c39546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f6b72492069a5a033f68add5c39546">&#9670;&nbsp;</a></span>operator new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* Mark3::MessageQueue::operator new </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00213">213</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +269,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a message object at the head of the queue </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab8_messages_2main_8cpp-example.html#a10">lab8_messages/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00071">71</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00064">64</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +299,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a message object at the head of the queue or nullptr on timeout. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00077">77</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00070">70</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +337,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a message, or 0 on timeout. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00083">83</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00076">76</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
 
 </div>
 </div>
@@ -296,13 +367,66 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab8_messages_2main_8cpp-example.html#a8">lab8_messages/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00104">104</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00092">92</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a38e5066244d20b29fc2a591091737664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e5066244d20b29fc2a591091737664">&#9670;&nbsp;</a></span>m_clLinkList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_typed_double_link_list.html">TypedDoubleLinkList</a>&lt;<a class="el" href="class_mark3_1_1_message.html">Message</a>&gt; Mark3::MessageQueue::m_clLinkList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List object used to store messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00284">284</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+
+</div>
+</div>
+<a id="ae71e5bcea36835fc0daeb7f9d77b6a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71e5bcea36835fc0daeb7f9d77b6a5a">&#9670;&nbsp;</a></span>m_clSemaphore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_semaphore.html">Semaphore</a> Mark3::MessageQueue::m_clSemaphore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counting semaphore used to manage thread blocking. </p>
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00281">281</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="message_8h_source.html">message.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/<a class="el" href="message_8cpp_source.html">message.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="message_8h_source.html">message.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/<a class="el" href="message_8cpp_source.html">message.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -310,7 +434,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_message_queue.html">MessageQueue</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:16 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:59 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

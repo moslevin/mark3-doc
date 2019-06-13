@@ -88,34 +88,36 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_timer_scheduler.html',
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_timer_scheduler.html" title="The TimerScheduler Class. This implements a &quot;Static&quot; class used to manage a global list of timers use...">TimerScheduler</a> Class. This implements a "Static" class used to manage a global list of timers used throughout the system.  
+ <a href="class_mark3_1_1_timer_scheduler.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9efcdf683286a8c03e3e36e51872982a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html#a9efcdf683286a8c03e3e36e51872982a">Init</a> ()</td></tr>
-<tr class="memdesc:a9efcdf683286a8c03e3e36e51872982a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init.  <a href="#a9efcdf683286a8c03e3e36e51872982a">More...</a><br /></td></tr>
+<tr class="memdesc:a9efcdf683286a8c03e3e36e51872982a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Initialize the timer scheduler. Must be called before any timer, or timer-derived functions are used.  <a href="#a9efcdf683286a8c03e3e36e51872982a">More...</a><br /></td></tr>
 <tr class="separator:a9efcdf683286a8c03e3e36e51872982a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c548de5a26315f2ca65880f68a5ae72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html#a7c548de5a26315f2ca65880f68a5ae72">Add</a> (<a class="el" href="class_mark3_1_1_timer.html">Timer</a> *pclListNode_)</td></tr>
-<tr class="memdesc:a7c548de5a26315f2ca65880f68a5ae72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add.  <a href="#a7c548de5a26315f2ca65880f68a5ae72">More...</a><br /></td></tr>
+<tr class="memdesc:a7c548de5a26315f2ca65880f68a5ae72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Add a timer to the timer scheduler. Adding a timer implicitly starts the timer as well.  <a href="#a7c548de5a26315f2ca65880f68a5ae72">More...</a><br /></td></tr>
 <tr class="separator:a7c548de5a26315f2ca65880f68a5ae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae278287c821769423171fbffc4a57e58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html#ae278287c821769423171fbffc4a57e58">Remove</a> (<a class="el" href="class_mark3_1_1_timer.html">Timer</a> *pclListNode_)</td></tr>
-<tr class="memdesc:ae278287c821769423171fbffc4a57e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove.  <a href="#ae278287c821769423171fbffc4a57e58">More...</a><br /></td></tr>
+<tr class="memdesc:ae278287c821769423171fbffc4a57e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove Remove a timer from the timer scheduler. May implicitly stop the timer if this is the only active timer scheduled.  <a href="#ae278287c821769423171fbffc4a57e58">More...</a><br /></td></tr>
 <tr class="separator:ae278287c821769423171fbffc4a57e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae65d77b912d2dda1d84db7636a3b79d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html#ae65d77b912d2dda1d84db7636a3b79d4">Process</a> ()</td></tr>
-<tr class="memdesc:ae65d77b912d2dda1d84db7636a3b79d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process.  <a href="#ae65d77b912d2dda1d84db7636a3b79d4">More...</a><br /></td></tr>
+<tr class="memdesc:ae65d77b912d2dda1d84db7636a3b79d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process This function must be called on timer expiry (from the timer's ISR context). This will result in all timers being updated based on the epoch that just elapsed. The next timer epoch is set based on the next <a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> object to expire.  <a href="#ae65d77b912d2dda1d84db7636a3b79d4">More...</a><br /></td></tr>
 <tr class="separator:ae65d77b912d2dda1d84db7636a3b79d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a6f83abfc7e0034c9cf47b4f4a5cb0d3d"><td class="memItemLeft" align="right" valign="top"><a id="a6f83abfc7e0034c9cf47b4f4a5cb0d3d"></a>
-static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html#a6f83abfc7e0034c9cf47b4f4a5cb0d3d">m_clTimerList</a></td></tr>
-<tr class="memdesc:a6f83abfc7e0034c9cf47b4f4a5cb0d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a> object manipu32ated by the <a class="el" href="class_mark3_1_1_timer.html" title="Kernel-managed software timers. ">Timer</a> <a class="el" href="class_mark3_1_1_scheduler.html">Scheduler</a>. <br /></td></tr>
+<tr class="memitem:a6f83abfc7e0034c9cf47b4f4a5cb0d3d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html#a6f83abfc7e0034c9cf47b4f4a5cb0d3d">m_clTimerList</a></td></tr>
+<tr class="memdesc:a6f83abfc7e0034c9cf47b4f4a5cb0d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_timer_list.html" title="the TimerList class. This class implements a doubly-linked-list of timer objects. ...">TimerList</a> object manipu32ated by the <a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> <a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a>.  <a href="#a6f83abfc7e0034c9cf47b4f4a5cb0d3d">More...</a><br /></td></tr>
 <tr class="separator:a6f83abfc7e0034c9cf47b4f4a5cb0d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>"Static" Class used to interface a global <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a> with the rest of the kernel. </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_timer_scheduler.html" title="The TimerScheduler Class. This implements a &quot;Static&quot; class used to manage a global list of timers use...">TimerScheduler</a> Class. This implements a "Static" class used to manage a global list of timers used throughout the system. </p>
 
-<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00037">37</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00038">38</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7c548de5a26315f2ca65880f68a5ae72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c548de5a26315f2ca65880f68a5ae72">&#9670;&nbsp;</a></span>Add()</h2>
@@ -141,8 +143,7 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
 </table>
 </div><div class="memdoc">
 
-<p>Add. </p>
-<p>Add a timer to the timer scheduler. Adding a timer implicitly starts the timer as well.</p>
+<p>Add Add a timer to the timer scheduler. Adding a timer implicitly starts the timer as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pclListNode_</td><td>Pointer to the timer list node to add </td></tr>
@@ -150,7 +151,7 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00055">55</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00054">54</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
 
 </div>
 </div>
@@ -178,8 +179,7 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
 </table>
 </div><div class="memdoc">
 
-<p>Init. </p>
-<p>Initialize the timer scheduler. Must be called before any timer, or timer-derived functions are used. </p>
+<p>Init Initialize the timer scheduler. Must be called before any timer, or timer-derived functions are used. </p>
 
 <p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00046">46</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
 
@@ -209,10 +209,9 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
 </table>
 </div><div class="memdoc">
 
-<p>Process. </p>
-<p>This function must be called on timer expiry (from the timer's ISR context). This will result in all timers being updated based on the epoch that just elapsed. The next timer epoch is set based on the next <a class="el" href="class_mark3_1_1_timer.html" title="Kernel-managed software timers. ">Timer</a> object to expire. </p>
+<p>Process This function must be called on timer expiry (from the timer's ISR context). This will result in all timers being updated based on the epoch that just elapsed. The next timer epoch is set based on the next <a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> object to expire. </p>
 
-<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00073">73</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00070">70</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
 
 </div>
 </div>
@@ -240,8 +239,7 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
 </table>
 </div><div class="memdoc">
 
-<p>Remove. </p>
-<p>Remove a timer from the timer scheduler. May implicitly stop the timer if this is the only active timer scheduled.</p>
+<p>Remove Remove a timer from the timer scheduler. May implicitly stop the timer if this is the only active timer scheduled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pclListNode_</td><td>Pointer to the timer list node to remove </td></tr>
@@ -249,13 +247,40 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00064">64</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00062">62</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6f83abfc7e0034c9cf47b4f4a5cb0d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f83abfc7e0034c9cf47b4f4a5cb0d3d">&#9670;&nbsp;</a></span>m_clTimerList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a> Mark3::TimerScheduler::m_clTimerList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_timer_list.html" title="the TimerList class. This class implements a doubly-linked-list of timer objects. ...">TimerList</a> object manipu32ated by the <a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> <a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="timerscheduler_8h_source.html#l00074">74</a> of file <a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/<a class="el" href="timer_8cpp_source.html">timer.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="timerscheduler_8h_source.html">timerscheduler.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/<a class="el" href="timer_8cpp_source.html">timer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -263,7 +288,7 @@ static <a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a>&#160;<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_timer_scheduler.html">TimerScheduler</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:18 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:42:01 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

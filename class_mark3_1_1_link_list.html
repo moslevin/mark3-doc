@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_link_list.html','');})
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> Class Abstract-data-type from which all other linked-lists are derived.  
+ <a href="class_mark3_1_1_link_list.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ll_8h_source.html">ll.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Mark3::LinkList:</div>
@@ -95,10 +98,18 @@ Inheritance diagram for Mark3::LinkList:</div>
  <div class="center">
   <img src="class_mark3_1_1_link_list.png" usemap="#Mark3::LinkList_map" alt=""/>
   <map id="Mark3::LinkList_map" name="Mark3::LinkList_map">
-<area href="class_mark3_1_1_circular_link_list.html" alt="Mark3::CircularLinkList" shape="rect" coords="0,56,142,80"/>
-<area href="class_mark3_1_1_double_link_list.html" alt="Mark3::DoubleLinkList" shape="rect" coords="152,56,294,80"/>
-<area href="class_mark3_1_1_thread_list.html" alt="Mark3::ThreadList" shape="rect" coords="0,112,142,136"/>
-<area href="class_mark3_1_1_timer_list.html" alt="Mark3::TimerList" shape="rect" coords="152,112,294,136"/>
+<area href="class_mark3_1_1_circular_link_list.html" title="The CircularLinkList class Circular-linked-list data type, inherited from the base LinkList type..." alt="Mark3::CircularLinkList" shape="rect" coords="306,56,602,80"/>
+<area href="class_mark3_1_1_double_link_list.html" title="The DoubleLinkList Class Doubly-linked-list data type, inherited from the base LinkList type..." alt="Mark3::DoubleLinkList" shape="rect" coords="1377,56,1673,80"/>
+<area href="class_mark3_1_1_typed_circular_link_list.html" title="The TypedCircularLinkList Class Circular-linked-list data type, inherited from the base LinkList type..." alt="Mark3::TypedCircularLinkList&lt; T &gt;" shape="rect" coords="0,112,296,136"/>
+<area href="class_mark3_1_1_typed_circular_link_list.html" alt="Mark3::TypedCircularLinkList&lt; Coroutine &gt;" shape="rect" coords="306,112,602,136"/>
+<area href="class_mark3_1_1_typed_circular_link_list.html" alt="Mark3::TypedCircularLinkList&lt; Thread &gt;" shape="rect" coords="612,112,908,136"/>
+<area href="class_mark3_1_1_typed_double_link_list.html" title="The TypedDoubleLinkList Class Doubly-linked-list data type, inherited from the base LinkList type..." alt="Mark3::TypedDoubleLinkList&lt; T &gt;" shape="rect" coords="918,112,1214,136"/>
+<area href="class_mark3_1_1_typed_double_link_list.html" alt="Mark3::TypedDoubleLinkList&lt; Mark3::Message &gt;" shape="rect" coords="1224,112,1520,136"/>
+<area href="class_mark3_1_1_typed_double_link_list.html" alt="Mark3::TypedDoubleLinkList&lt; Mark3::ThreadList &gt;" shape="rect" coords="1530,112,1826,136"/>
+<area href="class_mark3_1_1_typed_double_link_list.html" alt="Mark3::TypedDoubleLinkList&lt; Timer &gt;" shape="rect" coords="1836,112,2132,136"/>
+<area href="class_mark3_1_1_co_list.html" title="The CoList class The CoList class implements a circular-linked-listed structure for coroutine objects..." alt="Mark3::CoList" shape="rect" coords="306,168,602,192"/>
+<area href="class_mark3_1_1_thread_list.html" title="The ThreadList Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects. " alt="Mark3::ThreadList" shape="rect" coords="612,168,908,192"/>
+<area href="class_mark3_1_1_timer_list.html" title="the TimerList class. This class implements a doubly-linked-list of timer objects. ..." alt="Mark3::TimerList" shape="rect" coords="1836,168,2132,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -110,25 +121,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50caebdc682674e5e1dd1a6862b4248c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#a50caebdc682674e5e1dd1a6862b4248c">GetHead</a> ()</td></tr>
 <tr class="memdesc:a50caebdc682674e5e1dd1a6862b4248c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetHead.  <a href="#a50caebdc682674e5e1dd1a6862b4248c">More...</a><br /></td></tr>
 <tr class="separator:a50caebdc682674e5e1dd1a6862b4248c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fcc083f75f513df6000e96b621980a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#ab2fcc083f75f513df6000e96b621980a">SetHead</a> (<a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *pclNode_)</td></tr>
+<tr class="memdesc:ab2fcc083f75f513df6000e96b621980a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetHead.  <a href="#ab2fcc083f75f513df6000e96b621980a">More...</a><br /></td></tr>
+<tr class="separator:ab2fcc083f75f513df6000e96b621980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf0da4ba770e0e99fec3bf8269d1a9c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#abf0da4ba770e0e99fec3bf8269d1a9c4">GetTail</a> ()</td></tr>
 <tr class="memdesc:abf0da4ba770e0e99fec3bf8269d1a9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetTail.  <a href="#abf0da4ba770e0e99fec3bf8269d1a9c4">More...</a><br /></td></tr>
 <tr class="separator:abf0da4ba770e0e99fec3bf8269d1a9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ac59187eb0f1517af2216fc1ea7d39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#a79ac59187eb0f1517af2216fc1ea7d39">SetTail</a> (<a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *pclNode_)</td></tr>
+<tr class="memdesc:a79ac59187eb0f1517af2216fc1ea7d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetTail.  <a href="#a79ac59187eb0f1517af2216fc1ea7d39">More...</a><br /></td></tr>
+<tr class="separator:a79ac59187eb0f1517af2216fc1ea7d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a27ef7a24ad2ef1c8a38d9567c06fc785"><td class="memItemLeft" align="right" valign="top"><a id="a27ef7a24ad2ef1c8a38d9567c06fc785"></a>
-<a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#a27ef7a24ad2ef1c8a38d9567c06fc785">m_pclHead</a></td></tr>
-<tr class="memdesc:a27ef7a24ad2ef1c8a38d9567c06fc785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the head node in the list. <br /></td></tr>
+<tr class="memitem:a27ef7a24ad2ef1c8a38d9567c06fc785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#a27ef7a24ad2ef1c8a38d9567c06fc785">m_pclHead</a></td></tr>
+<tr class="memdesc:a27ef7a24ad2ef1c8a38d9567c06fc785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the head node in the list.  <a href="#a27ef7a24ad2ef1c8a38d9567c06fc785">More...</a><br /></td></tr>
 <tr class="separator:a27ef7a24ad2ef1c8a38d9567c06fc785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79bbeddb6ce4b0e97c8fc4c73fcff2dc"><td class="memItemLeft" align="right" valign="top"><a id="a79bbeddb6ce4b0e97c8fc4c73fcff2dc"></a>
-<a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#a79bbeddb6ce4b0e97c8fc4c73fcff2dc">m_pclTail</a></td></tr>
-<tr class="memdesc:a79bbeddb6ce4b0e97c8fc4c73fcff2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tail node in the list. <br /></td></tr>
+<tr class="memitem:a79bbeddb6ce4b0e97c8fc4c73fcff2dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html#a79bbeddb6ce4b0e97c8fc4c73fcff2dc">m_pclTail</a></td></tr>
+<tr class="memdesc:a79bbeddb6ce4b0e97c8fc4c73fcff2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the tail node in the list.  <a href="#a79bbeddb6ce4b0e97c8fc4c73fcff2dc">More...</a><br /></td></tr>
 <tr class="separator:a79bbeddb6ce4b0e97c8fc4c73fcff2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract-data-type from which all other linked-lists are derived </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> Class Abstract-data-type from which all other linked-lists are derived. </p>
 
-<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00103">103</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00119">119</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a50caebdc682674e5e1dd1a6862b4248c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50caebdc682674e5e1dd1a6862b4248c">&#9670;&nbsp;</a></span>GetHead()</h2>
@@ -157,7 +172,7 @@ Protected Attributes</h2></td></tr>
 <p>Get the head node in the linked list</p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the head node in the list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00128">128</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00144">144</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
 
 </div>
 </div>
@@ -188,7 +203,7 @@ Protected Attributes</h2></td></tr>
 <p>Get the tail node of the linked list</p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the tail node in the list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00136">136</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00162">162</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
 
 </div>
 </div>
@@ -219,12 +234,139 @@ Protected Attributes</h2></td></tr>
 <p>Init. </p>
 <p>Clear the linked list. </p>
 
-<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00115">115</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00131">131</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+
+</div>
+</div>
+<a id="ab2fcc083f75f513df6000e96b621980a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fcc083f75f513df6000e96b621980a">&#9670;&nbsp;</a></span>SetHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mark3::LinkList::SetHead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td>
+          <td class="paramname"><em>pclNode_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SetHead. </p>
+<p>Set the head node of a linked list</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclNode_</td><td>Pointer to node to set as the head of the linked list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00153">153</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+
+</div>
+</div>
+<a id="a79ac59187eb0f1517af2216fc1ea7d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ac59187eb0f1517af2216fc1ea7d39">&#9670;&nbsp;</a></span>SetTail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mark3::LinkList::SetTail </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a> *&#160;</td>
+          <td class="paramname"><em>pclNode_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SetTail. </p>
+<p>Set the tail node of the linked list</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclNode_</td><td>Pointer to the node to set as the tail of the linked list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00171">171</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a27ef7a24ad2ef1c8a38d9567c06fc785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ef7a24ad2ef1c8a38d9567c06fc785">&#9670;&nbsp;</a></span>m_pclHead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a>* Mark3::LinkList::m_pclHead</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the head node in the list. </p>
+
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00122">122</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
+
+</div>
+</div>
+<a id="a79bbeddb6ce4b0e97c8fc4c73fcff2dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79bbeddb6ce4b0e97c8fc4c73fcff2dc">&#9670;&nbsp;</a></span>m_pclTail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a>* Mark3::LinkList::m_pclTail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pointer to the tail node in the list. </p>
+
+<p class="definition">Definition at line <a class="el" href="ll_8h_source.html#l00123">123</a> of file <a class="el" href="ll_8h_source.html">ll.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="ll_8h_source.html">ll.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="ll_8h_source.html">ll.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -232,7 +374,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_link_list.html">LinkList</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:16 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:59 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

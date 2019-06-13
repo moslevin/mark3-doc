@@ -5,14 +5,19 @@ var NAVTREE =
     [ "License", "_l_i_c_e_n_s_e.html", [
       [ "License", "_l_i_c_e_n_s_e.html#LIC0", null ]
     ] ],
-    [ "Configuring The Mark3 Kernel", "_c_o_n_f_i_g0.html", [
+    [ "Configuring The Kernel", "_c_o_n_f_i_g0.html", [
       [ "Overview", "_c_o_n_f_i_g0.html#CONFIG_I", [
         [ "Kernel Configuration Options", "_c_o_n_f_i_g0.html#CONFIG_MARK3CFG", null ],
         [ "Port Configuration Options", "_c_o_n_f_i_g0.html#CONFIG_PORTCFG", null ]
       ] ]
     ] ],
-    [ "Building Mark3", "_b_u_i_l_d0.html", null ],
-    [ "Getting Started With The Mark3 API", "_s_t_a_r_t.html", [
+    [ "Building The Kernel", "_b_u_i_l_d0.html", [
+      [ "Prerequisites", "_b_u_i_l_d0.html#BUILDPRE", null ],
+      [ "Building", "_b_u_i_l_d0.html#BUILDBuiLD", null ],
+      [ "Supported Targets", "_b_u_i_l_d0.html#BUILDTARG", null ],
+      [ "More Info", "_b_u_i_l_d0.html#BUILDMORE", null ]
+    ] ],
+    [ "The Mark3 API", "_s_t_a_r_t.html", [
       [ "Kernel Setup", "_s_t_a_r_t.html#START0", null ],
       [ "Threads", "_s_t_a_r_t.html#THREADS", [
         [ "Thread Setup", "_s_t_a_r_t.html#TH_SETUP", null ],
@@ -40,10 +45,14 @@ var NAVTREE =
         [ "Reader-Write Lock Example", "_s_t_a_r_t.html#RWLOCKEX", null ]
       ] ],
       [ "Sleep", "_s_t_a_r_t.html#SLP", null ],
-      [ "Round-Robin Quantum", "_s_t_a_r_t.html#RR", null ]
+      [ "Round-Robin Quantum", "_s_t_a_r_t.html#RR", null ],
+      [ "Coroutines", "_s_t_a_r_t.html#COROU", null ],
+      [ "Critical Guards", "_s_t_a_r_t.html#CRG", null ],
+      [ "Lock Guards", "_s_t_a_r_t.html#LKG", null ],
+      [ "Scheduler Guards", "_s_t_a_r_t.html#SCG", null ]
     ] ],
     [ "Why Mark3?", "_w_h_y_m_a_r_k3.html", null ],
-    [ "When should you use an RTOS?", "_w_h_e_n_r_t_o_s.html", [
+    [ "When to use an RTOS?", "_w_h_e_n_r_t_o_s.html", [
       [ "The reality of system code", "_w_h_e_n_r_t_o_s.html#WHENREAL", null ],
       [ "Superloops, and their limitations", "_w_h_e_n_r_t_o_s.html#WHENSUPER", [
         [ "Intro to Superloops", "_w_h_e_n_r_t_o_s.html#WHENSUPERINTRO", null ],
@@ -71,7 +80,7 @@ var NAVTREE =
         [ "Services Provided by an RTOS Kernel", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERSERVICES", null ],
         [ "Guiding Principles of Mark3", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERPRINCIPLES", null ],
         [ "Be feature competitive", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERBFC", null ],
-        [ "No external dependencies, no new language features", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERNED", null ],
+        [ "No external dependencies, no non-language features", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERNED", null ],
         [ "Target the most popular hobbyist platforms available", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERHPA", null ],
         [ "Maximize determinism – but be pragmatic", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERMAXDET", null ],
         [ "Apply engineering principles – and that means discipline, measurement and verification", "_i_n_s_i_d_e_m_a_r_k3.html#INSIDEOVERENG", null ],
@@ -113,11 +122,14 @@ var NAVTREE =
       ] ],
       [ "Kernel Proper and Porting", "_m_a_r_k3_k_a.html#KRNLPROPER", null ]
     ] ],
-    [ "Mark3C - C-language API bindings for the Mark3 Kernel.", "_m_a_r_k3_c.html", [
+    [ "C-language bindings", "_m_a_r_k3_c.html", [
       [ "API Conventions", "_m_a_r_k3_c.html#MARK3CAPI", null ],
       [ "Allocating Objects", "_m_a_r_k3_c.html#MARK3CALLOC", null ]
     ] ],
     [ "Release Notes", "_r_e_l_e_a_s_e.html", [
+      [ "R10 Release", "_r_e_l_e_a_s_e.html#RELR10", null ],
+      [ "R9 Release", "_r_e_l_e_a_s_e.html#RELR9", null ],
+      [ "R8 Release", "_r_e_l_e_a_s_e.html#RELR8", null ],
       [ "R7 (Full Throttle) Release", "_r_e_l_e_a_s_e.html#RELR7", null ],
       [ "R6 Release", "_r_e_l_e_a_s_e.html#RELR6", null ],
       [ "R5 Release", "_r_e_l_e_a_s_e.html#RELR5", null ],
@@ -137,6 +149,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
@@ -148,14 +161,16 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -169,9 +184,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_b_u_i_l_d0.html",
-"class_mark3_1_1_message_pool.html#a0140ae8384d2850f591dfb0482ad1bcd",
-"functions_e.html",
-"notify_8cpp_source.html"
+"class_mark3_1_1_kernel.html#a411dd39b627c9a84a3d7effd6163d595",
+"class_mark3_1_1_scheduler_guard.html#ad9d29754367ff15076278ced67f815bb",
+"functions_func_s.html",
+"mark3c_8h.html",
+"readerwriter_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

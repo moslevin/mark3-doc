@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: Building Mark3</title>
+<title>Mark3 Realtime Kernel: Building The Kernel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,15 +80,50 @@ $(document).ready(function(){initNavTree('_b_u_i_l_d0.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Building <a class="el" href="namespace_mark3.html">Mark3</a> </div>  </div>
+<div class="title">Building The Kernel </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p><a class="el" href="namespace_mark3.html">Mark3</a> contains its own build system and support scripts, based on CMake and Ninja.</p>
+<h1><a class="anchor" id="BUILDPRE"></a>
+Prerequisites</h1>
+<p>To build via CMake, a user requires a suitable, supported toolchain (i.e. gcc-avr, arm-none-eabi-gcc), CMake 3.4.2 or higher, and a backend supported by CMake (i.e. Ninja build).</p>
+<p>For example, on debian-based distributions, such as Ubuntu, the avr toolchain can be installed using: </p><pre class="fragment">    apt-get install avr-libc gcc-avr cmake ninja-build
+</pre><p>Once a sane build environment has been created, the kernel, libraries, examples and tests can be built by running <code>ninja</code> from the target's build directory (/out/&lt;target&gt;/). By default, <a class="el" href="namespace_mark3.html">Mark3</a> builds for the atmega328p target, but the target can be selected by manually configuring environment variables, or by running the ./build/set_target.sh script as follows: </p><pre class="fragment">    ./build/set_target.sh &lt;architecture&gt; &lt;variant&gt; &lt;toolchain&gt;
+
+Where:
+     &lt;architecture&gt; is the target CPU architecture(i.e. avr, msp430, cm0, cm3, cm4f)
+     &lt;variant&gt;      is the part name (i.e. atmega328p, msp430f2274, generic)
+     &lt;toolchain&gt;    is the build toolchain (i.e. gcc)
+</pre><p>This script is a thin wrapper for the cmake configuration commands, and clears the output directory before re-initializing cmake for the selected target.</p>
+<h1><a class="anchor" id="BUILDBuiLD"></a>
+Building</h1>
+<p>To build the <a class="el" href="namespace_mark3.html">Mark3</a> kernel and middleware libraries for a generic ARM Cortex-M0 using a pre-configured arm-none-eabi-gcc toolchain, one would run the following commands: </p><pre class="fragment">    ./build/set_target.sh cm0 generic gcc
+    ./build/build.sh
+</pre><p>To perform an incremental build, go into the target's cmake build directory (/out/&lt;target/) and simply run 'ninja'.</p>
+<p>To perform a clean build, go into the target's cmake build directory (/out/&lt;target/) and run 'ninja clean', then 'ninja'.</p>
+<p>Note that not all libraries/tests/examples will build in all kernel configurations. The default kernel configuration may need adjustment/tweaking to support a specific part. See the documentation for details.</p>
+<h1><a class="anchor" id="BUILDTARG"></a>
+Supported Targets</h1>
+<p>Currently, <a class="el" href="namespace_mark3.html">Mark3</a> supports GCC toolchains for the following targets: </p><pre class="fragment">    atmega328p
+    atmega644
+    atmega1284p
+    atxmega256a3
+    atmega1280
+    atmega2560
+    msp430f2274
+    ARM Cortex-M0
+    ARM Cortex-M3 (Note: Also supports Cortex-M4)
+    ARM Cortex-M4F (Note: Also supports Cortex-M7)
+</pre><h1><a class="anchor" id="BUILDMORE"></a>
+More Info</h1>
+<p>The <a class="el" href="namespace_mark3.html">Mark3</a> project also has a ready-made docker image to simplify the process. Please see the <a class="el" href="namespace_mark3.html">Mark3</a> Docker project here for more details:</p>
+<p><a href="https://github.com/moslevin/mark3-docker">https://github.com/moslevin/mark3-docker</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

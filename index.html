@@ -83,36 +83,24 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">The <a class="el" href="namespace_mark3.html">Mark3</a> Realtime Kernel </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><pre class="fragment">     _____        _____        _____        _____
- ___|    _|__  __|_    |__  __|__   |__  __| __  |__  ______
-|    \  /  | ||    \      ||     |     ||  |/ /     ||___   |
-|     \/   | ||     \     ||     \     ||     \     ||___   |
-|__/ __/|__|_||__| __\  __||__| __\  __||__| __\  __||______|
-    |_____|      |_____|      |_____|      |_____|
-
---[Mark3 Realtime Platform]--------------------------------------------------
-
-Copyright (c) 2012 - 2018 m0slevin, all rights reserved.
-See license for more information</pre><p>The <a class="el" href="namespace_mark3.html">Mark3</a> Realtime Kernel is a completely free, open-source, real-time operating system aimed at bringing powerful, easy-to-use multitasking to microcontroller systems without MMUs.</p>
-<p>It uses modern programming languages and concepts to minimize code duplication, and its object-oriented design enhances readibility. The API is simple – in six function calls, you can set up the kernel, initialize two threads, and start the scheduler.</p>
-<p>The source is fully-documented with example code provided to illustrate concepts. The result is a performant RTOS, which is easy to read, easy to understand, and easy to extend to fit your needs.</p>
-<p>But <a class="el" href="namespace_mark3.html">Mark3</a> is bigger than just a real-time kernel, it also contains a number of class-leading features:</p>
-<ul>
-<li>Native implementation in C++, with C-language bindings.</li>
-<li>Device driver HAL which provides a meaningful abstraction around device-specific peripherals.</li>
-<li>CMake-based build system which can be used to build all libraries, examples, tests, documentation, and user-projects for any number of targets from the command-line.</li>
-<li>Graphics and UI code designed to simplify the implementation of systems using displays, keypads, joysticks, and touchscreens</li>
-<li>Robust and deterministic dynamic memory management libraries</li>
-<li>A Variety of general-purpose libraries to speed up embedded app development</li>
-<li>Emulator-aware debugging via the flAVR AVR emulator</li>
-<li>A bulletproof, well-documented bootloader for AVR microcontrollers Support for kernel-aware simulators, incluing Funkenstein's own flAVR.</li>
-</ul>
+<div class="textblock"><div class="image">
+<img src="mark3.png" alt="mark3.png" width="480"/>
+</div>
+ <p>The <a class="el" href="namespace_mark3.html">Mark3</a> Realtime Kernel is a completely free, open-source, real-time operating system aimed at bringing powerful, easy-to-use multitasking to microcontroller systems without MMUs.</p>
+<div class="image">
+<img src="banner2.png" alt="banner2.png" width="640"/>
+</div>
+ <p>The RTOS is written using a super portable design that scales to many common processor architectures, including a variety of 8, 16, 32, and 64-bit targets. The flexible CMake-based build system facilitates compiling the kernel, tests, examples, and user-application code for any supported target with a consistent interface.</p>
+<p>The API is rich and surprisingly simple – with six function calls, you can set up the kernel, initialize two threads, and start the scheduler.</p>
+<p>Written in modern C++, <a class="el" href="namespace_mark3.html">Mark3</a> makes use of modern language features that improve code quality, reduces duplication, and simplifies API usage. C++ isn't your thing? No problem! there's a complete set of C-language bindings available to facilitate the use of <a class="el" href="namespace_mark3.html">Mark3</a> in a wider variety of environments.</p>
+<p>The <a class="el" href="namespace_mark3.html">Mark3</a> kernel releases contain zero compiler warnings, zero compiler errors, and have zero unit test failures. The build and test process can be automated through the Mark3-docker project, allowing for easy integration with continuous integration environments. The kernel is also run through static analysis tools, automated profiling and documentation tools.</p>
+<p>The source is fully-documented with doxygen, and example code is provided to illustrate core concepts. The result is a performant RTOS, which is easy to read, easy to understand, and easy to extend to fit your needs. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:18 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:42:01 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

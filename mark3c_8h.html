@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: /home/moslevin/projects/github/mark3/kernel/lib/mark3c/src/public/mark3c.h File Reference</title>
+<title>Mark3 Realtime Kernel: /home/moslevin/projects/m3-repo/kernel/lib/mark3c/src/public/mark3c.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,6 +80,7 @@ $(document).ready(function(){initNavTree('mark3c_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -88,7 +89,7 @@ $(document).ready(function(){initNavTree('mark3c_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of C-language wrappers for the <a class="el" href="namespace_mark3.html">Mark3</a> kernel.  
+<p>Header providing C-language API bindings for the <a class="el" href="namespace_mark3.html">Mark3</a> kernel.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mark3cfg_8h_source.html">mark3cfg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fake__types_8h_source.html">fake_types.h</a>&quot;</code><br />
@@ -97,59 +98,113 @@ $(document).ready(function(){initNavTree('mark3c_8h.html','');});
 </div>
 <p><a href="mark3c_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a7449a369167c8d564211d1aca9ab870a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a7449a369167c8d564211d1aca9ab870a">THREAD_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Thread))</td></tr>
+<tr class="separator:a7449a369167c8d564211d1aca9ab870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9552c41a5b5e71c374a545241bb477ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9552c41a5b5e71c374a545241bb477ed">TIMER_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Timer))</td></tr>
+<tr class="separator:a9552c41a5b5e71c374a545241bb477ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b499fe8f55b754bbbfc39fda388292"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a35b499fe8f55b754bbbfc39fda388292">SEMAPHORE_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Semaphore))</td></tr>
+<tr class="separator:a35b499fe8f55b754bbbfc39fda388292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0729b97ed11498ff7919028902cd68f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a0729b97ed11498ff7919028902cd68f0">MUTEX_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Mutex))</td></tr>
+<tr class="separator:a0729b97ed11498ff7919028902cd68f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca90e1c1c62b70670514ffc18c9dfd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aeca90e1c1c62b70670514ffc18c9dfd4">MESSAGE_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Message))</td></tr>
+<tr class="separator:aeca90e1c1c62b70670514ffc18c9dfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d12312032af852205c79d49fd33855f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a6d12312032af852205c79d49fd33855f">MESSAGEQUEUE_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_MessageQueue))</td></tr>
+<tr class="separator:a6d12312032af852205c79d49fd33855f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cd4f02323bc4dd646d1b3654fb7f4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a83cd4f02323bc4dd646d1b3654fb7f4f">MAILBOX_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Mailbox))</td></tr>
+<tr class="separator:a83cd4f02323bc4dd646d1b3654fb7f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7d313f2ab58791eceb64e31a034218"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a7a7d313f2ab58791eceb64e31a034218">NOTIFY_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_Notify))</td></tr>
+<tr class="separator:a7a7d313f2ab58791eceb64e31a034218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9658b07767b0be086b907562e72ce8f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9658b07767b0be086b907562e72ce8f5">MESSAGEPOOL_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_MessagePool))</td></tr>
+<tr class="separator:a9658b07767b0be086b907562e72ce8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b0dbef82671d84e1adaf9338a0ad13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#af2b0dbef82671d84e1adaf9338a0ad13">CONDITIONVARIABLE_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_ConditionVariable))</td></tr>
+<tr class="separator:af2b0dbef82671d84e1adaf9338a0ad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86090fbc57ae71c22bc2c16bce0bd07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aa86090fbc57ae71c22bc2c16bce0bd07">READERWRITERLOCK_SIZE</a>&#160;&#160;&#160;(sizeof(Fake_ReaderWriterLock))</td></tr>
+<tr class="separator:aa86090fbc57ae71c22bc2c16bce0bd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c105ba6e6a947c7f5e0c034cb34181"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae0c105ba6e6a947c7f5e0c034cb34181">TOKEN_1</a>(x,  y)&#160;&#160;&#160;x##y</td></tr>
+<tr class="separator:ae0c105ba6e6a947c7f5e0c034cb34181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f6ae5f5c335ee008fc06dad87656d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(x,  y)&#160;&#160;&#160;<a class="el" href="mark3c_8h.html#ae0c105ba6e6a947c7f5e0c034cb34181">TOKEN_1</a>(x, y)</td></tr>
+<tr class="separator:aa9f6ae5f5c335ee008fc06dad87656d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31792a6bdd6bbc9b4716e3f31663e499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(x)&#160;&#160;&#160;(((x) + (sizeof(<a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>) - 1)) / sizeof(<a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>))</td></tr>
+<tr class="separator:a31792a6bdd6bbc9b4716e3f31663e499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351ddedf35f3dff9263f50dddfa9c905"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a351ddedf35f3dff9263f50dddfa9c905">DECLARE_THREAD</a>(name)</td></tr>
+<tr class="separator:a351ddedf35f3dff9263f50dddfa9c905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab435fb5632c0d37934b3fb0726501c3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ab435fb5632c0d37934b3fb0726501c3f">DECLARE_TIMER</a>(name)</td></tr>
+<tr class="separator:ab435fb5632c0d37934b3fb0726501c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8183a9845d11d3acb48bc48c92ba5464"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a8183a9845d11d3acb48bc48c92ba5464">DECLARE_SEMAPHORE</a>(name)</td></tr>
+<tr class="separator:a8183a9845d11d3acb48bc48c92ba5464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5098a30d95965a8e1896c50370d1fb89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a5098a30d95965a8e1896c50370d1fb89">DECLARE_MUTEX</a>(name)</td></tr>
+<tr class="separator:a5098a30d95965a8e1896c50370d1fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f714408b598d79937a1d4fe0b2081f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae7f714408b598d79937a1d4fe0b2081f">DECLARE_MESSAGE</a>(name)</td></tr>
+<tr class="separator:ae7f714408b598d79937a1d4fe0b2081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c1cbcb7f00f31d66e357377eb1eb3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ac4c1cbcb7f00f31d66e357377eb1eb3e">DECLARE_MESSAGEPOOL</a>(name)</td></tr>
+<tr class="separator:ac4c1cbcb7f00f31d66e357377eb1eb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103e738094165fc9e4abe4ecb0891d37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a103e738094165fc9e4abe4ecb0891d37">DECLARE_MESSAGEQUEUE</a>(name)</td></tr>
+<tr class="separator:a103e738094165fc9e4abe4ecb0891d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b085398ce93ba46e408cf41fa63c00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ac9b085398ce93ba46e408cf41fa63c00">DECLARE_MAILBOX</a>(name)</td></tr>
+<tr class="separator:ac9b085398ce93ba46e408cf41fa63c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282de47f85805cb5156913c15484301e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a282de47f85805cb5156913c15484301e">DECLARE_NOTIFY</a>(name)</td></tr>
+<tr class="separator:a282de47f85805cb5156913c15484301e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ed6718d1575f2f69b9d12e5274e410"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a92ed6718d1575f2f69b9d12e5274e410">DECLARE_CONDITIONVARIABLE</a>(name)</td></tr>
+<tr class="separator:a92ed6718d1575f2f69b9d12e5274e410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7497f9b85ea10e07e72539fd150484e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a7497f9b85ea10e07e72539fd150484e2">DECLARE_READERWRITERLOCK</a>(name)</td></tr>
+<tr class="separator:a7497f9b85ea10e07e72539fd150484e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae7f5d36c7b28af6ff6411c1bce719938"><td class="memItemLeft" align="right" valign="top"><a id="ae7f5d36c7b28af6ff6411c1bce719938"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a></td></tr>
-<tr class="memdesc:ae7f5d36c7b28af6ff6411c1bce719938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mailbox opaque handle data type. <br /></td></tr>
+<tr class="memitem:ae7f5d36c7b28af6ff6411c1bce719938"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a></td></tr>
+<tr class="memdesc:ae7f5d36c7b28af6ff6411c1bce719938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mailbox opaque handle data type.  <a href="#ae7f5d36c7b28af6ff6411c1bce719938">More...</a><br /></td></tr>
 <tr class="separator:ae7f5d36c7b28af6ff6411c1bce719938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6904117e9c4205913da5d85a4744948d"><td class="memItemLeft" align="right" valign="top"><a id="a6904117e9c4205913da5d85a4744948d"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a></td></tr>
-<tr class="memdesc:a6904117e9c4205913da5d85a4744948d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message opaque handle data type. <br /></td></tr>
+<tr class="memitem:a6904117e9c4205913da5d85a4744948d"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a></td></tr>
+<tr class="memdesc:a6904117e9c4205913da5d85a4744948d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message opaque handle data type.  <a href="#a6904117e9c4205913da5d85a4744948d">More...</a><br /></td></tr>
 <tr class="separator:a6904117e9c4205913da5d85a4744948d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a189eeeb1be884173bd77b9ec96a9a63a"><td class="memItemLeft" align="right" valign="top"><a id="a189eeeb1be884173bd77b9ec96a9a63a"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a></td></tr>
-<tr class="memdesc:a189eeeb1be884173bd77b9ec96a9a63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MessagePool opaque handle data type. <br /></td></tr>
+<tr class="memitem:a189eeeb1be884173bd77b9ec96a9a63a"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a></td></tr>
+<tr class="memdesc:a189eeeb1be884173bd77b9ec96a9a63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MessagePool opaque handle data type.  <a href="#a189eeeb1be884173bd77b9ec96a9a63a">More...</a><br /></td></tr>
 <tr class="separator:a189eeeb1be884173bd77b9ec96a9a63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e1bd97df236e195d25d098b18c588b"><td class="memItemLeft" align="right" valign="top"><a id="a45e1bd97df236e195d25d098b18c588b"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a></td></tr>
-<tr class="memdesc:a45e1bd97df236e195d25d098b18c588b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MessageQueue opaque handle data type. <br /></td></tr>
+<tr class="memitem:a45e1bd97df236e195d25d098b18c588b"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a></td></tr>
+<tr class="memdesc:a45e1bd97df236e195d25d098b18c588b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MessageQueue opaque handle data type.  <a href="#a45e1bd97df236e195d25d098b18c588b">More...</a><br /></td></tr>
 <tr class="separator:a45e1bd97df236e195d25d098b18c588b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aaa3aa8c4901694eeec9a4d6e1a275b"><td class="memItemLeft" align="right" valign="top"><a id="a9aaa3aa8c4901694eeec9a4d6e1a275b"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a></td></tr>
-<tr class="memdesc:a9aaa3aa8c4901694eeec9a4d6e1a275b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex opaque handle data type. <br /></td></tr>
+<tr class="memitem:a9aaa3aa8c4901694eeec9a4d6e1a275b"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a></td></tr>
+<tr class="memdesc:a9aaa3aa8c4901694eeec9a4d6e1a275b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex opaque handle data type.  <a href="#a9aaa3aa8c4901694eeec9a4d6e1a275b">More...</a><br /></td></tr>
 <tr class="separator:a9aaa3aa8c4901694eeec9a4d6e1a275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3a14c0c44c12b5f7b6ca9512824da3"><td class="memItemLeft" align="right" valign="top"><a id="a3d3a14c0c44c12b5f7b6ca9512824da3"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a></td></tr>
-<tr class="memdesc:a3d3a14c0c44c12b5f7b6ca9512824da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification object opaque handle data type. <br /></td></tr>
+<tr class="memitem:a3d3a14c0c44c12b5f7b6ca9512824da3"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a></td></tr>
+<tr class="memdesc:a3d3a14c0c44c12b5f7b6ca9512824da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification object opaque handle data type.  <a href="#a3d3a14c0c44c12b5f7b6ca9512824da3">More...</a><br /></td></tr>
 <tr class="separator:a3d3a14c0c44c12b5f7b6ca9512824da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b3f95ca126e44551b6a459e90ff834"><td class="memItemLeft" align="right" valign="top"><a id="a50b3f95ca126e44551b6a459e90ff834"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a></td></tr>
-<tr class="memdesc:a50b3f95ca126e44551b6a459e90ff834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphore opaque handle data type. <br /></td></tr>
+<tr class="memitem:a50b3f95ca126e44551b6a459e90ff834"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a></td></tr>
+<tr class="memdesc:a50b3f95ca126e44551b6a459e90ff834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphore opaque handle data type.  <a href="#a50b3f95ca126e44551b6a459e90ff834">More...</a><br /></td></tr>
 <tr class="separator:a50b3f95ca126e44551b6a459e90ff834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7de51742f0a585270c1cb8816ee4f4c"><td class="memItemLeft" align="right" valign="top"><a id="ac7de51742f0a585270c1cb8816ee4f4c"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a></td></tr>
-<tr class="memdesc:ac7de51742f0a585270c1cb8816ee4f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread opaque handle data type. <br /></td></tr>
+<tr class="memitem:ac7de51742f0a585270c1cb8816ee4f4c"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a></td></tr>
+<tr class="memdesc:ac7de51742f0a585270c1cb8816ee4f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread opaque handle data type.  <a href="#ac7de51742f0a585270c1cb8816ee4f4c">More...</a><br /></td></tr>
 <tr class="separator:ac7de51742f0a585270c1cb8816ee4f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff39942d5c4e35cb7ab019c6ae3c7535"><td class="memItemLeft" align="right" valign="top"><a id="aff39942d5c4e35cb7ab019c6ae3c7535"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a></td></tr>
-<tr class="memdesc:aff39942d5c4e35cb7ab019c6ae3c7535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer opaque handle data type. <br /></td></tr>
+<tr class="memitem:aff39942d5c4e35cb7ab019c6ae3c7535"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a></td></tr>
+<tr class="memdesc:aff39942d5c4e35cb7ab019c6ae3c7535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer opaque handle data type.  <a href="#aff39942d5c4e35cb7ab019c6ae3c7535">More...</a><br /></td></tr>
 <tr class="separator:aff39942d5c4e35cb7ab019c6ae3c7535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab25bcecf2df3b14b253b20dc8baae655"><td class="memItemLeft" align="right" valign="top"><a id="ab25bcecf2df3b14b253b20dc8baae655"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ab25bcecf2df3b14b253b20dc8baae655">ConditionVariable_t</a></td></tr>
-<tr class="memdesc:ab25bcecf2df3b14b253b20dc8baae655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition Variable opaque handle data type. <br /></td></tr>
+<tr class="memitem:ab25bcecf2df3b14b253b20dc8baae655"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ab25bcecf2df3b14b253b20dc8baae655">ConditionVariable_t</a></td></tr>
+<tr class="memdesc:ab25bcecf2df3b14b253b20dc8baae655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition Variable opaque handle data type.  <a href="#ab25bcecf2df3b14b253b20dc8baae655">More...</a><br /></td></tr>
 <tr class="separator:ab25bcecf2df3b14b253b20dc8baae655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e53b604c249265bacd099897d908cd"><td class="memItemLeft" align="right" valign="top"><a id="a70e53b604c249265bacd099897d908cd"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a70e53b604c249265bacd099897d908cd">ReaderWriterLock_t</a></td></tr>
-<tr class="memdesc:a70e53b604c249265bacd099897d908cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reader-writer-lock opaque handle data type. <br /></td></tr>
+<tr class="memitem:a70e53b604c249265bacd099897d908cd"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a70e53b604c249265bacd099897d908cd">ReaderWriterLock_t</a></td></tr>
+<tr class="memdesc:a70e53b604c249265bacd099897d908cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reader-writer-lock opaque handle data type.  <a href="#a70e53b604c249265bacd099897d908cd">More...</a><br /></td></tr>
 <tr class="separator:a70e53b604c249265bacd099897d908cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec70612f5e35622bf42e62944afe2517"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aec70612f5e35622bf42e62944afe2517">kernel_debug_print_t</a>) (const char *szString_)</td></tr>
+<tr class="separator:aec70612f5e35622bf42e62944afe2517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1ddbd4f6477b04386c3ca18f846aa3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a8c1ddbd4f6477b04386c3ca18f846aa3">panic_func_t</a>) (uint16_t u16PanicCode_)</td></tr>
+<tr class="separator:a8c1ddbd4f6477b04386c3ca18f846aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2efb74e5ccb8cbde503a54002a55aef"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ad2efb74e5ccb8cbde503a54002a55aef">thread_entry_func_t</a>) (void *pvArg_)</td></tr>
+<tr class="separator:ad2efb74e5ccb8cbde503a54002a55aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d45e55640d0539fef2613f68149f9a4"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9d45e55640d0539fef2613f68149f9a4">timer_callback_t</a>) (<a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a> hOwner_, void *pvData_)</td></tr>
+<tr class="separator:a9d45e55640d0539fef2613f68149f9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abfd2ee26a60099efd7a5ebf6cb5fcdaf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdaf">thread_state_t</a> { , <a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafa327b504fcea41a280d9c9d25a530321d">THREAD_STATE_READY</a>, 
+<tr class="memitem:abfd2ee26a60099efd7a5ebf6cb5fcdaf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdaf">thread_state_t</a> { <br />
+&#160;&#160;<a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafa048b9bdaa908dd8cb2e2cb930e007e73">THREAD_STATE_EXIT</a> = 0, 
+<a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafa327b504fcea41a280d9c9d25a530321d">THREAD_STATE_READY</a>, 
 <a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafac907d846ae87fb0d5455d0c2b3714586">THREAD_STATE_BLOCKED</a>, 
 <a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafa6bb9d4549894f22b0db2771574d47dcb">THREAD_STATE_STOP</a>, 
-<a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafa4331d57a1ce83e74b199b423c3a5811d">THREAD_STATE_INVALID</a>
+<br />
+&#160;&#160;<a class="el" href="mark3c_8h.html#abfd2ee26a60099efd7a5ebf6cb5fcdafa4331d57a1ce83e74b199b423c3a5811d">THREAD_STATE_INVALID</a>
+<br />
  }</td></tr>
 <tr class="separator:abfd2ee26a60099efd7a5ebf6cb5fcdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,27 +219,47 @@ Functions</h2></td></tr>
 <tr class="memitem:a51a55bd463476eed616d1ee4f1568a96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a51a55bd463476eed616d1ee4f1568a96">Alloc_Semaphore</a> (void)</td></tr>
 <tr class="memdesc:a51a55bd463476eed616d1ee4f1568a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Semaphore.  <a href="#a51a55bd463476eed616d1ee4f1568a96">More...</a><br /></td></tr>
 <tr class="separator:a51a55bd463476eed616d1ee4f1568a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb4f92451d3f390723232a1268401de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a6cb4f92451d3f390723232a1268401de">Free_Semaphore</a> (<a class="el" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a> handle)</td></tr>
+<tr class="separator:a6cb4f92451d3f390723232a1268401de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c7a86e38a1dcab246ad1484d39ca7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a22c7a86e38a1dcab246ad1484d39ca7c">Alloc_Mutex</a> (void)</td></tr>
 <tr class="memdesc:a22c7a86e38a1dcab246ad1484d39ca7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Mutex.  <a href="#a22c7a86e38a1dcab246ad1484d39ca7c">More...</a><br /></td></tr>
 <tr class="separator:a22c7a86e38a1dcab246ad1484d39ca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f2cdd03b8cc05e2620b2976453215e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a13f2cdd03b8cc05e2620b2976453215e">Free_Mutex</a> (<a class="el" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a> handle)</td></tr>
+<tr class="separator:a13f2cdd03b8cc05e2620b2976453215e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b9c520ef293bc7546cc2b46ff89a9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a74b9c520ef293bc7546cc2b46ff89a9d">Alloc_Message</a> (void)</td></tr>
 <tr class="memdesc:a74b9c520ef293bc7546cc2b46ff89a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Message.  <a href="#a74b9c520ef293bc7546cc2b46ff89a9d">More...</a><br /></td></tr>
 <tr class="separator:a74b9c520ef293bc7546cc2b46ff89a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefc28fa6c9cca9549c879564e8f938c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#acefc28fa6c9cca9549c879564e8f938c">Free_Message</a> (<a class="el" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a> handle)</td></tr>
+<tr class="separator:acefc28fa6c9cca9549c879564e8f938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078301b63371545594a8ca86e1379a83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a078301b63371545594a8ca86e1379a83">Alloc_MessageQueue</a> (void)</td></tr>
 <tr class="memdesc:a078301b63371545594a8ca86e1379a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_MessageQueue.  <a href="#a078301b63371545594a8ca86e1379a83">More...</a><br /></td></tr>
 <tr class="separator:a078301b63371545594a8ca86e1379a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433199855f9e7cba8cfbef6feeb8d262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a433199855f9e7cba8cfbef6feeb8d262">Free_MessageQueue</a> (<a class="el" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a> handle)</td></tr>
+<tr class="separator:a433199855f9e7cba8cfbef6feeb8d262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf25d2a60175865e5b23d9c7100e85a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aaf25d2a60175865e5b23d9c7100e85a5">Alloc_MessagePool</a> (void)</td></tr>
+<tr class="separator:aaf25d2a60175865e5b23d9c7100e85a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03ec3ebfb60b027aea094690ccec0d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aa03ec3ebfb60b027aea094690ccec0d7">Free_MessagePool</a> (<a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a> handle)</td></tr>
+<tr class="separator:aa03ec3ebfb60b027aea094690ccec0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28a515bdc71ed10d8f95bdd8daae27e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aa28a515bdc71ed10d8f95bdd8daae27e">Alloc_Notify</a> (void)</td></tr>
 <tr class="memdesc:aa28a515bdc71ed10d8f95bdd8daae27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Notify.  <a href="#aa28a515bdc71ed10d8f95bdd8daae27e">More...</a><br /></td></tr>
 <tr class="separator:aa28a515bdc71ed10d8f95bdd8daae27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9219a3e45a4e4802f9fcf91cc0e6fde1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9219a3e45a4e4802f9fcf91cc0e6fde1">Free_Notify</a> (<a class="el" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a> handle)</td></tr>
+<tr class="separator:a9219a3e45a4e4802f9fcf91cc0e6fde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c9a7b6a8db7a64056df410ff5a5356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a33c9a7b6a8db7a64056df410ff5a5356">Alloc_Mailbox</a> (void)</td></tr>
 <tr class="memdesc:a33c9a7b6a8db7a64056df410ff5a5356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Mailbox.  <a href="#a33c9a7b6a8db7a64056df410ff5a5356">More...</a><br /></td></tr>
 <tr class="separator:a33c9a7b6a8db7a64056df410ff5a5356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9584b1aa646893182555a74c93c81c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae9584b1aa646893182555a74c93c81c8">Free_Mailbox</a> (<a class="el" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a> handle)</td></tr>
+<tr class="separator:ae9584b1aa646893182555a74c93c81c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c0ed3ce39baf6984eba6b134e1a092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a37c0ed3ce39baf6984eba6b134e1a092">Alloc_Thread</a> (void)</td></tr>
 <tr class="memdesc:a37c0ed3ce39baf6984eba6b134e1a092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Thread.  <a href="#a37c0ed3ce39baf6984eba6b134e1a092">More...</a><br /></td></tr>
 <tr class="separator:a37c0ed3ce39baf6984eba6b134e1a092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448a66a64f996dd72f8693875847de36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a448a66a64f996dd72f8693875847de36">Free_Thread</a> (<a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a> handle)</td></tr>
+<tr class="separator:a448a66a64f996dd72f8693875847de36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a876241e74746d06048e02b31db7ce5ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a876241e74746d06048e02b31db7ce5ef">Alloc_Timer</a> (void)</td></tr>
 <tr class="memdesc:a876241e74746d06048e02b31db7ce5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc_Timer.  <a href="#a876241e74746d06048e02b31db7ce5ef">More...</a><br /></td></tr>
 <tr class="separator:a876241e74746d06048e02b31db7ce5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fecdc406d43734d37d0ee6377a32fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a17fecdc406d43734d37d0ee6377a32fc">Free_Timer</a> (<a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a> handle)</td></tr>
+<tr class="separator:a17fecdc406d43734d37d0ee6377a32fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a215267b1038050cc6c5057b7b06e5f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a215267b1038050cc6c5057b7b06e5f24">Kernel_Init</a> (void)</td></tr>
 <tr class="memdesc:a215267b1038050cc6c5057b7b06e5f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel_Init.  <a href="#a215267b1038050cc6c5057b7b06e5f24">More...</a><br /></td></tr>
 <tr class="separator:a215267b1038050cc6c5057b7b06e5f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +269,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad82650824f6a84f663387abd3981b9c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ad82650824f6a84f663387abd3981b9c0">Kernel_IsStarted</a> (void)</td></tr>
 <tr class="memdesc:ad82650824f6a84f663387abd3981b9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel_IsStarted.  <a href="#ad82650824f6a84f663387abd3981b9c0">More...</a><br /></td></tr>
 <tr class="separator:ad82650824f6a84f663387abd3981b9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd9f3a627ec0b676fef1b7e624b841bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#afd9f3a627ec0b676fef1b7e624b841bf">Kernel_SetPanic</a> (panic_func_t pfPanic_)</td></tr>
+<tr class="memitem:afd9f3a627ec0b676fef1b7e624b841bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#afd9f3a627ec0b676fef1b7e624b841bf">Kernel_SetPanic</a> (<a class="el" href="mark3c_8h.html#a8c1ddbd4f6477b04386c3ca18f846aa3">panic_func_t</a> pfPanic_)</td></tr>
 <tr class="memdesc:afd9f3a627ec0b676fef1b7e624b841bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel_SetPanic.  <a href="#afd9f3a627ec0b676fef1b7e624b841bf">More...</a><br /></td></tr>
 <tr class="separator:afd9f3a627ec0b676fef1b7e624b841bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1945eb6094245598952490ef279de5b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a1945eb6094245598952490ef279de5b7">Kernel_IsPanic</a> (void)</td></tr>
@@ -215,7 +290,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a59f80adfcbc6c3878f4c07e72669e8ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a59f80adfcbc6c3878f4c07e72669e8ea">Scheduler_GetCurrentThread</a> (void)</td></tr>
 <tr class="memdesc:a59f80adfcbc6c3878f4c07e72669e8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler_GetCurrentThread.  <a href="#a59f80adfcbc6c3878f4c07e72669e8ea">More...</a><br /></td></tr>
 <tr class="separator:a59f80adfcbc6c3878f4c07e72669e8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89b38f198e65e2d5a18a1a8647368ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae89b38f198e65e2d5a18a1a8647368ff">Thread_Init</a> (<a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a> handle, <a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> *pwStack_, uint16_t u16StackSize_, <a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a> uXPriority_, thread_entry_func_t pfEntryPoint_, void *pvArg_)</td></tr>
+<tr class="memitem:ae89b38f198e65e2d5a18a1a8647368ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ae89b38f198e65e2d5a18a1a8647368ff">Thread_Init</a> (<a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a> handle, <a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> *pwStack_, uint16_t u16StackSize_, <a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a> uXPriority_, <a class="el" href="mark3c_8h.html#ad2efb74e5ccb8cbde503a54002a55aef">thread_entry_func_t</a> pfEntryPoint_, void *pvArg_)</td></tr>
 <tr class="memdesc:ae89b38f198e65e2d5a18a1a8647368ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread_Init.  <a href="#ae89b38f198e65e2d5a18a1a8647368ff">More...</a><br /></td></tr>
 <tr class="separator:ae89b38f198e65e2d5a18a1a8647368ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b149c57fd26454fe1dbc88d0b3d1ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a4b149c57fd26454fe1dbc88d0b3d1ce7">Thread_Start</a> (<a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a> handle)</td></tr>
@@ -257,7 +332,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ab44d863728e24e4227b0a9224307129a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#ab44d863728e24e4227b0a9224307129a">Timer_Init</a> (<a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a> handle)</td></tr>
 <tr class="memdesc:ab44d863728e24e4227b0a9224307129a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer_Init.  <a href="#ab44d863728e24e4227b0a9224307129a">More...</a><br /></td></tr>
 <tr class="separator:ab44d863728e24e4227b0a9224307129a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805a406774e5dab063f9e59bdf597bfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a805a406774e5dab063f9e59bdf597bfb">Timer_Start</a> (<a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a> handle, bool bRepeat_, uint32_t u32IntervalMs_, timer_callback_t pfCallback_, void *pvData_)</td></tr>
+<tr class="memitem:a805a406774e5dab063f9e59bdf597bfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a805a406774e5dab063f9e59bdf597bfb">Timer_Start</a> (<a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a> handle, bool bRepeat_, uint32_t u32IntervalMs_, <a class="el" href="mark3c_8h.html#a9d45e55640d0539fef2613f68149f9a4">timer_callback_t</a> pfCallback_, void *pvData_)</td></tr>
 <tr class="memdesc:a805a406774e5dab063f9e59bdf597bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer_Start.  <a href="#a805a406774e5dab063f9e59bdf597bfb">More...</a><br /></td></tr>
 <tr class="separator:a805a406774e5dab063f9e59bdf597bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed90a19e435ac498cfbe88094e19ef60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#aed90a19e435ac498cfbe88094e19ef60">Timer_Restart</a> (<a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a> handle)</td></tr>
@@ -443,7 +518,7 @@ Functions</h2></td></tr>
 <tr class="memitem:acad4a68f7ed85f232a08c47f0fc432f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#acad4a68f7ed85f232a08c47f0fc432f1">ReaderWriterLock_TimedAcquireReader</a> (<a class="el" href="mark3c_8h.html#a70e53b604c249265bacd099897d908cd">ReaderWriterLock_t</a> handle, uint32_t u32TimeoutMs_)</td></tr>
 <tr class="memdesc:acad4a68f7ed85f232a08c47f0fc432f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReaderWriterLock_TimedAcquireReader.  <a href="#acad4a68f7ed85f232a08c47f0fc432f1">More...</a><br /></td></tr>
 <tr class="separator:acad4a68f7ed85f232a08c47f0fc432f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e3ed6831493a5587bdddec35daab6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a7e3ed6831493a5587bdddec35daab6be">Kernel_SetDebugPrintFunction</a> (kernel_debug_print_t pfPrintFunction_)</td></tr>
+<tr class="memitem:a7e3ed6831493a5587bdddec35daab6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a7e3ed6831493a5587bdddec35daab6be">Kernel_SetDebugPrintFunction</a> (<a class="el" href="mark3c_8h.html#aec70612f5e35622bf42e62944afe2517">kernel_debug_print_t</a> pfPrintFunction_)</td></tr>
 <tr class="memdesc:a7e3ed6831493a5587bdddec35daab6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel_SetDebugPrintFunction.  <a href="#a7e3ed6831493a5587bdddec35daab6be">More...</a><br /></td></tr>
 <tr class="separator:a7e3ed6831493a5587bdddec35daab6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9801e7f1c6ea06468c2bdbb560cc9fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mark3c_8h.html#a9801e7f1c6ea06468c2bdbb560cc9fa3">Kernel_DebugPrint</a> (const char *szString_)</td></tr>
@@ -451,11 +526,803 @@ Functions</h2></td></tr>
 <tr class="separator:a9801e7f1c6ea06468c2bdbb560cc9fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of C-language wrappers for the <a class="el" href="namespace_mark3.html">Mark3</a> kernel. </p>
-<p>Header providing C-language API bindings for the <a class="el" href="namespace_mark3.html">Mark3</a> kernel.</p>
+<div class="textblock"><p>Header providing C-language API bindings for the <a class="el" href="namespace_mark3.html">Mark3</a> kernel. </p>
 
 <p class="definition">Definition in file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af2b0dbef82671d84e1adaf9338a0ad13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b0dbef82671d84e1adaf9338a0ad13">&#9670;&nbsp;</a></span>CONDITIONVARIABLE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONDITIONVARIABLE_SIZE&#160;&#160;&#160;(sizeof(Fake_ConditionVariable))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00079">79</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a92ed6718d1575f2f69b9d12e5274e410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ed6718d1575f2f69b9d12e5274e410">&#9670;&nbsp;</a></span>DECLARE_CONDITIONVARIABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_CONDITIONVARIABLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>              <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__condvar_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(EVENTFLAG_SIZE)];                                         \</div><div class="line">    ConditionVariable_t name = (<a class="code" href="mark3c_8h.html#ab25bcecf2df3b14b253b20dc8baae655">ConditionVariable_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__condvar_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_ab25bcecf2df3b14b253b20dc8baae655"><div class="ttname"><a href="mark3c_8h.html#ab25bcecf2df3b14b253b20dc8baae655">ConditionVariable_t</a></div><div class="ttdeci">void * ConditionVariable_t</div><div class="ttdoc">Condition Variable opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00048">mark3c.h:48</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00161">161</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9b085398ce93ba46e408cf41fa63c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b085398ce93ba46e408cf41fa63c00">&#9670;&nbsp;</a></span>DECLARE_MAILBOX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_MAILBOX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>    <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__mailbox_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a83cd4f02323bc4dd646d1b3654fb7f4f">MAILBOX_SIZE</a>)];                                                     \</div><div class="line">    Mailbox_t name = (<a class="code" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__mailbox_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_ae7f5d36c7b28af6ff6411c1bce719938"><div class="ttname"><a href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a></div><div class="ttdeci">void * Mailbox_t</div><div class="ttdoc">Mailbox opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00039">mark3c.h:39</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a83cd4f02323bc4dd646d1b3654fb7f4f"><div class="ttname"><a href="mark3c_8h.html#a83cd4f02323bc4dd646d1b3654fb7f4f">MAILBOX_SIZE</a></div><div class="ttdeci">#define MAILBOX_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00073">mark3c.h:73</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00147">147</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ae7f714408b598d79937a1d4fe0b2081f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f714408b598d79937a1d4fe0b2081f">&#9670;&nbsp;</a></span>DECLARE_MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_MESSAGE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>    <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__message_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#aeca90e1c1c62b70670514ffc18c9dfd4">MESSAGE_SIZE</a>)];                                                     \</div><div class="line">    Message_t name = (<a class="code" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__message_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a6904117e9c4205913da5d85a4744948d"><div class="ttname"><a href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a></div><div class="ttdeci">void * Message_t</div><div class="ttdoc">Message opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00040">mark3c.h:40</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aeca90e1c1c62b70670514ffc18c9dfd4"><div class="ttname"><a href="mark3c_8h.html#aeca90e1c1c62b70670514ffc18c9dfd4">MESSAGE_SIZE</a></div><div class="ttdeci">#define MESSAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00071">mark3c.h:71</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00135">135</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ac4c1cbcb7f00f31d66e357377eb1eb3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c1cbcb7f00f31d66e357377eb1eb3e">&#9670;&nbsp;</a></span>DECLARE_MESSAGEPOOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_MESSAGEPOOL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>        <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__messagepool_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a9658b07767b0be086b907562e72ce8f5">MESSAGEPOOL_SIZE</a>)];                                         \</div><div class="line">    MessagePool_t name = (<a class="code" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__messagepool_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a189eeeb1be884173bd77b9ec96a9a63a"><div class="ttname"><a href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a></div><div class="ttdeci">void * MessagePool_t</div><div class="ttdoc">MessagePool opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00041">mark3c.h:41</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a9658b07767b0be086b907562e72ce8f5"><div class="ttname"><a href="mark3c_8h.html#a9658b07767b0be086b907562e72ce8f5">MESSAGEPOOL_SIZE</a></div><div class="ttdeci">#define MESSAGEPOOL_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00078">mark3c.h:78</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00139">139</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a103e738094165fc9e4abe4ecb0891d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103e738094165fc9e4abe4ecb0891d37">&#9670;&nbsp;</a></span>DECLARE_MESSAGEQUEUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_MESSAGEQUEUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>         <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__messagequeue_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a6d12312032af852205c79d49fd33855f">MESSAGEQUEUE_SIZE</a>)];                                      \</div><div class="line">    MessageQueue_t name = (<a class="code" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__messagequeue_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a45e1bd97df236e195d25d098b18c588b"><div class="ttname"><a href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a></div><div class="ttdeci">void * MessageQueue_t</div><div class="ttdoc">MessageQueue opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00042">mark3c.h:42</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a6d12312032af852205c79d49fd33855f"><div class="ttname"><a href="mark3c_8h.html#a6d12312032af852205c79d49fd33855f">MESSAGEQUEUE_SIZE</a></div><div class="ttdeci">#define MESSAGEQUEUE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00072">mark3c.h:72</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00143">143</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a5098a30d95965a8e1896c50370d1fb89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5098a30d95965a8e1896c50370d1fb89">&#9670;&nbsp;</a></span>DECLARE_MUTEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_MUTEX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>  <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__mutex_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a0729b97ed11498ff7919028902cd68f0">MUTEX_SIZE</a>)];                                                           \</div><div class="line">    Mutex_t name = (<a class="code" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__mutex_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a9aaa3aa8c4901694eeec9a4d6e1a275b"><div class="ttname"><a href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a></div><div class="ttdeci">void * Mutex_t</div><div class="ttdoc">Mutex opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00043">mark3c.h:43</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a0729b97ed11498ff7919028902cd68f0"><div class="ttname"><a href="mark3c_8h.html#a0729b97ed11498ff7919028902cd68f0">MUTEX_SIZE</a></div><div class="ttdeci">#define MUTEX_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00070">mark3c.h:70</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00131">131</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a282de47f85805cb5156913c15484301e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282de47f85805cb5156913c15484301e">&#9670;&nbsp;</a></span>DECLARE_NOTIFY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_NOTIFY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>   <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__notify_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a7a7d313f2ab58791eceb64e31a034218">NOTIFY_SIZE</a>)];                                                        \</div><div class="line">    Notify_t name = (<a class="code" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__notify_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a3d3a14c0c44c12b5f7b6ca9512824da3"><div class="ttname"><a href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a></div><div class="ttdeci">void * Notify_t</div><div class="ttdoc">Notification object opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00044">mark3c.h:44</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a7a7d313f2ab58791eceb64e31a034218"><div class="ttname"><a href="mark3c_8h.html#a7a7d313f2ab58791eceb64e31a034218">NOTIFY_SIZE</a></div><div class="ttdeci">#define NOTIFY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00074">mark3c.h:74</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00151">151</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a7497f9b85ea10e07e72539fd150484e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7497f9b85ea10e07e72539fd150484e2">&#9670;&nbsp;</a></span>DECLARE_READERWRITERLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_READERWRITERLOCK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>             <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__readerwriterlock_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(EVENTFLAG_SIZE)];                                 \</div><div class="line">    ReaderWriterLock_t name = (<a class="code" href="mark3c_8h.html#a70e53b604c249265bacd099897d908cd">ReaderWriterLock_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__readerwriterlock_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a70e53b604c249265bacd099897d908cd"><div class="ttname"><a href="mark3c_8h.html#a70e53b604c249265bacd099897d908cd">ReaderWriterLock_t</a></div><div class="ttdeci">void * ReaderWriterLock_t</div><div class="ttdoc">Reader-writer-lock opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00049">mark3c.h:49</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00165">165</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a8183a9845d11d3acb48bc48c92ba5464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8183a9845d11d3acb48bc48c92ba5464">&#9670;&nbsp;</a></span>DECLARE_SEMAPHORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_SEMAPHORE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>      <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__semaphore_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a35b499fe8f55b754bbbfc39fda388292">SEMAPHORE_SIZE</a>)];                                               \</div><div class="line">    Semaphore_t name = (<a class="code" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__semaphore_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a50b3f95ca126e44551b6a459e90ff834"><div class="ttname"><a href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a></div><div class="ttdeci">void * Semaphore_t</div><div class="ttdoc">Semaphore opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00045">mark3c.h:45</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a35b499fe8f55b754bbbfc39fda388292"><div class="ttname"><a href="mark3c_8h.html#a35b499fe8f55b754bbbfc39fda388292">SEMAPHORE_SIZE</a></div><div class="ttdeci">#define SEMAPHORE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00069">mark3c.h:69</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00127">127</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a351ddedf35f3dff9263f50dddfa9c905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351ddedf35f3dff9263f50dddfa9c905">&#9670;&nbsp;</a></span>DECLARE_THREAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_THREAD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>   <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__thread_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a7449a369167c8d564211d1aca9ab870a">THREAD_SIZE</a>)];                                                        \</div><div class="line">    Thread_t name = (<a class="code" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__thread_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_ac7de51742f0a585270c1cb8816ee4f4c"><div class="ttname"><a href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a></div><div class="ttdeci">void * Thread_t</div><div class="ttdoc">Thread opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00046">mark3c.h:46</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a7449a369167c8d564211d1aca9ab870a"><div class="ttname"><a href="mark3c_8h.html#a7449a369167c8d564211d1aca9ab870a">THREAD_SIZE</a></div><div class="ttdeci">#define THREAD_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00067">mark3c.h:67</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00119">119</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ab435fb5632c0d37934b3fb0726501c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab435fb5632c0d37934b3fb0726501c3f">&#9670;&nbsp;</a></span>DECLARE_TIMER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_TIMER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>  <a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__timer_, name)[<a class="code" href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a>(<a class="code" href="mark3c_8h.html#a9552c41a5b5e71c374a545241bb477ed">TIMER_SIZE</a>)];                                                           \</div><div class="line">    Timer_t name = (<a class="code" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a>)<a class="code" href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a>(__timer_, name);</div><div class="ttc" id="portcfg_8h_html_a7bee6ac5affaf1f013a9d9de75054223"><div class="ttname"><a href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a></div><div class="ttdeci">#define K_WORD</div><div class="ttdoc">Size of a data word. </div><div class="ttdef"><b>Definition:</b> <a href="portcfg_8h_source.html#l00062">portcfg.h:62</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a9552c41a5b5e71c374a545241bb477ed"><div class="ttname"><a href="mark3c_8h.html#a9552c41a5b5e71c374a545241bb477ed">TIMER_SIZE</a></div><div class="ttdeci">#define TIMER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00068">mark3c.h:68</a></div></div>
+<div class="ttc" id="mark3c_8h_html_a31792a6bdd6bbc9b4716e3f31663e499"><div class="ttname"><a href="mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499">WORD_ROUND</a></div><div class="ttdeci">#define WORD_ROUND(x)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00117">mark3c.h:117</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aa9f6ae5f5c335ee008fc06dad87656d1"><div class="ttname"><a href="mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1">TOKEN_2</a></div><div class="ttdeci">#define TOKEN_2(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00113">mark3c.h:113</a></div></div>
+<div class="ttc" id="mark3c_8h_html_aff39942d5c4e35cb7ab019c6ae3c7535"><div class="ttname"><a href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a></div><div class="ttdeci">void * Timer_t</div><div class="ttdoc">Timer opaque handle data type. </div><div class="ttdef"><b>Definition:</b> <a href="mark3c_8h_source.html#l00047">mark3c.h:47</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00123">123</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a83cd4f02323bc4dd646d1b3654fb7f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cd4f02323bc4dd646d1b3654fb7f4f">&#9670;&nbsp;</a></span>MAILBOX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAILBOX_SIZE&#160;&#160;&#160;(sizeof(Fake_Mailbox))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00073">73</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="aeca90e1c1c62b70670514ffc18c9dfd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca90e1c1c62b70670514ffc18c9dfd4">&#9670;&nbsp;</a></span>MESSAGE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MESSAGE_SIZE&#160;&#160;&#160;(sizeof(Fake_Message))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00071">71</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a9658b07767b0be086b907562e72ce8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9658b07767b0be086b907562e72ce8f5">&#9670;&nbsp;</a></span>MESSAGEPOOL_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MESSAGEPOOL_SIZE&#160;&#160;&#160;(sizeof(Fake_MessagePool))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00078">78</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d12312032af852205c79d49fd33855f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d12312032af852205c79d49fd33855f">&#9670;&nbsp;</a></span>MESSAGEQUEUE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MESSAGEQUEUE_SIZE&#160;&#160;&#160;(sizeof(Fake_MessageQueue))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00072">72</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a0729b97ed11498ff7919028902cd68f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0729b97ed11498ff7919028902cd68f0">&#9670;&nbsp;</a></span>MUTEX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MUTEX_SIZE&#160;&#160;&#160;(sizeof(Fake_Mutex))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00070">70</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a7a7d313f2ab58791eceb64e31a034218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7d313f2ab58791eceb64e31a034218">&#9670;&nbsp;</a></span>NOTIFY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOTIFY_SIZE&#160;&#160;&#160;(sizeof(Fake_Notify))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00074">74</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="aa86090fbc57ae71c22bc2c16bce0bd07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86090fbc57ae71c22bc2c16bce0bd07">&#9670;&nbsp;</a></span>READERWRITERLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define READERWRITERLOCK_SIZE&#160;&#160;&#160;(sizeof(Fake_ReaderWriterLock))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00080">80</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a35b499fe8f55b754bbbfc39fda388292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b499fe8f55b754bbbfc39fda388292">&#9670;&nbsp;</a></span>SEMAPHORE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEMAPHORE_SIZE&#160;&#160;&#160;(sizeof(Fake_Semaphore))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00069">69</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a7449a369167c8d564211d1aca9ab870a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7449a369167c8d564211d1aca9ab870a">&#9670;&nbsp;</a></span>THREAD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_SIZE&#160;&#160;&#160;(sizeof(Fake_Thread))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00067">67</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a9552c41a5b5e71c374a545241bb477ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9552c41a5b5e71c374a545241bb477ed">&#9670;&nbsp;</a></span>TIMER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIMER_SIZE&#160;&#160;&#160;(sizeof(Fake_Timer))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00068">68</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ae0c105ba6e6a947c7f5e0c034cb34181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c105ba6e6a947c7f5e0c034cb34181">&#9670;&nbsp;</a></span>TOKEN_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOKEN_1</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;x##y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00112">112</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="aa9f6ae5f5c335ee008fc06dad87656d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f6ae5f5c335ee008fc06dad87656d1">&#9670;&nbsp;</a></span>TOKEN_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOKEN_2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="mark3c_8h.html#ae0c105ba6e6a947c7f5e0c034cb34181">TOKEN_1</a>(x, y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00113">113</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a31792a6bdd6bbc9b4716e3f31663e499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31792a6bdd6bbc9b4716e3f31663e499">&#9670;&nbsp;</a></span>WORD_ROUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WORD_ROUND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) + (sizeof(<a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>) - 1)) / sizeof(<a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00117">117</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab25bcecf2df3b14b253b20dc8baae655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25bcecf2df3b14b253b20dc8baae655">&#9670;&nbsp;</a></span>ConditionVariable_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#ab25bcecf2df3b14b253b20dc8baae655">ConditionVariable_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Condition Variable opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00048">48</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="aec70612f5e35622bf42e62944afe2517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec70612f5e35622bf42e62944afe2517">&#9670;&nbsp;</a></span>kernel_debug_print_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* kernel_debug_print_t) (const char *szString_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00062">62</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ae7f5d36c7b28af6ff6411c1bce719938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f5d36c7b28af6ff6411c1bce719938">&#9670;&nbsp;</a></span>Mailbox_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mailbox opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00039">39</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a6904117e9c4205913da5d85a4744948d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6904117e9c4205913da5d85a4744948d">&#9670;&nbsp;</a></span>Message_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Message opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00040">40</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a189eeeb1be884173bd77b9ec96a9a63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189eeeb1be884173bd77b9ec96a9a63a">&#9670;&nbsp;</a></span>MessagePool_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MessagePool opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00041">41</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a45e1bd97df236e195d25d098b18c588b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e1bd97df236e195d25d098b18c588b">&#9670;&nbsp;</a></span>MessageQueue_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MessageQueue opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00042">42</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a9aaa3aa8c4901694eeec9a4d6e1a275b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aaa3aa8c4901694eeec9a4d6e1a275b">&#9670;&nbsp;</a></span>Mutex_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutex opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00043">43</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d3a14c0c44c12b5f7b6ca9512824da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3a14c0c44c12b5f7b6ca9512824da3">&#9670;&nbsp;</a></span>Notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notification object opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00044">44</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a8c1ddbd4f6477b04386c3ca18f846aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1ddbd4f6477b04386c3ca18f846aa3">&#9670;&nbsp;</a></span>panic_func_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* panic_func_t) (uint16_t u16PanicCode_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00282">282</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a70e53b604c249265bacd099897d908cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e53b604c249265bacd099897d908cd">&#9670;&nbsp;</a></span>ReaderWriterLock_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a70e53b604c249265bacd099897d908cd">ReaderWriterLock_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reader-writer-lock opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00049">49</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a50b3f95ca126e44551b6a459e90ff834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b3f95ca126e44551b6a459e90ff834">&#9670;&nbsp;</a></span>Semaphore_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Semaphore opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00045">45</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ad2efb74e5ccb8cbde503a54002a55aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2efb74e5ccb8cbde503a54002a55aef">&#9670;&nbsp;</a></span>thread_entry_func_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* thread_entry_func_t) (void *pvArg_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00401">401</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7de51742f0a585270c1cb8816ee4f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7de51742f0a585270c1cb8816ee4f4c">&#9670;&nbsp;</a></span>Thread_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00046">46</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="a9d45e55640d0539fef2613f68149f9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d45e55640d0539fef2613f68149f9a4">&#9670;&nbsp;</a></span>timer_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* timer_callback_t) (<a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a> hOwner_, void *pvData_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00570">570</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<a id="aff39942d5c4e35cb7ab019c6ae3c7535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff39942d5c4e35cb7ab019c6ae3c7535">&#9670;&nbsp;</a></span>Timer_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timer opaque handle data type. </p>
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8h_source.html#l00047">47</a> of file <a class="el" href="mark3c_8h_source.html">mark3c.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="abfd2ee26a60099efd7a5ebf6cb5fcdaf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfd2ee26a60099efd7a5ebf6cb5fcdaf">&#9670;&nbsp;</a></span>thread_state_t</h2>
 
@@ -469,7 +1336,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the various states that a thread can be in </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abfd2ee26a60099efd7a5ebf6cb5fcdafa327b504fcea41a280d9c9d25a530321d"></a>THREAD_STATE_READY&#160;</td><td class="fielddoc"><p>!&lt; Thread has terminated via exit path </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abfd2ee26a60099efd7a5ebf6cb5fcdafa048b9bdaa908dd8cb2e2cb930e007e73"></a>THREAD_STATE_EXIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abfd2ee26a60099efd7a5ebf6cb5fcdafa327b504fcea41a280d9c9d25a530321d"></a>THREAD_STATE_READY&#160;</td><td class="fielddoc"><p>!&lt; Thread has terminated via exit path </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abfd2ee26a60099efd7a5ebf6cb5fcdafac907d846ae87fb0d5455d0c2b3714586"></a>THREAD_STATE_BLOCKED&#160;</td><td class="fielddoc"><p>!&lt; Thread is ready to run </p>
 </td></tr>
@@ -558,6 +1426,26 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Handle to an allocated object, or nullptr if heap exhausted </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00076">76</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf25d2a60175865e5b23d9c7100e85a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf25d2a60175865e5b23d9c7100e85a5">&#9670;&nbsp;</a></span>Alloc_MessagePool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a> Alloc_MessagePool </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00100">100</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
 
 </div>
 </div>
@@ -1279,6 +2167,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9584b1aa646893182555a74c93c81c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9584b1aa646893182555a74c93c81c8">&#9670;&nbsp;</a></span>Free_Mailbox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Mailbox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938">Mailbox_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00128">128</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a5596340c7a61dc4d9d5622e71399bf8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5596340c7a61dc4d9d5622e71399bf8f">&#9670;&nbsp;</a></span>Free_Memory()</h2>
 
@@ -1304,6 +2212,166 @@ Functions</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00034">34</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acefc28fa6c9cca9549c879564e8f938c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefc28fa6c9cca9549c879564e8f938c">&#9670;&nbsp;</a></span>Free_Message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a6904117e9c4205913da5d85a4744948d">Message_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00082">82</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa03ec3ebfb60b027aea094690ccec0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03ec3ebfb60b027aea094690ccec0d7">&#9670;&nbsp;</a></span>Free_MessagePool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_MessagePool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a189eeeb1be884173bd77b9ec96a9a63a">MessagePool_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00106">106</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a433199855f9e7cba8cfbef6feeb8d262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433199855f9e7cba8cfbef6feeb8d262">&#9670;&nbsp;</a></span>Free_MessageQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_MessageQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a45e1bd97df236e195d25d098b18c588b">MessageQueue_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00094">94</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13f2cdd03b8cc05e2620b2976453215e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f2cdd03b8cc05e2620b2976453215e">&#9670;&nbsp;</a></span>Free_Mutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Mutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a9aaa3aa8c4901694eeec9a4d6e1a275b">Mutex_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00058">58</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9219a3e45a4e4802f9fcf91cc0e6fde1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9219a3e45a4e4802f9fcf91cc0e6fde1">&#9670;&nbsp;</a></span>Free_Notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Notify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a3d3a14c0c44c12b5f7b6ca9512824da3">Notify_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00118">118</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cb4f92451d3f390723232a1268401de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb4f92451d3f390723232a1268401de">&#9670;&nbsp;</a></span>Free_Semaphore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Semaphore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a50b3f95ca126e44551b6a459e90ff834">Semaphore_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00046">46</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a448a66a64f996dd72f8693875847de36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448a66a64f996dd72f8693875847de36">&#9670;&nbsp;</a></span>Free_Thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Thread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#ac7de51742f0a585270c1cb8816ee4f4c">Thread_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00161">161</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17fecdc406d43734d37d0ee6377a32fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17fecdc406d43734d37d0ee6377a32fc">&#9670;&nbsp;</a></span>Free_Timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Free_Timer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#aff39942d5c4e35cb7ab019c6ae3c7535">Timer_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mark3c_8cpp_source.html#l00172">172</a> of file <a class="el" href="mark3c_8cpp_source.html">mark3c.cpp</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +2537,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Kernel_SetDebugPrintFunction </td>
           <td>(</td>
-          <td class="paramtype">kernel_debug_print_t&#160;</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#aec70612f5e35622bf42e62944afe2517">kernel_debug_print_t</a>&#160;</td>
           <td class="paramname"><em>pfPrintFunction_</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1498,7 +2566,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Kernel_SetPanic </td>
           <td>(</td>
-          <td class="paramtype">panic_func_t&#160;</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a8c1ddbd4f6477b04386c3ca18f846aa3">panic_func_t</a>&#160;</td>
           <td class="paramname"><em>pfPanic_</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3400,7 +4468,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">thread_entry_func_t&#160;</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#ad2efb74e5ccb8cbde503a54002a55aef">thread_entry_func_t</a>&#160;</td>
           <td class="paramname"><em>pfEntryPoint_</em>, </td>
         </tr>
         <tr>
@@ -3710,7 +4778,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timer_callback_t&#160;</td>
+          <td class="paramtype"><a class="el" href="mark3c_8h.html#a9d45e55640d0539fef2613f68149f9a4">timer_callback_t</a>&#160;</td>
           <td class="paramname"><em>pfCallback_</em>, </td>
         </tr>
         <tr>
@@ -3779,7 +4847,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dc43877d82dd332f9fb2071fcca799d6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_c883bf649c7845365059c82cfcfc2919.html">lib</a></li><li class="navelem"><a class="el" href="dir_662bb9c23cbc9524cd967dd8e19ae9fb.html">mark3c</a></li><li class="navelem"><a class="el" href="dir_574f4bdfca38ac198c33c49e00856a96.html">src</a></li><li class="navelem"><a class="el" href="dir_37a89cf2335969c30a8ceaf877bf2700.html">public</a></li><li class="navelem"><a class="el" href="mark3c_8h.html">mark3c.h</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

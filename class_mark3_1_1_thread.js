@@ -1,5 +1,7 @@
 var class_mark3_1_1_thread =
 [
+    [ "~Thread", "class_mark3_1_1_thread.html#abde685f49d2d14a8d40041b2abeec021", null ],
+    [ "Thread", "class_mark3_1_1_thread.html#abb24759a92e880f9e0add1e71600a75c", null ],
     [ "ContextSwitchSWI", "class_mark3_1_1_thread.html#ac9c89f1f988f22a6e7189cb1077671a6", null ],
     [ "CoopYield", "class_mark3_1_1_thread.html#a43cb69e1fe84c381ac6dffc07daee3b3", null ],
     [ "Exit", "class_mark3_1_1_thread.html#ab69ec8cb690158489ad0811b81a2e9ee", null ],
@@ -22,6 +24,8 @@ var class_mark3_1_1_thread =
     [ "InheritPriority", "class_mark3_1_1_thread.html#a67a622808ce0a4ea0ad5cbe1d8851c7c", null ],
     [ "Init", "class_mark3_1_1_thread.html#a1852a577bac68bb211d2c5d63f693197", null ],
     [ "Init", "class_mark3_1_1_thread.html#aacc5526ca344777c0cbfeca03fb85399", null ],
+    [ "IsInitialized", "class_mark3_1_1_thread.html#a19b8500181e52c9f7584a010005ab064", null ],
+    [ "operator new", "class_mark3_1_1_thread.html#aff590a4e6407543d9941b72c0b70f4ab", null ],
     [ "SetCurrent", "class_mark3_1_1_thread.html#ac44d9eef521679f7f2f79d92645c031c", null ],
     [ "SetEventFlagMask", "class_mark3_1_1_thread.html#a2f3517295bd70b078250563d47dddc56", null ],
     [ "SetEventFlagMode", "class_mark3_1_1_thread.html#afc0cbea762c03bd9de2502871df9fd63", null ],
@@ -38,6 +42,7 @@ var class_mark3_1_1_thread =
     [ "Start", "class_mark3_1_1_thread.html#abbe943fc790be967f25601acbac48467", null ],
     [ "Stop", "class_mark3_1_1_thread.html#afd9e3f8a37b023eb6bcbff547e3cc7e4", null ],
     [ "Yield", "class_mark3_1_1_thread.html#af1a4c518d09e53e189a4ce5a21f3b910", null ],
+    [ "ThreadPort", "class_mark3_1_1_thread.html#aa8908dfbfb48ae58ac1f271221553cf2", null ],
     [ "m_bExpired", "class_mark3_1_1_thread.html#a4fbd3e590aa4ca00da807235934980d9", null ],
     [ "m_clTimer", "class_mark3_1_1_thread.html#a1cceb461f2688e6db33070d94efb666a", null ],
     [ "m_eFlagMode", "class_mark3_1_1_thread.html#a0d3f4e7d884ba813021b89ee6b617d31", null ],

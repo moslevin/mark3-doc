@@ -1,7 +1,9 @@
 var class_mark3_1_1_semaphore =
 [
+    [ "~Semaphore", "class_mark3_1_1_semaphore.html#aade8249da8d42a94c99cdcca6c1d9138", null ],
     [ "GetCount", "class_mark3_1_1_semaphore.html#a987b07af13ea84f4cdccc76d00b9b224", null ],
     [ "Init", "class_mark3_1_1_semaphore.html#ad78eb40b09d44d55fcfa598ced25ffcf", null ],
+    [ "operator new", "class_mark3_1_1_semaphore.html#a6a1a4b2a431f06c45552010e839d179c", null ],
     [ "Pend", "class_mark3_1_1_semaphore.html#a79c021285717527d04ebb4c1c5ac5735", null ],
     [ "Pend", "class_mark3_1_1_semaphore.html#a30e4c7b5603b6429e10e386e13ed6b5a", null ],
     [ "Pend_i", "class_mark3_1_1_semaphore.html#abe1af2577449f2678e9fa76aa777a77e", null ],

@@ -88,10 +88,17 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_message_pool.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_message_pool.html" title="The MessagePool Class The MessagePool class implements a simple allocator for message objects exchang...">MessagePool</a> Class The <a class="el" href="class_mark3_1_1_message_pool.html" title="The MessagePool Class The MessagePool class implements a simple allocator for message objects exchang...">MessagePool</a> class implements a simple allocator for message objects exchanged between threads. The sender allocates (pop's) messages, then sends them to the receiver. Upon receipt, it is the receiver's responsibility to deallocate (push) the message back to the pool.  
+ <a href="class_mark3_1_1_message_pool.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="message_8h_source.html">message.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9b76950656eb4e1a629a0687cf84965f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_pool.html#a9b76950656eb4e1a629a0687cf84965f">operator new</a> (size_t sz, void *pv)</td></tr>
+<tr class="separator:a9b76950656eb4e1a629a0687cf84965f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4edb024429b5ba613f56b56dc9c6ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_pool.html#a3c4edb024429b5ba613f56b56dc9c6ce">~MessagePool</a> ()</td></tr>
+<tr class="separator:a3c4edb024429b5ba613f56b56dc9c6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6146e0bb6417a80422b85aa6caf20b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_pool.html#a6146e0bb6417a80422b85aa6caf20b1d">Init</a> ()</td></tr>
 <tr class="memdesc:a6146e0bb6417a80422b85aa6caf20b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init.  <a href="#a6146e0bb6417a80422b85aa6caf20b1d">More...</a><br /></td></tr>
 <tr class="separator:a6146e0bb6417a80422b85aa6caf20b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,17 +114,44 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a81e2a59e9dcdc79d6bece365c1ea1a3c"><td class="memItemLeft" align="right" valign="top"><a id="a81e2a59e9dcdc79d6bece365c1ea1a3c"></a>
-<a class="el" href="class_mark3_1_1_double_link_list.html">DoubleLinkList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_pool.html#a81e2a59e9dcdc79d6bece365c1ea1a3c">m_clList</a></td></tr>
-<tr class="memdesc:a81e2a59e9dcdc79d6bece365c1ea1a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linked list used to manage the <a class="el" href="class_mark3_1_1_message.html">Message</a> objects. <br /></td></tr>
-<tr class="separator:a81e2a59e9dcdc79d6bece365c1ea1a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440e405088d0330f840b2b8294d23016"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_typed_double_link_list.html">TypedDoubleLinkList</a>&lt; <a class="el" href="class_mark3_1_1_message.html">Message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_pool.html#a440e405088d0330f840b2b8294d23016">m_clList</a></td></tr>
+<tr class="memdesc:a440e405088d0330f840b2b8294d23016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linked list used to manage the <a class="el" href="class_mark3_1_1_message.html" title="the Message class. This object provides threadsafe message-based IPC services based on exchange of ob...">Message</a> objects.  <a href="#a440e405088d0330f840b2b8294d23016">More...</a><br /></td></tr>
+<tr class="separator:a440e405088d0330f840b2b8294d23016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements a list of message objects </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_message_pool.html" title="The MessagePool Class The MessagePool class implements a simple allocator for message objects exchang...">MessagePool</a> Class The <a class="el" href="class_mark3_1_1_message_pool.html" title="The MessagePool Class The MessagePool class implements a simple allocator for message objects exchang...">MessagePool</a> class implements a simple allocator for message objects exchanged between threads. The sender allocates (pop's) messages, then sends them to the receiver. Upon receipt, it is the receiver's responsibility to deallocate (push) the message back to the pool. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab8_messages_2main_8cpp-example.html#_a4">lab8_messages/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00155">155</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00157">157</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3c4edb024429b5ba613f56b56dc9c6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c4edb024429b5ba613f56b56dc9c6ce">&#9670;&nbsp;</a></span>~MessagePool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mark3::MessagePool::~MessagePool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00161">161</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0cc9774283878be9cd51e6c55b8fe012"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cc9774283878be9cd51e6c55b8fe012">&#9670;&nbsp;</a></span>GetHead()</h2>
 
@@ -137,7 +171,7 @@ Private Attributes</h2></td></tr>
 <p>Return a pointer to the first element in the message list</p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00059">59</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00052">52</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
 
 </div>
 </div>
@@ -164,6 +198,44 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9b76950656eb4e1a629a0687cf84965f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b76950656eb4e1a629a0687cf84965f">&#9670;&nbsp;</a></span>operator new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* Mark3::MessagePool::operator new </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00160">160</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+
+</div>
+</div>
 <a id="a0140ae8384d2850f591dfb0482ad1bcd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0140ae8384d2850f591dfb0482ad1bcd">&#9670;&nbsp;</a></span>Pop()</h2>
 
@@ -181,10 +253,10 @@ Private Attributes</h2></td></tr>
 
 <p>Pop. </p>
 <p>Pop a message from the queue, returning it to the user to be popu32ated before sending by a transmitter.</p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to a <a class="el" href="class_mark3_1_1_message.html">Message</a> object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a <a class="el" href="class_mark3_1_1_message.html" title="the Message class. This object provides threadsafe message-based IPC services based on exchange of ob...">Message</a> object </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab8_messages_2main_8cpp-example.html#a6">lab8_messages/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00044">44</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="message_8cpp_source.html#l00041">41</a> of file <a class="el" href="message_8cpp_source.html">message.cpp</a>.</p>
 
 </div>
 </div>
@@ -208,7 +280,7 @@ Private Attributes</h2></td></tr>
 <p>Return a previously-claimed message object back to the queue. used once the message has been processed by a receiver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pclMessage_</td><td>Pointer to the <a class="el" href="class_mark3_1_1_message.html">Message</a> object to return back to the queue </td></tr>
+    <tr><td class="paramname">pclMessage_</td><td>Pointer to the <a class="el" href="class_mark3_1_1_message.html" title="the Message class. This object provides threadsafe message-based IPC services based on exchange of ob...">Message</a> object to return back to the queue </td></tr>
   </table>
   </dd>
 </dl>
@@ -218,9 +290,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a440e405088d0330f840b2b8294d23016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440e405088d0330f840b2b8294d23016">&#9670;&nbsp;</a></span>m_clList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_typed_double_link_list.html">TypedDoubleLinkList</a>&lt;<a class="el" href="class_mark3_1_1_message.html">Message</a>&gt; Mark3::MessagePool::m_clList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Linked list used to manage the <a class="el" href="class_mark3_1_1_message.html" title="the Message class. This object provides threadsafe message-based IPC services based on exchange of ob...">Message</a> objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="message_8h_source.html#l00201">201</a> of file <a class="el" href="message_8h_source.html">message.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="message_8h_source.html">message.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/<a class="el" href="message_8cpp_source.html">message.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="message_8h_source.html">message.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/<a class="el" href="message_8cpp_source.html">message.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -228,7 +327,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_message_pool.html">MessagePool</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:16 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:59 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -7,6 +7,7 @@ var class_mark3_1_1_reader_writer_lock =
     [ "AcquireWriter", "class_mark3_1_1_reader_writer_lock.html#a7b2b23b8f00a504714a30b4a7f72b6cc", null ],
     [ "AcquireWriter_i", "class_mark3_1_1_reader_writer_lock.html#a55747367cbe2fffe24978b3f9bb6906a", null ],
     [ "Init", "class_mark3_1_1_reader_writer_lock.html#aa18c126a4ae6c3abc791a8f56a02d86a", null ],
+    [ "operator new", "class_mark3_1_1_reader_writer_lock.html#a783d07adcff748e5b4f35c529e7235af", null ],
     [ "ReleaseReader", "class_mark3_1_1_reader_writer_lock.html#a223e7b0edd964ece6f0a8f500a691a5c", null ],
     [ "ReleaseWriter", "class_mark3_1_1_reader_writer_lock.html#a7252452ce93d374511c161072978d259", null ],
     [ "m_clGlobalMutex", "class_mark3_1_1_reader_writer_lock.html#a3e0d49f4b8fd5369b398e500698e3f25", null ],

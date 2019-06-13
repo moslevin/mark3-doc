@@ -81,11 +81,15 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_lock_guard.html','');}
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_mark3_1_1_lock_guard-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Mark3::LockGuard Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_mark3_1_1_lock_guard.html" title="The LockGuard class. This class provides RAII locks based on Mark3&#39;s kernel Mutex object...">LockGuard</a> class. This class provides RAII locks based on <a class="el" href="namespace_mark3.html">Mark3</a>'s kernel <a class="el" href="class_mark3_1_1_mutex.html" title="The Mutex Class. Class providing Mutual-exclusion locks, based on BlockingObject. ...">Mutex</a> object. Note that <a class="el" href="namespace_mark3.html">Mark3</a> does not support exceptions, so care must be taken to ensure that this object is only used where that constraint can be met.  
+ <a href="class_mark3_1_1_lock_guard.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="lockguard_8h_source.html">lockguard.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -95,13 +99,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1783e031aeda30dfdb6a1b236ab7c45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7515247c77e0db1bd27789dc6c3ff75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_lock_guard.html#ab7515247c77e0db1bd27789dc6c3ff75">LockGuard</a> (<a class="el" href="class_mark3_1_1_mutex.html">Mutex</a> *pclMutex, uint32_t u32TimeoutMs_)</td></tr>
 <tr class="separator:ab7515247c77e0db1bd27789dc6c3ff75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96860dafb94040437ab140151510390b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_lock_guard.html#a96860dafb94040437ab140151510390b">~LockGuard</a> ()</td></tr>
+<tr class="separator:a96860dafb94040437ab140151510390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140ddb8052c4609712b9ab73bdf7c122"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_lock_guard.html#a140ddb8052c4609712b9ab73bdf7c122">isAcquired</a> ()</td></tr>
 <tr class="separator:a140ddb8052c4609712b9ab73bdf7c122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af094dfca8be2e2b092173dfb72be9a06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_lock_guard.html#af094dfca8be2e2b092173dfb72be9a06">m_bIsAcquired</a></td></tr>
+<tr class="separator:af094dfca8be2e2b092173dfb72be9a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5600852c897f813fde4f08e5fa9744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mark3_1_1_mutex.html">Mutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_lock_guard.html#a3b5600852c897f813fde4f08e5fa9744">m_pclMutex</a></td></tr>
+<tr class="separator:a3b5600852c897f813fde4f08e5fa9744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implement RAII-style locks based on <a class="el" href="namespace_mark3.html">Mark3</a>'s kernel <a class="el" href="class_mark3_1_1_mutex.html">Mutex</a> object. Note that <a class="el" href="namespace_mark3.html">Mark3</a> does not support exceptions, so </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_lock_guard.html" title="The LockGuard class. This class provides RAII locks based on Mark3&#39;s kernel Mutex object...">LockGuard</a> class. This class provides RAII locks based on <a class="el" href="namespace_mark3.html">Mark3</a>'s kernel <a class="el" href="class_mark3_1_1_mutex.html" title="The Mutex Class. Class providing Mutual-exclusion locks, based on BlockingObject. ...">Mutex</a> object. Note that <a class="el" href="namespace_mark3.html">Mark3</a> does not support exceptions, so care must be taken to ensure that this object is only used where that constraint can be met. </p>
 
-<p class="definition">Definition at line <a class="el" href="lockguard_8h_source.html#l00030">30</a> of file <a class="el" href="lockguard_8h_source.html">lockguard.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lockguard_8h_source.html#l00032">32</a> of file <a class="el" href="lockguard_8h_source.html">lockguard.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1783e031aeda30dfdb6a1b236ab7c45c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1783e031aeda30dfdb6a1b236ab7c45c">&#9670;&nbsp;</a></span>LockGuard() <span class="overload">[1/2]</span></h2>
@@ -125,7 +138,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lockguard_8cpp_source.html#l00024">24</a> of file <a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lockguard_8cpp_source.html#l00025">25</a> of file <a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a>.</p>
 
 </div>
 </div>
@@ -162,7 +175,26 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lockguard_8cpp_source.html#l00032">32</a> of file <a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lockguard_8cpp_source.html#l00034">34</a> of file <a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a96860dafb94040437ab140151510390b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96860dafb94040437ab140151510390b">&#9670;&nbsp;</a></span>~LockGuard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mark3::LockGuard::~LockGuard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lockguard_8cpp_source.html#l00042">42</a> of file <a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a>.</p>
 
 </div>
 </div>
@@ -191,13 +223,62 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Verify that lock was correctly initialized and locked during acquisition. This is used to provide error-checking for timed RAII locks, where <a class="el" href="namespace_mark3.html">Mark3</a> does not use exceptions, and a kernel-panic is too heavy-handed. </p><dl class="section return"><dt>Returns</dt><dd>true if the lock was initialed correctly, false on error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lockguard_8h_source.html#l00052">52</a> of file <a class="el" href="lockguard_8h_source.html">lockguard.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lockguard_8h_source.html#l00054">54</a> of file <a class="el" href="lockguard_8h_source.html">lockguard.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af094dfca8be2e2b092173dfb72be9a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af094dfca8be2e2b092173dfb72be9a06">&#9670;&nbsp;</a></span>m_bIsAcquired</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mark3::LockGuard::m_bIsAcquired</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lockguard_8h_source.html#l00057">57</a> of file <a class="el" href="lockguard_8h_source.html">lockguard.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b5600852c897f813fde4f08e5fa9744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b5600852c897f813fde4f08e5fa9744">&#9670;&nbsp;</a></span>m_pclMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_mutex.html">Mutex</a>* Mark3::LockGuard::m_pclMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lockguard_8h_source.html#l00058">58</a> of file <a class="el" href="lockguard_8h_source.html">lockguard.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="lockguard_8h_source.html">lockguard.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/<a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="lockguard_8h_source.html">lockguard.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/<a class="el" href="lockguard_8cpp_source.html">lockguard.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -205,7 +286,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_lock_guard.html">LockGuard</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:16 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:59 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

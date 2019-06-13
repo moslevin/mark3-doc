@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: Configuring The Mark3 Kernel</title>
+<title>Mark3 Realtime Kernel: Configuring The Kernel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,18 +80,18 @@ $(document).ready(function(){initNavTree('_c_o_n_f_i_g0.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Configuring The <a class="el" href="namespace_mark3.html">Mark3</a> Kernel </div>  </div>
+<div class="title">Configuring The Kernel </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="CONFIG_I"></a>
 Overview</h1>
-<p>Configuration is done through setting options in <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> , and <a class="el" href="portcfg_8h.html" title="Mark3 Port Configuration. ">portcfg.h</a>.</p>
-<p><a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> contains global kernel configuration options, which determine specific kernel behaviors, and enable certain kernel APIs independent of the any target architecture. Previous to the R7 release, all kernel configuration options were set from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a>, and there was an incredible amount of granularity in the configuration options.</p>
-<p>One main motivating factor behind removing the granular configuration in <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> is that it added a ton of #ifdefs throughout the code, which made it look less clean. It was also difficult to maintain since there were too many permutations and combinations of configuration options to reasonably test.</p>
-<p>Another motivation for removing the vast array of configuration options from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> is that there's limited benefit to code size. With the advent of modern compiler optimizations such as section-based garbage collection and link-time optimizations, compilers to a remarkable job of optimizing out unused code. <a class="el" href="namespace_mark3.html">Mark3</a> supports these optimizations, allowing for nearly the same level of performance benefit as feature specific #ifdefs. In short - you still only pay for what you use, without having to select the features you want ahead of time.</p>
+<p>Configuration is done through setting options in <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> , and <a class="el" href="portcfg_8h.html" title="Mark3 Port Configuration. ">portcfg.h</a>.</p>
+<p><a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> contains global kernel configuration options, which determine specific kernel behaviors, and enable certain kernel APIs independent of the any target architecture. Previous to the R7 release, all kernel configuration options were set from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a>, and there was an incredible amount of granularity in the configuration options.</p>
+<p>One main motivating factor behind removing the granular configuration in <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> is that it added a ton of #ifdefs throughout the code, which made it look less clean. It was also difficult to maintain since there were too many permutations and combinations of configuration options to reasonably test.</p>
+<p>Another motivation for removing the vast array of configuration options from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> is that there's limited benefit to code size. With the advent of modern compiler optimizations such as section-based garbage collection and link-time optimizations, compilers to a remarkable job of optimizing out unused code. <a class="el" href="namespace_mark3.html">Mark3</a> supports these optimizations, allowing for nearly the same level of performance benefit as feature specific #ifdefs. In short - you still only pay for what you use, without having to select the features you want ahead of time.</p>
 <h2><a class="anchor" id="CONFIG_MARK3CFG"></a>
 Kernel Configuration Options</h2>
-<p>Kernel configuration is performed by setting #define's in <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> to values of 0 or 1.</p>
+<p>Kernel configuration is performed by setting #define's in <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> to values of 0 or 1.</p>
 <p><b>KERNEL_DEBUG</b></p>
 <p>When enabled, assert statements within the kernel are checked at runtime. This is useful for tracking kernel-breaking changes, memory corruption, etc. in debug builds.</p>
 <p>Should be disabled in release builds for performance reasons.</p>
@@ -149,15 +149,21 @@ Port Configuration Options</h2>
 <p>Define the native type corresponding to the target timer hardware's counter register.</p>
 <p><b>PORT_MIN_TIMER_TICKS</b></p>
 <p>Minimum number of timer ticks for any delay or sleep, required to ensure that a timer cannot be initialized to a negative value.</p>
+<p><b>PORT_OVERLOAD_NEW</b></p>
+<p>Set this to 1 to overload the system's New/Free functions with the kernel's allocator functions. A user must configure the Kernel's allocator functions to point to a real heap implementation backed with real memory in order to use dynamic object creation.</p>
+<p><b>PORT_STACK_GROWS_DOWN</b></p>
+<p>Set this to 1 if the stack grows down in the target architecture, or 0 if the stack grows up</p>
+<p><b>PORT_USE_HW_CLZ</b></p>
+<p>Set this to 1 if the target CPU/toolchain supports an optimized Count-leading-zeros instruction, or count-leading-zeros intrinsic. If such functionality is not available, a general-purpose implementation will be used.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="portcfg_8h.html" title="Mark3 Port Configuration. ">portcfg.h</a> </dd>
 <dd>
-<a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> </dd></dl>
+<a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
