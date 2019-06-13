@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: /home/moslevin/projects/github/mark3/kernel/src/arch/avr/atmega1284p/gcc/kerneltimer.cpp File Reference</title>
+<title>Mark3 Realtime Kernel: /home/moslevin/projects/m3-repo/kernel/src/arch/avr/atmega1284p/gcc/kerneltimer.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,13 +80,15 @@ $(document).ready(function(){initNavTree('kerneltimer_8cpp.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">kerneltimer.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Kernel Timer Implementation for ATMega328p.  
+<p>Kernel Timer Implementation for ATMega1284p.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mark3_8h_source.html">mark3.h</a>&quot;</code><br />
 <code>#include &lt;avr/common.h&gt;</code><br />
@@ -99,18 +101,104 @@ $(document).ready(function(){initNavTree('kerneltimer_8cpp.html','');});
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_mark3"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html">Mark3</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a065c06b79ac2647af785d52bf85fedd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kerneltimer_8cpp.html#a065c06b79ac2647af785d52bf85fedd8">TCCR1B_INIT</a>&#160;&#160;&#160;((1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12))</td></tr>
+<tr class="separator:a065c06b79ac2647af785d52bf85fedd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72aed430e8dfe7af58cd1b2f2e1dc05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kerneltimer_8cpp.html#ad72aed430e8dfe7af58cd1b2f2e1dc05">TIMER_IMSK</a>&#160;&#160;&#160;(1 &lt;&lt; OCIE1A)</td></tr>
+<tr class="separator:ad72aed430e8dfe7af58cd1b2f2e1dc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7071062a095c5d6fc76748c955a22bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kerneltimer_8cpp.html#ab7071062a095c5d6fc76748c955a22bb">TIMER_IFR</a>&#160;&#160;&#160;(1 &lt;&lt; OCF1A)</td></tr>
+<tr class="separator:ab7071062a095c5d6fc76748c955a22bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad3283c52231da75b994885043abd36da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ad3283c52231da75b994885043abd36da">Mark3::KernelTimer_Task</a> (void *unused)</td></tr>
+<tr class="separator:ad3283c52231da75b994885043abd36da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39420cdd896dd12c68e36313139d0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kerneltimer_8cpp.html#ad39420cdd896dd12c68e36313139d0a5">ISR</a> (TIMER1_COMPA_vect)</td></tr>
+<tr class="separator:ad39420cdd896dd12c68e36313139d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Kernel Timer Implementation for ATMega328p. </p>
+<div class="textblock"><p>Kernel Timer Implementation for ATMega1284p. </p>
 
 <p class="definition">Definition in file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a065c06b79ac2647af785d52bf85fedd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a065c06b79ac2647af785d52bf85fedd8">&#9670;&nbsp;</a></span>TCCR1B_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TCCR1B_INIT&#160;&#160;&#160;((1 &lt;&lt; WGM12) | (1 &lt;&lt; CS12))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00027">27</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab7071062a095c5d6fc76748c955a22bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7071062a095c5d6fc76748c955a22bb">&#9670;&nbsp;</a></span>TIMER_IFR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIMER_IFR&#160;&#160;&#160;(1 &lt;&lt; OCF1A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00029">29</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad72aed430e8dfe7af58cd1b2f2e1dc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72aed430e8dfe7af58cd1b2f2e1dc05">&#9670;&nbsp;</a></span>TIMER_IMSK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIMER_IMSK&#160;&#160;&#160;(1 &lt;&lt; OCIE1A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00028">28</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad39420cdd896dd12c68e36313139d0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39420cdd896dd12c68e36313139d0a5">&#9670;&nbsp;</a></span>ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">TIMER1_COMPA_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00103">103</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dc43877d82dd332f9fb2071fcca799d6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_3dd30a497388ee684638f120a124721c.html">src</a></li><li class="navelem"><a class="el" href="dir_92743408a41bb08453a7c583adc761b3.html">arch</a></li><li class="navelem"><a class="el" href="dir_e545c6747f0a62c90efb0107f5bdce45.html">avr</a></li><li class="navelem"><a class="el" href="dir_15d36ccd0d5c99a3927df5e66e3d21e0.html">atmega1284p</a></li><li class="navelem"><a class="el" href="dir_bf83e40eaac91a1884d1f182836d1220.html">gcc</a></li><li class="navelem"><a class="el" href="kerneltimer_8cpp.html">kerneltimer.cpp</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

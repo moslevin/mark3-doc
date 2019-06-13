@@ -97,8 +97,8 @@ Be feature competitive</h2>
 <p>To truly be taken seriously as more than just a toy or educational tool, an RTOS needs to have a certain feature suite. While <a class="el" href="namespace_mark3.html">Mark3</a> isn't a clone of any existing RTOS, it should at least attempt parity with the most common software in its class.</p>
 <p>Looking at its competitors, <a class="el" href="namespace_mark3.html">Mark3</a> as a kernel supports most, if not all of the compelling features found in modern RTOS kernels, including dynamic threads, dynamic timers, efficient message passing, and multiple types of synchronization primatives.</p>
 <h2><a class="anchor" id="INSIDEOVERNED"></a>
-No external dependencies, no new language features</h2>
-<p>To maximize portability and promote adoption to new platforms, <a class="el" href="namespace_mark3.html">Mark3</a> is written in a widely supported subset of C++ that lends itself to embedded applications. It avoids RTTI, exceptions, templates, and libraries (C standard, STL, etc.), with all fundamental data structures and types implemented completely for use by the kernel. As a result, the portable parts of <a class="el" href="namespace_mark3.html">Mark3</a> should compile for any capable C++ toolchain.</p>
+No external dependencies, no non-language features</h2>
+<p>To maximize portability and promote adoption to new platforms, <a class="el" href="namespace_mark3.html">Mark3</a> is written in a widely supported subset of C++ that lends itself to embedded applications. It avoids RTTI, exceptions, and libraries (C standard, STL, boost, etc.), with all fundamental data structures and types implemented completely for use by the kernel. As a result, the portable parts of <a class="el" href="namespace_mark3.html">Mark3</a> should compile for any capable C++ toolchain.</p>
 <h2><a class="anchor" id="INSIDEOVERHPA"></a>
 Target the most popular hobbyist platforms available</h2>
 <p>Realistically, this means supporting the various Arduino-compatible target CPUs, including AVR and ARM Cortex-M series microcontrollers. As a result, the current default target for <a class="el" href="namespace_mark3.html">Mark3</a> is the atmega328p, which has 32KB of flash and 2KB of RAM. All decisions regarding default features, code size, and performance need to take that target system into account.</p>
@@ -129,7 +129,7 @@ Use Virtualization For Verification</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

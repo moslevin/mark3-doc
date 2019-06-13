@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('namespace_mark3.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Mark3 Namespace Reference</div>  </div>
 </div><!--header-->
@@ -93,98 +94,194 @@ $(document).ready(function(){initNavTree('namespace_mark3.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_mark3_1_1_atomic"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3_1_1_atomic.html">Atomic</a></td></tr>
-<tr class="memdesc:namespace_mark3_1_1_atomic"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_mark3_1_1_atomic.html" title="The Atomic namespace. ">Atomic</a> namespace. <br /></td></tr>
+<tr class="memdesc:namespace_mark3_1_1_atomic"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="namespace_mark3_1_1_atomic.html" title="The Atomic namespace This utility module provides primatives for atomic operations - that is...">Atomic</a> namespace This utility module provides primatives for atomic operations - that is, operations that are guaranteed to execute uninterrupted. Basic atomic primatives provided here include Set/Add/Subtract, as well as an atomic test-and-set. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_auto_alloc.html">AutoAlloc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_auto_alloc.html" title="The AutoAlloc class. This class provides an object-allocation interface for both kernel objects and u...">AutoAlloc</a> class. This class provides an object-allocation interface for both kernel objects and user-defined types. This class supplies callouts for alloc/free that use object-type metadata to determine how objects may be allocated, allowing a user to create custom dynamic memory implementations for specific object types and sizes. As a result, the user-defined allocators can avoid the kinds of memory fragmentation and exhaustion issues that occur in typical embedded systems in which a single heap is used to satisfy all allocations in the application.  <a href="class_mark3_1_1_auto_alloc.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_blocking_object.html">BlockingObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_blocking_object.html" title="The BlockingObject class. Class implementing thread-blocking primatives. used for implementing things...">BlockingObject</a> class. Class implementing thread-blocking primatives. used for implementing things like semaphores, mutexes, message queues, or anything else that could cause a thread to suspend execution on some external stimulus.  <a href="class_mark3_1_1_blocking_object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_circular_link_list.html">CircularLinkList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_circular_link_list.html" title="The CircularLinkList class Circular-linked-list data type, inherited from the base LinkList type...">CircularLinkList</a> class Circular-linked-list data type, inherited from the base <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> type.  <a href="class_mark3_1_1_circular_link_list.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_co_list.html">CoList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_co_list.html" title="The CoList class The CoList class implements a circular-linked-listed structure for coroutine objects...">CoList</a> class The <a class="el" href="class_mark3_1_1_co_list.html" title="The CoList class The CoList class implements a circular-linked-listed structure for coroutine objects...">CoList</a> class implements a circular-linked-listed structure for coroutine objects. The intent of this object is to maintain a list of active coroutine objects with a specific priority or state, to ensure that a freshly-schedulable co-routine always exists at the head of the list.  <a href="class_mark3_1_1_co_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_condition_variable.html">ConditionVariable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_condition_variable.html" title="The ConditionVariable class This class implements a condition variable. This is a synchronization obj...">ConditionVariable</a> class This class implements a condition variable. This is a synchronization object that allows multiple threads to block, each waiting for specific signals unique to them. Access to the specified condition is guarded by a mutex that is supplied by the caller. This object can permit multiple waiters that can be unblocked one-at-a-time via signalling, or unblocked all at once via broadcasting. This object is built upon lower-level primatives, and is somewhat more heavyweight than the primative types supplied by the kernel.  <a href="class_mark3_1_1_condition_variable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_coroutine.html">Coroutine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_coroutine.html" title="The Coroutine class implements a lightweight, run-to-completion task that forms the basis for co-oper...">Coroutine</a> class implements a lightweight, run-to-completion task that forms the basis for co-operative task scheduling in <a class="el" href="namespace_mark3.html">Mark3</a>. Coroutines are designed to be run from a singular context, and scheduled as a result of events occurring from threads, timers, interrupt sources, or other co-routines.  <a href="class_mark3_1_1_coroutine.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_co_scheduler.html">CoScheduler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_co_scheduler.html" title="The CoScheduler class. This class implements the coroutine scheduler. Similar to the Mark3 thread sch...">CoScheduler</a> class. This class implements the coroutine scheduler. Similar to the <a class="el" href="namespace_mark3.html">Mark3</a> thread scheduler, the highest-priority active object is scheduled / returned for execution. If no active co-routines are available to be scheduled, then the scheduler returns nullptr.  <a href="class_mark3_1_1_co_scheduler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_critical_guard.html">CriticalGuard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_critical_guard.html" title="The CriticalGuard class. This class provides an implemention of RAII for critical sections...">CriticalGuard</a> class. This class provides an implemention of RAII for critical sections. Object creation results in a critical section being invoked. The subsequent destructor call results in the critical section being released.  <a href="class_mark3_1_1_critical_guard.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_critical_section.html">CriticalSection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_critical_section.html" title="The CriticalSection class. This class implements a portable CriticalSection interface based on macros...">CriticalSection</a> class. This class implements a portable <a class="el" href="class_mark3_1_1_critical_section.html" title="The CriticalSection class. This class implements a portable CriticalSection interface based on macros...">CriticalSection</a> interface based on macros/inline functions that are implemented as part of each port.  <a href="class_mark3_1_1_critical_section.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_double_link_list.html">DoubleLinkList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_double_link_list.html" title="The DoubleLinkList Class Doubly-linked-list data type, inherited from the base LinkList type...">DoubleLinkList</a> Class Doubly-linked-list data type, inherited from the base <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> type.  <a href="class_mark3_1_1_double_link_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_event_flag.html">EventFlag</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_event_flag.html" title="The EventFlag class is a blocking object, similar to a semaphore or mutex, commonly used for synchron...">EventFlag</a> class is a blocking object, similar to a semaphore or mutex, commonly used for synchronizing thread execution based on events occurring within the system.  <a href="class_mark3_1_1_event_flag.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_event_flag.html" title="The EventFlag class. This class implements a blocking object, similar to a semaphore or mutex...">EventFlag</a> class. This class implements a blocking object, similar to a semaphore or mutex, commonly used for synchronizing thread execution based on events occurring within the system. Each <a class="el" href="class_mark3_1_1_event_flag.html" title="The EventFlag class. This class implements a blocking object, similar to a semaphore or mutex...">EventFlag</a> object contains a 16-bit bitmask, which is used to trigger events on associated threads. Threads wishing to block, waiting for a specific event to occur can wait on any pattern within this 16-bit bitmask to be set. Here, we provide the ability for a thread to block, waiting for ANY bits in a specified mask to be set, or for ALL bits within a specific mask to be set. Depending on how the object is configured, the bits that triggered the wakeup can be automatically cleared once a match has occurred.  <a href="class_mark3_1_1_event_flag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_kernel.html">Kernel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_kernel.html" title="The Kernel Class encapsulates all of the kernel startup, configuration and management functions...">Kernel</a> Class encapsulates all of the kernel startup, configuration and management functions.  <a href="class_mark3_1_1_kernel.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_kernel_s_w_i.html">KernelSWI</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_kernel_s_w_i.html" title="The KernelSWI Class provides the software-interrupt used to implement the context-switching interrupt...">KernelSWI</a> Class provides the software-interrupt used to implement the context-switching interrupt used by the kernel. This interface must be implemented by target-specific code in the porting layer.  <a href="class_mark3_1_1_kernel_s_w_i.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_kernel_timer.html">KernelTimer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_kernel_timer.html" title="The KernelTimer class provides a timer interface used by all time-based scheduling/timer subsystems i...">KernelTimer</a> class provides a timer interface used by all time-based scheduling/timer subsystems in the kernel. This interface must be implemented by target-specific code in the porting layer.  <a href="class_mark3_1_1_kernel_timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list.html">LinkList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> Class Abstract-data-type from which all other linked-lists are derived.  <a href="class_mark3_1_1_link_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_link_list_node.html">LinkListNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_link_list_node.html" title="The LinkListNode Class Basic linked-list node data structure. This data is managed by the linked-list...">LinkListNode</a> Class Basic linked-list node data structure. This data is managed by the linked-list class types, and can be used transparently between them.  <a href="class_mark3_1_1_link_list_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_lock_guard.html">LockGuard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_lock_guard.html" title="The LockGuard class. This class provides RAII locks based on Mark3&#39;s kernel Mutex object...">LockGuard</a> class. This class provides RAII locks based on <a class="el" href="namespace_mark3.html">Mark3</a>'s kernel <a class="el" href="class_mark3_1_1_mutex.html" title="The Mutex Class. Class providing Mutual-exclusion locks, based on BlockingObject. ...">Mutex</a> object. Note that <a class="el" href="namespace_mark3.html">Mark3</a> does not support exceptions, so care must be taken to ensure that this object is only used where that constraint can be met.  <a href="class_mark3_1_1_lock_guard.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_mailbox.html">Mailbox</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_mailbox.html" title="The Mailbox class implements an IPC mechnism based on envelopes containing data of a fixed size (conf...">Mailbox</a> class implements an IPC mechnism based on envelopes containing data of a fixed size (configured at initialization) that reside within a buffer of memory provided by the user.  <a href="class_mark3_1_1_mailbox.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_mailbox.html" title="The Mailbox class. This class implements an IPC mechnism based on sending/receiving envelopes contain...">Mailbox</a> class. This class implements an IPC mechnism based on sending/receiving envelopes containing data of a fixed size, configured at initialization) that reside within a buffer of memory provided by the user.  <a href="class_mark3_1_1_mailbox.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_mem_util.html">MemUtil</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">String and Memory manipu32ation class.  <a href="class_mark3_1_1_mem_util.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message.html">Message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the <a class="el" href="class_mark3_1_1_message.html" title="the Message class. This object provides threadsafe message-based IPC services based on exchange of ob...">Message</a> class. This object provides threadsafe message-based IPC services based on exchange of objects containing a data pointer and minimal application-defined metadata. Messages are to be allocated/produced by the sender, and deallocated/consumed by the receiver.  <a href="class_mark3_1_1_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_pool.html">MessagePool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_message_pool.html" title="The MessagePool Class The MessagePool class implements a simple allocator for message objects exchang...">MessagePool</a> Class The <a class="el" href="class_mark3_1_1_message_pool.html" title="The MessagePool Class The MessagePool class implements a simple allocator for message objects exchang...">MessagePool</a> class implements a simple allocator for message objects exchanged between threads. The sender allocates (pop's) messages, then sends them to the receiver. Upon receipt, it is the receiver's responsibility to deallocate (push) the message back to the pool.  <a href="class_mark3_1_1_message_pool.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_message_queue.html">MessageQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_message_queue.html" title="The MessageQueue class. Implements a mechanism used to send/receive data between threads. Allows threads to block, waiting for messages to be sent from other contexts. ">MessageQueue</a> class. Implements a mechanism used to send/receive data between threads. Allows threads to block, waiting for messages to be sent from other contexts.  <a href="class_mark3_1_1_message_queue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_mutex.html">Mutex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_mutex.html" title="The Mutex Class. Class providing Mutual-exclusion locks, based on BlockingObject. ...">Mutex</a> Class. Class providing Mutual-exclusion locks, based on <a class="el" href="class_mark3_1_1_blocking_object.html" title="The BlockingObject class. Class implementing thread-blocking primatives. used for implementing things...">BlockingObject</a>.  <a href="class_mark3_1_1_mutex.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_notify.html">Notify</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_notify.html" title="The Notify class is a blocking object type, that allows one or more threads to wait for an event to o...">Notify</a> class is a blocking object type, that allows one or more threads to wait for an event to occur before resuming operation.  <a href="class_mark3_1_1_notify.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_notify.html" title="The Notify class. This class provides a blocking object type that allows one or more threads to wait ...">Notify</a> class. This class provides a blocking object type that allows one or more threads to wait for an event to occur before resuming operation.  <a href="class_mark3_1_1_notify.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_priority_map.html" title="The PriorityMap class. ">PriorityMap</a> class.  <a href="class_mark3_1_1_priority_map.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_priority_map_l1.html">PriorityMapL1</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_priority_map_l1.html" title="The PriorityMapL1 class This class implements a priority bitmap data structure. Each bit in the objec...">PriorityMapL1</a> class This class implements a priority bitmap data structure. Each bit in the objects internal storage represents a priority. When a bit is set, it indicates that something is scheduled at the bit's corresponding priority, when a bit is clear it indicates that no entities are scheduled at that priority. This object provides the fundamental logic required to implement efficient priority-based scheduling for the thread + coroutine schedulers in the kernel.  <a href="class_mark3_1_1_priority_map_l1.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_priority_map_l2.html">PriorityMapL2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_priority_map_l2.html" title="The PriorityMapL2 class This class implements a priority bitmap data structure. Each bit in the objec...">PriorityMapL2</a> class This class implements a priority bitmap data structure. Each bit in the objects internal storage represents a priority. When a bit is set, it indicates that something is scheduled at the bit's corresponding priority, when a bit is clear it indicates that no entities are scheduled at that priority. This object provides the fundamental logic required to implement efficient priority-based scheduling for the thread + coroutine schedulers in the kernel.  <a href="class_mark3_1_1_priority_map_l2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_profile_timer.html">ProfileTimer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Profiling timer. This class is used to perform high-performance profiling of code to see how int32_t certain operations take. useful in instrumenting the performance of key algorithms and time-critical operations to ensure real-timer behavior.  <a href="class_mark3_1_1_profile_timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_quantum.html">Quantum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_quantum.html" title="The Quantum Class. Static-class used to implement Thread quantum functionality, which is fundamental ...">Quantum</a> Class. Static-class used to implement <a class="el" href="class_mark3_1_1_thread.html" title="The Thread Class. This object providing the fundamental thread control data structures and functions ...">Thread</a> quantum functionality, which is fundamental to round-robin thread scheduling.  <a href="class_mark3_1_1_quantum.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_reader_writer_lock.html">ReaderWriterLock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_reader_writer_lock.html" title="The ReaderWriterLock class This class implements an object that marshalls access to a resource based ...">ReaderWriterLock</a> class This class implements an object that marshalls access to a resource based on the intended usage of the resource. A reader-writer lock permits multiple concurrent read access, or single-writer access to a resource. If the object holds a write lock, other writers, and all readers will block until the writer is finished. If the object holds reader locks, all writers will block until all readers are finished before the first writer can take ownership of the resource. This is based upon lower-level synchronization primatives, and is somewhat more heavyweight than primative synchronization types.  <a href="class_mark3_1_1_reader_writer_lock.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_reader_writer_lock.html" title="The ReaderWriterLock class. This class implements an object that marshalls access to a resource based...">ReaderWriterLock</a> class. This class implements an object that marshalls access to a resource based on the intended usage of the resource. A reader-writer lock permits multiple concurrent read access, or single-writer access to a resource. If the object holds a write lock, other writers, and all readers will block until the writer is finished. If the object holds reader locks, all writers will block until all readers are finished before the first writer can take ownership of the resource. This is based upon lower-level synchronization primatives, and is somewhat more heavyweight than primative synchronization types.  <a href="class_mark3_1_1_reader_writer_lock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html">Scheduler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a> Class. This class provides priority-based round-robin <a class="el" href="class_mark3_1_1_thread.html" title="The Thread Class. This object providing the fundamental thread control data structures and functions ...">Thread</a> scheduling for all active threads managed by the kernel.  <a href="class_mark3_1_1_scheduler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler_guard.html">SchedulerGuard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_scheduler_guard.html" title="The SchedulerGuard class This class implements RAII-based control of the scheduler&#39;s global state...">SchedulerGuard</a> class This class implements RAII-based control of the scheduler's global state. Upon object construction, the scheduler's state is cached locally and the scheduler is disabled (if not already disabled). Upon object destruction, the scheduler's previous state is restored. This object is interrupt-safe, although it has no effect when called from an interrupt given that interrupts are inherently higher-priority than threads.  <a href="class_mark3_1_1_scheduler_guard.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_semaphore.html">Semaphore</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the <a class="el" href="class_mark3_1_1_semaphore.html" title="the Semaphore class provides Binary &amp; Counting semaphore objects, based on BlockingObject base class...">Semaphore</a> class provides Binary &amp; Counting semaphore objects, based on <a class="el" href="class_mark3_1_1_blocking_object.html" title="The BlockingObject class. Class implementing thread-blocking primatives. used for implementing things...">BlockingObject</a> base class.  <a href="class_mark3_1_1_semaphore.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_streamer.html">Streamer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_streamer.html" title="The Streamer class. ">Streamer</a> class.  <a href="class_mark3_1_1_streamer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_streamer.html" title="The Streamer class. This class implements a circular byte-buffer with thread and interrupt safe metho...">Streamer</a> class. This class implements a circular byte-buffer with thread and interrupt safe methods for writing-to and reading-from the buffer. Objects of this class type are designed to be shared between threads, or between threads and interrupts.  <a href="class_mark3_1_1_streamer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread.html">Thread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_thread.html" title="The Thread Class. This object providing the fundamental thread control data structures and functions ...">Thread</a> Class. This object providing the fundamental thread control data structures and functions that define a single thread of execution in the <a class="el" href="namespace_mark3.html">Mark3</a> operating system. It is the fundamental data type used to provide multitasking support in the kernel.  <a href="class_mark3_1_1_thread.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_thread_list.html" title="The ThreadList Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects. ">ThreadList</a> Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects.  <a href="class_mark3_1_1_thread_list.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_list_list.html">ThreadListList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_thread_list_list.html" title="The ThreadListList class Class used to track all threadlists active in the OS kernel. At any point in time, the list can be traversed to get a complete view of all running, blocked, or stopped threads in the system. ">ThreadListList</a> class Class used to track all threadlists active in the OS kernel. At any point in time, the list can be traversed to get a complete view of all running, blocked, or stopped threads in the system.  <a href="class_mark3_1_1_thread_list_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_port.html">ThreadPort</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_thread_port.html" title="The ThreadPort Class defines the target-specific functions required by the kernel for threading...">ThreadPort</a> Class defines the target-specific functions required by the kernel for threading.  <a href="class_mark3_1_1_thread_port.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer.html">Timer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel-managed software timers.  <a href="class_mark3_1_1_timer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> Class. This class provides kernel-managed timers, used to provide high-precision delays. Functionality is useful to both user-code, and is used extensively within the kernel and its blocking objects to implement round-robin scheduling, thread sleep, and timeouts. Provides one-shot and periodic timers for use by application code. This object relies on a target-defined hardware timer implementation, which is multiplexed by the kernel's timer scheduler.  <a href="class_mark3_1_1_timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_list.html">TimerList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the <a class="el" href="class_mark3_1_1_timer_list.html" title="the TimerList class. This class implements a doubly-linked-list of timer objects. ...">TimerList</a> class. This class implements a doubly-linked-list of timer objects.  <a href="class_mark3_1_1_timer_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_timer_scheduler.html">TimerScheduler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_timer_scheduler.html" title="The TimerScheduler Class. This implements a &quot;Static&quot; class used to manage a global list of timers use...">TimerScheduler</a> Class. This implements a "Static" class used to manage a global list of timers used throughout the system.  <a href="class_mark3_1_1_timer_scheduler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mark3_1_1_token__t.html">Token_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token descriptor struct format.  <a href="struct_mark3_1_1_token__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_typed_circular_link_list.html">TypedCircularLinkList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_typed_circular_link_list.html" title="The TypedCircularLinkList Class Circular-linked-list data type, inherited from the base LinkList type...">TypedCircularLinkList</a> Class Circular-linked-list data type, inherited from the base <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> type, and templated for use with linked-list-node derived data-types.  <a href="class_mark3_1_1_typed_circular_link_list.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_typed_double_link_list.html">TypedDoubleLinkList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_typed_double_link_list.html" title="The TypedDoubleLinkList Class Doubly-linked-list data type, inherited from the base LinkList type...">TypedDoubleLinkList</a> Class Doubly-linked-list data type, inherited from the base <a class="el" href="class_mark3_1_1_link_list.html" title="The LinkList Class Abstract-data-type from which all other linked-lists are derived. ">LinkList</a> type, and templated for use with linked-list-node derived data-types.  <a href="class_mark3_1_1_typed_double_link_list.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_typed_link_list_node.html">TypedLinkListNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_mark3_1_1_typed_link_list_node.html" title="The TypedLinkListNode class The TypedLinkListNode class provides a linked-list node type for a specif...">TypedLinkListNode</a> class The <a class="el" href="class_mark3_1_1_typed_link_list_node.html" title="The TypedLinkListNode class The TypedLinkListNode class provides a linked-list node type for a specif...">TypedLinkListNode</a> class provides a linked-list node type for a specified object type. This can be used with typed link-list data structures to manage lists of objects without having to static-cast between the base type and the derived class.  <a href="class_mark3_1_1_typed_link_list_node.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a13650c2ac3d8ae114da7c5c8aaaf36b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a13650c2ac3d8ae114da7c5c8aaaf36b1">AutoAllocAllocator_t</a> = void *(*)(<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87">AutoAllocType</a> eType_, size_t sSize_)</td></tr>
+<tr class="separator:a13650c2ac3d8ae114da7c5c8aaaf36b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f99371e360020a16c5a4f281df50ab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ad0f99371e360020a16c5a4f281df50ab">AutoAllocFree_t</a> = void(*)(<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87">AutoAllocType</a> eType_, void *pvObj_)</td></tr>
+<tr class="separator:ad0f99371e360020a16c5a4f281df50ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a397a0fe402c5e87d5599965b7ad28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a49a397a0fe402c5e87d5599965b7ad28">CoPrioMap</a> = <a class="el" href="class_mark3_1_1_priority_map_l1.html">PriorityMapL1</a>&lt; <a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a>, <a class="el" href="portcfg_8h.html#a41e4809e0adc2283d9fe9fa9194e0e11">PORT_COROUTINE_PRIORITIES</a> &gt;</td></tr>
+<tr class="separator:a49a397a0fe402c5e87d5599965b7ad28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e513476e73cb622de6957c5962a815"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a69e513476e73cb622de6957c5962a815">CoroutineHandler</a> = void(*)(<a class="el" href="class_mark3_1_1_coroutine.html">Coroutine</a> *pclCaller_, void *pvContext_)</td></tr>
+<tr class="separator:a69e513476e73cb622de6957c5962a815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadbcb072b5cf96d518032c8ec192a92f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#aadbcb072b5cf96d518032c8ec192a92f">PanicFunc</a> = void(*)(uint16_t u16PanicCode_)</td></tr>
 <tr class="separator:aadbcb072b5cf96d518032c8ec192a92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94490498eaeda857e8e728be0f522a1c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a94490498eaeda857e8e728be0f522a1c">IdleFunc</a> = void(*)()</td></tr>
 <tr class="separator:a94490498eaeda857e8e728be0f522a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf057943f4d5157b63a32037937b9b2c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#adf057943f4d5157b63a32037937b9b2c">ThreadEntryFunc</a> = void(*)(void *pvArg_)</td></tr>
 <tr class="separator:adf057943f4d5157b63a32037937b9b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce7d17549480e5976278357f829239e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a9ce7d17549480e5976278357f829239e">PriorityMap</a> = <a class="el" href="class_mark3_1_1_priority_map_l1.html">PriorityMapL1</a>&lt; <a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a>, <a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a> &gt;</td></tr>
+<tr class="separator:a9ce7d17549480e5976278357f829239e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683d2ebde1d4dfce8f7e173e1250d51d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a683d2ebde1d4dfce8f7e173e1250d51d">ThreadCreateCallout</a> = void(*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pclThread_)</td></tr>
+<tr class="separator:a683d2ebde1d4dfce8f7e173e1250d51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a296c676851fdbd28f69af146b45ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a36a296c676851fdbd28f69af146b45ac">ThreadExitCallout</a> = void(*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pclThread_)</td></tr>
+<tr class="separator:a36a296c676851fdbd28f69af146b45ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a46d2e3b118cad6feb34560d4a69ea3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a4a46d2e3b118cad6feb34560d4a69ea3">ThreadContextCallout</a> = void(*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pclThread_)</td></tr>
+<tr class="separator:a4a46d2e3b118cad6feb34560d4a69ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a955ae3e5be4016453b6c552069574e27"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a955ae3e5be4016453b6c552069574e27">TimerCallback</a> = void(*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pclOwner_, void *pvData_)</td></tr>
 <tr class="separator:a955ae3e5be4016453b6c552069574e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a8176a7c3d3bf80720b7a22126053bb87"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87">AutoAllocType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87ac083a461f71a75c172ef0798afb9b1e5">AutoAllocType::EventFlag</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87a7d2575e347164e306b5e3bd3a1e540f4">AutoAllocType::MailBox</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87a4c2a8fe7eaf24721cc7a9f0175115bd4">AutoAllocType::Message</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87ab31ea82bab04135d8ec8a5aa1cd34d5a">AutoAllocType::MessagePool</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87ae236645eccec0ea664130828614dd2c8">AutoAllocType::MessageQueue</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87a648c65b85d6dae62ee3d0130b0da2f01">AutoAllocType::Mutex</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87aaaf9ed605d0193362321ba0def15c9b7">AutoAllocType::Notify</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87af9145352f6358db8f2a94a937b23ba86">AutoAllocType::Semaphore</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87ad97477d6d8a838ead9348185bb5b6742">AutoAllocType::Thread</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87aefb4777327e6f704fb1519c1882f93ec">AutoAllocType::Timer</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87ae1a12d4bd0bbad4f98a03932ccd1953d">AutoAllocType::ConditionVariable</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87a874e92fcb96b80eb1a75ca9a81be4e91">AutoAllocType::ReaderWriterLock</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87a8f9bfe9d1345237cb3b2b205864da075">AutoAllocType::User</a>, 
+<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87a65e65c8ab0d8609ce12fc68a03cb8e00">AutoAllocType::Raw</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:a8176a7c3d3bf80720b7a22126053bb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5e0b796cede12fbafd7bfeddba2af6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#adc5e0b796cede12fbafd7bfeddba2af6">EventFlagOperation</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespace_mark3.html#adc5e0b796cede12fbafd7bfeddba2af6a8dbfca29299f0e53cc134bff8ae50a67">EventFlagOperation::All_Set</a> = 0, 
 <a class="el" href="namespace_mark3.html#adc5e0b796cede12fbafd7bfeddba2af6a3e985746947a00864becb35bce55bfaf">EventFlagOperation::Any_Set</a>, 
@@ -195,19 +292,132 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:adc5e0b796cede12fbafd7bfeddba2af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc1255f33ee5d3a777180fb962fd0e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6">ThreadState</a> : uint8_t </td></tr>
+<tr class="memitem:a2bc1255f33ee5d3a777180fb962fd0e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6">ThreadState</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6afef46e5063ce3dc78b8ae64fa474241d">ThreadState::Exit</a> = 0, 
+<a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6ae7d31fc0602fb2ede144d18cdffd816b">ThreadState::Ready</a>, 
+<a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6a4ecc0d90eec1cea3e9db96583a1bb9c2">ThreadState::Blocked</a>, 
+<a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6a11a755d598c0c417f9a36758c3da7481">ThreadState::Stop</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_mark3.html#a2bc1255f33ee5d3a777180fb962fd0e6a4bbb8f967da6d1a610596d7257179c2b">ThreadState::Invalid</a>
+<br />
+ }</td></tr>
 <tr class="separator:a2bc1255f33ee5d3a777180fb962fd0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aee67e5cf473bee49b9e5814be88e08b2"><td class="memItemLeft" align="right" valign="top"><a id="aee67e5cf473bee49b9e5814be88e08b2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#aee67e5cf473bee49b9e5814be88e08b2">ISR</a> (INT2_vect) __attribute__((signal</td></tr>
-<tr class="memdesc:aee67e5cf473bee49b9e5814be88e08b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR(INT2 _vect) SWI using INT2 - used to trigger a context switch. <br /></td></tr>
+<tr class="memitem:ad3283c52231da75b994885043abd36da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ad3283c52231da75b994885043abd36da">KernelTimer_Task</a> (void *unused)</td></tr>
+<tr class="separator:ad3283c52231da75b994885043abd36da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667434bde64da48e932d29f871a015c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a667434bde64da48e932d29f871a015c4">Thread_Switch</a> (void)</td></tr>
+<tr class="separator:a667434bde64da48e932d29f871a015c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee67e5cf473bee49b9e5814be88e08b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#aee67e5cf473bee49b9e5814be88e08b2">ISR</a> (INT2_vect) __attribute__((signal</td></tr>
+<tr class="memdesc:aee67e5cf473bee49b9e5814be88e08b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR(INT2 _vect) SWI using INT2 - used to trigger a context switch.  <a href="#aee67e5cf473bee49b9e5814be88e08b2">More...</a><br /></td></tr>
 <tr class="separator:aee67e5cf473bee49b9e5814be88e08b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48a43c931f2fd7142e3ca3b8e68d4b3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ae48a43c931f2fd7142e3ca3b8e68d4b3">PORT_CLZ</a> (uint8_t in_)</td></tr>
+<tr class="separator:ae48a43c931f2fd7142e3ca3b8e68d4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3f6dd017fec034e526d1ce641604b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a0a3f6dd017fec034e526d1ce641604b9">PORT_IRQ_ENABLE</a> ()</td></tr>
+<tr class="separator:a0a3f6dd017fec034e526d1ce641604b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6848de1340e586c9a3850ea5776b6540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a6848de1340e586c9a3850ea5776b6540">PORT_IRQ_DISABLE</a> ()</td></tr>
+<tr class="separator:a6848de1340e586c9a3850ea5776b6540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96066be720cc48682e0aabc77af58c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a96066be720cc48682e0aabc77af58c58">PORT_CS_ENTER</a> ()</td></tr>
+<tr class="separator:a96066be720cc48682e0aabc77af58c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e2cf0ab99101efae2cebe1633dc9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a57e2cf0ab99101efae2cebe1633dc9c6">PORT_CS_EXIT</a> ()</td></tr>
+<tr class="separator:a57e2cf0ab99101efae2cebe1633dc9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29ededb45621da0fd6c8bb8ff0b9188"><td class="memItemLeft" align="right" valign="top"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ae29ededb45621da0fd6c8bb8ff0b9188">PORT_CS_NESTING</a> ()</td></tr>
+<tr class="separator:ae29ededb45621da0fd6c8bb8ff0b9188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad8280bfb0de2cf6c2f98a48105a34246"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ad8280bfb0de2cf6c2f98a48105a34246">uMaxTimerTicks</a> = uint32_t { 0x7FFFFFFF }</td></tr>
+<tr class="memdesc:ad8280bfb0de2cf6c2f98a48105a34246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum value to set.  <a href="#ad8280bfb0de2cf6c2f98a48105a34246">More...</a><br /></td></tr>
+<tr class="separator:ad8280bfb0de2cf6c2f98a48105a34246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c669d5a1f2a3f5e297496de2a35bb5e"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a5c669d5a1f2a3f5e297496de2a35bb5e">uTimerTicksInvalid</a> = uint32_t { 0 }</td></tr>
+<tr class="separator:a5c669d5a1f2a3f5e297496de2a35bb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a3439a27e0d2652a1b6f1090256353"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a81a3439a27e0d2652a1b6f1090256353">uTimerFlagOneShot</a> = uint8_t { 0x01 }</td></tr>
+<tr class="memdesc:a81a3439a27e0d2652a1b6f1090256353"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is one-shot.  <a href="#a81a3439a27e0d2652a1b6f1090256353">More...</a><br /></td></tr>
+<tr class="separator:a81a3439a27e0d2652a1b6f1090256353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa6caee94344f800977a4d61cca4b3f"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a7aa6caee94344f800977a4d61cca4b3f">uTimerFlagActive</a> = uint8_t { 0x02 }</td></tr>
+<tr class="memdesc:a7aa6caee94344f800977a4d61cca4b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is currently active.  <a href="#a7aa6caee94344f800977a4d61cca4b3f">More...</a><br /></td></tr>
+<tr class="separator:a7aa6caee94344f800977a4d61cca4b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07b907c509f2e5c107c4c5c6627f142"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ad07b907c509f2e5c107c4c5c6627f142">uTimerFlagCallback</a> = uint8_t { 0x04 }</td></tr>
+<tr class="memdesc:ad07b907c509f2e5c107c4c5c6627f142"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is pending a callback.  <a href="#ad07b907c509f2e5c107c4c5c6627f142">More...</a><br /></td></tr>
+<tr class="separator:ad07b907c509f2e5c107c4c5c6627f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795fa0fea338e4b9f6bda7adb7396209"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a795fa0fea338e4b9f6bda7adb7396209">uTimerFlagExpired</a> = uint8_t { 0x08 }</td></tr>
+<tr class="memdesc:a795fa0fea338e4b9f6bda7adb7396209"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is actually expired.  <a href="#a795fa0fea338e4b9f6bda7adb7396209">More...</a><br /></td></tr>
+<tr class="separator:a795fa0fea338e4b9f6bda7adb7396209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c038c0b534018ed75b934063809265"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ac1c038c0b534018ed75b934063809265">naked</a></td></tr>
+<tr class="separator:ac1c038c0b534018ed75b934063809265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec027d9dacb749dc255357b1673b6c2d"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#aec027d9dacb749dc255357b1673b6c2d">SR_</a> = uint8_t{0x3F}</td></tr>
+<tr class="separator:aec027d9dacb749dc255357b1673b6c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2c2c312bd7d1a3df9e6a80160d35cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#ada2c2c312bd7d1a3df9e6a80160d35cb">g_kwSFR</a></td></tr>
+<tr class="separator:ada2c2c312bd7d1a3df9e6a80160d35cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d75bf99d819e312b3ceeca219b2abde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mark3.html#a6d75bf99d819e312b3ceeca219b2abde">g_kwCriticalCount</a></td></tr>
+<tr class="separator:a6d75bf99d819e312b3ceeca219b2abde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class providing the software-interrupt required for context-switching in the kernel. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a13650c2ac3d8ae114da7c5c8aaaf36b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13650c2ac3d8ae114da7c5c8aaaf36b1">&#9670;&nbsp;</a></span>AutoAllocAllocator_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a13650c2ac3d8ae114da7c5c8aaaf36b1">Mark3::AutoAllocAllocator_t</a> = typedef void* (*)(<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87">AutoAllocType</a> eType_, size_t sSize_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="autoalloc_8h_source.html#l00053">53</a> of file <a class="el" href="autoalloc_8h_source.html">autoalloc.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0f99371e360020a16c5a4f281df50ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f99371e360020a16c5a4f281df50ab">&#9670;&nbsp;</a></span>AutoAllocFree_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#ad0f99371e360020a16c5a4f281df50ab">Mark3::AutoAllocFree_t</a> = typedef void (*)(<a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87">AutoAllocType</a> eType_, void* pvObj_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="autoalloc_8h_source.html#l00054">54</a> of file <a class="el" href="autoalloc_8h_source.html">autoalloc.h</a>.</p>
+
+</div>
+</div>
+<a id="a49a397a0fe402c5e87d5599965b7ad28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a397a0fe402c5e87d5599965b7ad28">&#9670;&nbsp;</a></span>CoPrioMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a49a397a0fe402c5e87d5599965b7ad28">Mark3::CoPrioMap</a> = typedef <a class="el" href="class_mark3_1_1_priority_map_l1.html">PriorityMapL1</a>&lt;<a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a>, <a class="el" href="portcfg_8h.html#a41e4809e0adc2283d9fe9fa9194e0e11">PORT_COROUTINE_PRIORITIES</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coroutine_8h_source.html#l00030">30</a> of file <a class="el" href="coroutine_8h_source.html">coroutine.h</a>.</p>
+
+</div>
+</div>
+<a id="a69e513476e73cb622de6957c5962a815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e513476e73cb622de6957c5962a815">&#9670;&nbsp;</a></span>CoroutineHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a69e513476e73cb622de6957c5962a815">Mark3::CoroutineHandler</a> = typedef void (*)(<a class="el" href="class_mark3_1_1_coroutine.html">Coroutine</a>* pclCaller_, void* pvContext_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="coroutine_8h_source.html#l00040">40</a> of file <a class="el" href="coroutine_8h_source.html">coroutine.h</a>.</p>
+
+</div>
+</div>
 <a id="a94490498eaeda857e8e728be0f522a1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94490498eaeda857e8e728be0f522a1c">&#9670;&nbsp;</a></span>IdleFunc</h2>
 
@@ -242,6 +452,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ce7d17549480e5976278357f829239e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce7d17549480e5976278357f829239e">&#9670;&nbsp;</a></span>PriorityMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a9ce7d17549480e5976278357f829239e">Mark3::PriorityMap</a> = typedef <a class="el" href="class_mark3_1_1_priority_map_l1.html">PriorityMapL1</a>&lt;<a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a>, <a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="priomap_8h_source.html#l00029">29</a> of file <a class="el" href="priomap_8h_source.html">priomap.h</a>.</p>
+
+</div>
+</div>
+<a id="a4a46d2e3b118cad6feb34560d4a69ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a46d2e3b118cad6feb34560d4a69ea3">&#9670;&nbsp;</a></span>ThreadContextCallout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a4a46d2e3b118cad6feb34560d4a69ea3">Mark3::ThreadContextCallout</a> = typedef void (*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a>* pclThread_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thread_8h_source.html#l00054">54</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
+
+</div>
+</div>
+<a id="a683d2ebde1d4dfce8f7e173e1250d51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683d2ebde1d4dfce8f7e173e1250d51d">&#9670;&nbsp;</a></span>ThreadCreateCallout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a683d2ebde1d4dfce8f7e173e1250d51d">Mark3::ThreadCreateCallout</a> = typedef void (*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a>* pclThread_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thread_8h_source.html#l00052">52</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
+
+</div>
+</div>
 <a id="adf057943f4d5157b63a32037937b9b2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf057943f4d5157b63a32037937b9b2c">&#9670;&nbsp;</a></span>ThreadEntryFunc</h2>
 
@@ -259,6 +517,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a36a296c676851fdbd28f69af146b45ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a296c676851fdbd28f69af146b45ac">&#9670;&nbsp;</a></span>ThreadExitCallout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_mark3.html#a36a296c676851fdbd28f69af146b45ac">Mark3::ThreadExitCallout</a> = typedef void (*)(<a class="el" href="class_mark3_1_1_thread.html">Thread</a>* pclThread_)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thread_8h_source.html#l00053">53</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
+
+</div>
+</div>
 <a id="a955ae3e5be4016453b6c552069574e27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a955ae3e5be4016453b6c552069574e27">&#9670;&nbsp;</a></span>TimerCallback</h2>
 
@@ -273,11 +547,51 @@ Functions</h2></td></tr>
 <p>This type defines the callback function type for timer events. Since these are called from an interrupt context, they do not operate from within a thread or object context directly &ndash; as a result, the context must be manually passed into the calls.</p>
 <p>pclOwner_ is a pointer to the thread that owns the timer pvData_ is a pointer to some data or object that needs to know about the timer's expiry from within the timer interrupt context. </p>
 
-<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00063">63</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00050">50</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a8176a7c3d3bf80720b7a22126053bb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8176a7c3d3bf80720b7a22126053bb87">&#9670;&nbsp;</a></span>AutoAllocType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_mark3.html#a8176a7c3d3bf80720b7a22126053bb87">Mark3::AutoAllocType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87ac083a461f71a75c172ef0798afb9b1e5"></a>EventFlag&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87a7d2575e347164e306b5e3bd3a1e540f4"></a>MailBox&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87a4c2a8fe7eaf24721cc7a9f0175115bd4"></a>Message&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87ab31ea82bab04135d8ec8a5aa1cd34d5a"></a>MessagePool&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87ae236645eccec0ea664130828614dd2c8"></a>MessageQueue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87a648c65b85d6dae62ee3d0130b0da2f01"></a>Mutex&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87aaaf9ed605d0193362321ba0def15c9b7"></a>Notify&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87af9145352f6358db8f2a94a937b23ba86"></a>Semaphore&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87ad97477d6d8a838ead9348185bb5b6742"></a>Thread&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87aefb4777327e6f704fb1519c1882f93ec"></a>Timer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87ae1a12d4bd0bbad4f98a03932ccd1953d"></a>ConditionVariable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87a874e92fcb96b80eb1a75ca9a81be4e91"></a>ReaderWriterLock&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87a8f9bfe9d1345237cb3b2b205864da075"></a>User&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8176a7c3d3bf80720b7a22126053bb87a65e65c8ab0d8609ce12fc68a03cb8e00"></a>Raw&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="autoalloc_8h_source.html#l00032">32</a> of file <a class="el" href="autoalloc_8h_source.html">autoalloc.h</a>.</p>
+
+</div>
+</div>
 <a id="adc5e0b796cede12fbafd7bfeddba2af6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc5e0b796cede12fbafd7bfeddba2af6">&#9670;&nbsp;</a></span>EventFlagOperation</h2>
 
@@ -336,8 +650,484 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Enumeration representing the different states a thread can exist in </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2bc1255f33ee5d3a777180fb962fd0e6afef46e5063ce3dc78b8ae64fa474241d"></a>Exit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2bc1255f33ee5d3a777180fb962fd0e6ae7d31fc0602fb2ede144d18cdffd816b"></a>Ready&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2bc1255f33ee5d3a777180fb962fd0e6a4ecc0d90eec1cea3e9db96583a1bb9c2"></a>Blocked&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2bc1255f33ee5d3a777180fb962fd0e6a11a755d598c0c417f9a36758c3da7481"></a>Stop&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2bc1255f33ee5d3a777180fb962fd0e6a4bbb8f967da6d1a610596d7257179c2b"></a>Invalid&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 <p class="definition">Definition at line <a class="el" href="kerneltypes_8h_source.html#l00062">62</a> of file <a class="el" href="kerneltypes_8h_source.html">kerneltypes.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aee67e5cf473bee49b9e5814be88e08b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee67e5cf473bee49b9e5814be88e08b2">&#9670;&nbsp;</a></span>ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mark3::ISR </td>
+          <td>(</td>
+          <td class="paramtype">INT2_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISR(INT2 _vect) SWI using INT2 - used to trigger a context switch. </p>
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00137">137</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad3283c52231da75b994885043abd36da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3283c52231da75b994885043abd36da">&#9670;&nbsp;</a></span>KernelTimer_Task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Mark3::KernelTimer_Task </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>unused</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00044">44</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae48a43c931f2fd7142e3ca3b8e68d4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae48a43c931f2fd7142e3ca3b8e68d4b3">&#9670;&nbsp;</a></span>PORT_CLZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Mark3::PORT_CLZ </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>in_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00144">144</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="a96066be720cc48682e0aabc77af58c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96066be720cc48682e0aabc77af58c58">&#9670;&nbsp;</a></span>PORT_CS_ENTER()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mark3::PORT_CS_ENTER </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00167">167</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="a57e2cf0ab99101efae2cebe1633dc9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e2cf0ab99101efae2cebe1633dc9c6">&#9670;&nbsp;</a></span>PORT_CS_EXIT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mark3::PORT_CS_EXIT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00178">178</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="ae29ededb45621da0fd6c8bb8ff0b9188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29ededb45621da0fd6c8bb8ff0b9188">&#9670;&nbsp;</a></span>PORT_CS_NESTING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> Mark3::PORT_CS_NESTING </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00187">187</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="a6848de1340e586c9a3850ea5776b6540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6848de1340e586c9a3850ea5776b6540">&#9670;&nbsp;</a></span>PORT_IRQ_DISABLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mark3::PORT_IRQ_DISABLE </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00161">161</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a3f6dd017fec034e526d1ce641604b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3f6dd017fec034e526d1ce641604b9">&#9670;&nbsp;</a></span>PORT_IRQ_ENABLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mark3::PORT_IRQ_ENABLE </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00155">155</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="a667434bde64da48e932d29f871a015c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667434bde64da48e932d29f871a015c4">&#9670;&nbsp;</a></span>Thread_Switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Mark3::Thread_Switch </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00094">94</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6d75bf99d819e312b3ceeca219b2abde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d75bf99d819e312b3ceeca219b2abde">&#9670;&nbsp;</a></span>g_kwCriticalCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> Mark3::g_kwCriticalCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00036">36</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ada2c2c312bd7d1a3df9e6a80160d35cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2c2c312bd7d1a3df9e6a80160d35cb">&#9670;&nbsp;</a></span>g_kwSFR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a> Mark3::g_kwSFR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00035">35</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac1c038c0b534018ed75b934063809265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c038c0b534018ed75b934063809265">&#9670;&nbsp;</a></span>naked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mark3::naked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00136">136</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec027d9dacb749dc255357b1673b6c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec027d9dacb749dc255357b1673b6c2d">&#9670;&nbsp;</a></span>SR_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::SR_ = uint8_t{0x3F}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="threadport_8h_source.html#l00137">137</a> of file <a class="el" href="threadport_8h_source.html">threadport.h</a>.</p>
+
+</div>
+</div>
+<a id="ad8280bfb0de2cf6c2f98a48105a34246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8280bfb0de2cf6c2f98a48105a34246">&#9670;&nbsp;</a></span>uMaxTimerTicks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::uMaxTimerTicks = uint32_t { 0x7FFFFFFF }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum value to set. </p>
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00032">32</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+</div>
+</div>
+<a id="a7aa6caee94344f800977a4d61cca4b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa6caee94344f800977a4d61cca4b3f">&#9670;&nbsp;</a></span>uTimerFlagActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::uTimerFlagActive = uint8_t { 0x02 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is currently active. </p>
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00035">35</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+</div>
+</div>
+<a id="ad07b907c509f2e5c107c4c5c6627f142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07b907c509f2e5c107c4c5c6627f142">&#9670;&nbsp;</a></span>uTimerFlagCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::uTimerFlagCallback = uint8_t { 0x04 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is pending a callback. </p>
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00036">36</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+</div>
+</div>
+<a id="a795fa0fea338e4b9f6bda7adb7396209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795fa0fea338e4b9f6bda7adb7396209">&#9670;&nbsp;</a></span>uTimerFlagExpired</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::uTimerFlagExpired = uint8_t { 0x08 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is actually expired. </p>
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00037">37</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+</div>
+</div>
+<a id="a81a3439a27e0d2652a1b6f1090256353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a3439a27e0d2652a1b6f1090256353">&#9670;&nbsp;</a></span>uTimerFlagOneShot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::uTimerFlagOneShot = uint8_t { 0x01 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_timer.html" title="The Timer Class. This class provides kernel-managed timers, used to provide high-precision delays...">Timer</a> is one-shot. </p>
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00034">34</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+
+</div>
+</div>
+<a id="a5c669d5a1f2a3f5e297496de2a35bb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c669d5a1f2a3f5e297496de2a35bb5e">&#9670;&nbsp;</a></span>uTimerTicksInvalid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::uTimerTicksInvalid = uint32_t { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00033">33</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +1137,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -88,69 +88,69 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_scheduler.html','');})
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a> Class. This class provides priority-based round-robin <a class="el" href="class_mark3_1_1_thread.html" title="The Thread Class. This object providing the fundamental thread control data structures and functions ...">Thread</a> scheduling for all active threads managed by the kernel.  
+ <a href="class_mark3_1_1_scheduler.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a68af41eff8c6ec912b911a46e772db80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a68af41eff8c6ec912b911a46e772db80">Init</a> ()</td></tr>
-<tr class="memdesc:a68af41eff8c6ec912b911a46e772db80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init.  <a href="#a68af41eff8c6ec912b911a46e772db80">More...</a><br /></td></tr>
+<tr class="memdesc:a68af41eff8c6ec912b911a46e772db80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Intiailize the scheduler, must be called before use.  <a href="#a68af41eff8c6ec912b911a46e772db80">More...</a><br /></td></tr>
 <tr class="separator:a68af41eff8c6ec912b911a46e772db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81143c3745758c064267e9a9c5a38796"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a81143c3745758c064267e9a9c5a38796">Schedule</a> ()</td></tr>
-<tr class="memdesc:a81143c3745758c064267e9a9c5a38796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule.  <a href="#a81143c3745758c064267e9a9c5a38796">More...</a><br /></td></tr>
+<tr class="memdesc:a81143c3745758c064267e9a9c5a38796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule Run the scheduler, determines the next thread to run based on the current state of the threads. Note that the next-thread chosen from this function is only valid while in a critical section.  <a href="#a81143c3745758c064267e9a9c5a38796">More...</a><br /></td></tr>
 <tr class="separator:a81143c3745758c064267e9a9c5a38796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad03f6684293c74c7ab680e786ebf85e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ad03f6684293c74c7ab680e786ebf85e0">Add</a> (<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pclThread_)</td></tr>
-<tr class="memdesc:ad03f6684293c74c7ab680e786ebf85e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add.  <a href="#ad03f6684293c74c7ab680e786ebf85e0">More...</a><br /></td></tr>
+<tr class="memdesc:ad03f6684293c74c7ab680e786ebf85e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Add a thread to the scheduler at its current priority level.  <a href="#ad03f6684293c74c7ab680e786ebf85e0">More...</a><br /></td></tr>
 <tr class="separator:ad03f6684293c74c7ab680e786ebf85e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800d63ba4e1a4cd53de2270e03735b7c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a800d63ba4e1a4cd53de2270e03735b7c">Remove</a> (<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pclThread_)</td></tr>
-<tr class="memdesc:a800d63ba4e1a4cd53de2270e03735b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove.  <a href="#a800d63ba4e1a4cd53de2270e03735b7c">More...</a><br /></td></tr>
+<tr class="memdesc:a800d63ba4e1a4cd53de2270e03735b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove Remove a thread from the scheduler at its current priority level.  <a href="#a800d63ba4e1a4cd53de2270e03735b7c">More...</a><br /></td></tr>
 <tr class="separator:a800d63ba4e1a4cd53de2270e03735b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7400b7decb0969de691b4cc58adfbd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#aac7400b7decb0969de691b4cc58adfbd">SetScheduler</a> (bool bEnable_)</td></tr>
-<tr class="memdesc:aac7400b7decb0969de691b4cc58adfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetScheduler.  <a href="#aac7400b7decb0969de691b4cc58adfbd">More...</a><br /></td></tr>
+<tr class="memdesc:aac7400b7decb0969de691b4cc58adfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetScheduler Set the active state of the scheduler. When the scheduler is disabled, the <em>next thread</em> is never set; the currently running thread will run forever until the scheduler is enabled again. Care must be taken to ensure that we don't end up trying to block while the scheduler is disabled, otherwise the system ends up in an unusable state.  <a href="#aac7400b7decb0969de691b4cc58adfbd">More...</a><br /></td></tr>
 <tr class="separator:aac7400b7decb0969de691b4cc58adfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9dc8b0e0f1c261546f78c3515629087"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mark3_1_1_thread.html">Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ae9dc8b0e0f1c261546f78c3515629087">GetCurrentThread</a> ()</td></tr>
-<tr class="memdesc:ae9dc8b0e0f1c261546f78c3515629087"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetCurrentThread.  <a href="#ae9dc8b0e0f1c261546f78c3515629087">More...</a><br /></td></tr>
+<tr class="memdesc:ae9dc8b0e0f1c261546f78c3515629087"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetCurrentThread Return the pointer to the currently-running thread.  <a href="#ae9dc8b0e0f1c261546f78c3515629087">More...</a><br /></td></tr>
 <tr class="separator:ae9dc8b0e0f1c261546f78c3515629087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9b9b872fb2f229becb8e92d84ef2fc"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="class_mark3_1_1_thread.html">Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a0d9b9b872fb2f229becb8e92d84ef2fc">GetNextThread</a> ()</td></tr>
-<tr class="memdesc:a0d9b9b872fb2f229becb8e92d84ef2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetNextThread.  <a href="#a0d9b9b872fb2f229becb8e92d84ef2fc">More...</a><br /></td></tr>
+<tr class="memdesc:a0d9b9b872fb2f229becb8e92d84ef2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetNextThread Return the pointer to the thread that should run next, according to the last run of the scheduler.  <a href="#a0d9b9b872fb2f229becb8e92d84ef2fc">More...</a><br /></td></tr>
 <tr class="separator:a0d9b9b872fb2f229becb8e92d84ef2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23a9532c5cd76721e032f2f1442cd97"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#af23a9532c5cd76721e032f2f1442cd97">GetThreadList</a> (<a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a> uXPriority_)</td></tr>
-<tr class="memdesc:af23a9532c5cd76721e032f2f1442cd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetThreadList.  <a href="#af23a9532c5cd76721e032f2f1442cd97">More...</a><br /></td></tr>
+<tr class="memdesc:af23a9532c5cd76721e032f2f1442cd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetThreadList Return the pointer to the active list of threads that are at the given priority level in the scheduler.  <a href="#af23a9532c5cd76721e032f2f1442cd97">More...</a><br /></td></tr>
 <tr class="separator:af23a9532c5cd76721e032f2f1442cd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad44e51925dd9d69cd37b2fd572ab4a09"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ad44e51925dd9d69cd37b2fd572ab4a09">GetStopList</a> ()</td></tr>
-<tr class="memdesc:ad44e51925dd9d69cd37b2fd572ab4a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetStopList.  <a href="#ad44e51925dd9d69cd37b2fd572ab4a09">More...</a><br /></td></tr>
+<tr class="memdesc:ad44e51925dd9d69cd37b2fd572ab4a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetStopList Return the pointer to the list of threads that are in the scheduler's stopped state.  <a href="#ad44e51925dd9d69cd37b2fd572ab4a09">More...</a><br /></td></tr>
 <tr class="separator:ad44e51925dd9d69cd37b2fd572ab4a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab335062846a1ddf45d3402f4e82ffddb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ab335062846a1ddf45d3402f4e82ffddb">IsEnabled</a> ()</td></tr>
-<tr class="memdesc:ab335062846a1ddf45d3402f4e82ffddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">IsEnabled.  <a href="#ab335062846a1ddf45d3402f4e82ffddb">More...</a><br /></td></tr>
+<tr class="memdesc:ab335062846a1ddf45d3402f4e82ffddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">IsEnabled Return the current state of the scheduler - whether or not scheudling is enabled or disabled.  <a href="#ab335062846a1ddf45d3402f4e82ffddb">More...</a><br /></td></tr>
 <tr class="separator:ab335062846a1ddf45d3402f4e82ffddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85b58260f2059edbea1e321428d1477"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ad85b58260f2059edbea1e321428d1477">QueueScheduler</a> ()</td></tr>
-<tr class="memdesc:ad85b58260f2059edbea1e321428d1477"><td class="mdescLeft">&#160;</td><td class="mdescRight">QueueScheduler.  <a href="#ad85b58260f2059edbea1e321428d1477">More...</a><br /></td></tr>
+<tr class="memdesc:ad85b58260f2059edbea1e321428d1477"><td class="mdescLeft">&#160;</td><td class="mdescRight">QueueScheduler Tell the kernel to perform a scheduling operation as soon as the scheduler is re-enabled.  <a href="#ad85b58260f2059edbea1e321428d1477">More...</a><br /></td></tr>
 <tr class="separator:ad85b58260f2059edbea1e321428d1477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ac7f2a67449633d319aaa836aaf26b58f"><td class="memItemLeft" align="right" valign="top"><a id="ac7f2a67449633d319aaa836aaf26b58f"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ac7f2a67449633d319aaa836aaf26b58f">m_bEnabled</a></td></tr>
-<tr class="memdesc:ac7f2a67449633d319aaa836aaf26b58f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_scheduler.html">Scheduler</a>'s state - enabled or disabled. <br /></td></tr>
+<tr class="memitem:a797a92cc8e9153b8580b700d748becdb"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a797a92cc8e9153b8580b700d748becdb">m_uNumPriorities</a> = size_t { <a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a> }</td></tr>
+<tr class="separator:a797a92cc8e9153b8580b700d748becdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f2a67449633d319aaa836aaf26b58f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#ac7f2a67449633d319aaa836aaf26b58f">m_bEnabled</a></td></tr>
+<tr class="memdesc:ac7f2a67449633d319aaa836aaf26b58f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a>'s state - enabled or disabled.  <a href="#ac7f2a67449633d319aaa836aaf26b58f">More...</a><br /></td></tr>
 <tr class="separator:ac7f2a67449633d319aaa836aaf26b58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3508bb4f1b5c9fb230433083d43686da"><td class="memItemLeft" align="right" valign="top"><a id="a3508bb4f1b5c9fb230433083d43686da"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a3508bb4f1b5c9fb230433083d43686da">m_bQueuedSchedule</a></td></tr>
-<tr class="memdesc:a3508bb4f1b5c9fb230433083d43686da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable representing whether or not there's a queued scheduler operation. <br /></td></tr>
+<tr class="memitem:a3508bb4f1b5c9fb230433083d43686da"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a3508bb4f1b5c9fb230433083d43686da">m_bQueuedSchedule</a></td></tr>
+<tr class="memdesc:a3508bb4f1b5c9fb230433083d43686da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable representing whether or not there's a queued scheduler operation.  <a href="#a3508bb4f1b5c9fb230433083d43686da">More...</a><br /></td></tr>
 <tr class="separator:a3508bb4f1b5c9fb230433083d43686da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e26a200abca5b481c7a1449e6a804e8"><td class="memItemLeft" align="right" valign="top"><a id="a2e26a200abca5b481c7a1449e6a804e8"></a>
-static <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a2e26a200abca5b481c7a1449e6a804e8">m_clStopList</a></td></tr>
-<tr class="memdesc:a2e26a200abca5b481c7a1449e6a804e8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> for all stopped threads. <br /></td></tr>
+<tr class="memitem:a2e26a200abca5b481c7a1449e6a804e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a2e26a200abca5b481c7a1449e6a804e8">m_clStopList</a></td></tr>
+<tr class="memdesc:a2e26a200abca5b481c7a1449e6a804e8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mark3_1_1_thread_list.html" title="The ThreadList Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects. ">ThreadList</a> for all stopped threads.  <a href="#a2e26a200abca5b481c7a1449e6a804e8">More...</a><br /></td></tr>
 <tr class="separator:a2e26a200abca5b481c7a1449e6a804e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5d838c0db8fe09b891ba0ecfe9843bb"><td class="memItemLeft" align="right" valign="top"><a id="af5d838c0db8fe09b891ba0ecfe9843bb"></a>
-static <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#af5d838c0db8fe09b891ba0ecfe9843bb">m_aclPriorities</a> [<a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a>]</td></tr>
-<tr class="memdesc:af5d838c0db8fe09b891ba0ecfe9843bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ThreadLists for all threads at all priorities. <br /></td></tr>
-<tr class="separator:af5d838c0db8fe09b891ba0ecfe9843bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3fe81b8d1a0cc8c16b6580a3c163b9"><td class="memItemLeft" align="right" valign="top"><a id="a4b3fe81b8d1a0cc8c16b6580a3c163b9"></a>
-static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a4b3fe81b8d1a0cc8c16b6580a3c163b9">m_clPrioMap</a></td></tr>
-<tr class="memdesc:a4b3fe81b8d1a0cc8c16b6580a3c163b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority bitmap lookup structure, 1-bit per thread priority. <br /></td></tr>
+<tr class="memitem:a44da71f0fcc9f36c755df14f8d6b3092"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a44da71f0fcc9f36c755df14f8d6b3092">m_aclPriorities</a> [<a class="el" href="class_mark3_1_1_scheduler.html#a797a92cc8e9153b8580b700d748becdb">m_uNumPriorities</a>]</td></tr>
+<tr class="memdesc:a44da71f0fcc9f36c755df14f8d6b3092"><td class="mdescLeft">&#160;</td><td class="mdescRight">ThreadLists for all threads at all priorities.  <a href="#a44da71f0fcc9f36c755df14f8d6b3092">More...</a><br /></td></tr>
+<tr class="separator:a44da71f0fcc9f36c755df14f8d6b3092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3fe81b8d1a0cc8c16b6580a3c163b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_mark3.html#a9ce7d17549480e5976278357f829239e">PriorityMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_scheduler.html#a4b3fe81b8d1a0cc8c16b6580a3c163b9">m_clPrioMap</a></td></tr>
+<tr class="memdesc:a4b3fe81b8d1a0cc8c16b6580a3c163b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority bitmap lookup structure, 1-bit per thread priority.  <a href="#a4b3fe81b8d1a0cc8c16b6580a3c163b9">More...</a><br /></td></tr>
 <tr class="separator:a4b3fe81b8d1a0cc8c16b6580a3c163b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Priority-based round-robin <a class="el" href="class_mark3_1_1_thread.html">Thread</a> scheduling, using ThreadLists for housekeeping. </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a> Class. This class provides priority-based round-robin <a class="el" href="class_mark3_1_1_thread.html" title="The Thread Class. This object providing the fundamental thread control data structures and functions ...">Thread</a> scheduling for all active threads managed by the kernel. </p>
 
 <p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00063">63</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -178,8 +178,7 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>Add. </p>
-<p>Add a thread to the scheduler at its current priority level.</p>
+<p>Add Add a thread to the scheduler at its current priority level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pclThread_</td><td>Pointer to the thread to add to the scheduler </td></tr>
@@ -214,12 +213,11 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>GetCurrentThread. </p>
-<p>Return the pointer to the currently-running thread.</p>
+<p>GetCurrentThread Return the pointer to the currently-running thread. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the currently-running thread </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a11">lab9_dynamic_threads/main.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a12">lab9_dynamic_threads/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00122">122</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00116">116</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -246,11 +244,10 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>GetNextThread. </p>
-<p>Return the pointer to the thread that should run next, according to the last run of the scheduler.</p>
+<p>GetNextThread Return the pointer to the thread that should run next, according to the last run of the scheduler. </p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the next-running thread </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00131">131</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00124">124</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -277,11 +274,10 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>GetStopList. </p>
-<p>Return the pointer to the list of threads that are in the scheduler's stopped state.</p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> containing the stopped threads </dd></dl>
+<p>GetStopList Return the pointer to the list of threads that are in the scheduler's stopped state. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_mark3_1_1_thread_list.html" title="The ThreadList Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects. ">ThreadList</a> containing the stopped threads </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00151">151</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00142">142</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -309,17 +305,16 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>GetThreadList. </p>
-<p>Return the pointer to the active list of threads that are at the given priority level in the scheduler.</p>
+<p>GetThreadList Return the pointer to the active list of threads that are at the given priority level in the scheduler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uXPriority_</td><td>Priority level of the threadlist</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> for the given priority level </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_mark3_1_1_thread_list.html" title="The ThreadList Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects. ">ThreadList</a> for the given priority level </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00142">142</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00134">134</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -347,8 +342,7 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>Init. </p>
-<p>Intiailize the scheduler, must be called before use. </p>
+<p>Init Intiailize the scheduler, must be called before use. </p>
 
 <p class="definition">Definition at line <a class="el" href="scheduler_8cpp_source.html#l00036">36</a> of file <a class="el" href="scheduler_8cpp_source.html">scheduler.cpp</a>.</p>
 
@@ -377,11 +371,10 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>IsEnabled. </p>
-<p>Return the current state of the scheduler - whether or not scheudling is enabled or disabled.</p>
+<p>IsEnabled Return the current state of the scheduler - whether or not scheudling is enabled or disabled. </p>
 <dl class="section return"><dt>Returns</dt><dd>true - scheduler enabled, false - disabled </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00160">160</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00150">150</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -408,10 +401,9 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>QueueScheduler. </p>
-<p>Tell the kernel to perform a scheduling operation as soon as the scheduler is re-enabled. </p>
+<p>QueueScheduler Tell the kernel to perform a scheduling operation as soon as the scheduler is re-enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00167">167</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00156">156</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -439,8 +431,7 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>Remove. </p>
-<p>Remove a thread from the scheduler at its current priority level.</p>
+<p>Remove Remove a thread from the scheduler at its current priority level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pclThread_</td><td>Pointer to the thread to be removed from the scheduler </td></tr>
@@ -475,8 +466,7 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>Schedule. </p>
-<p>Run the scheduler, determines the next thread to run based on the current state of the threads. Note that the next-thread chosen from this function is only valid while in a critical section. </p>
+<p>Schedule Run the scheduler, determines the next thread to run based on the current state of the threads. Note that the next-thread chosen from this function is only valid while in a critical section. </p>
 
 <p class="definition">Definition at line <a class="el" href="scheduler_8cpp_source.html#l00045">45</a> of file <a class="el" href="scheduler_8cpp_source.html">scheduler.cpp</a>.</p>
 
@@ -506,8 +496,7 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 </table>
 </div><div class="memdoc">
 
-<p>SetScheduler. </p>
-<p>Set the active state of the scheduler. When the scheduler is disabled, the <em>next thread</em> is never set; the currently running thread will run forever until the scheduler is enabled again. Care must be taken to ensure that we don't end up trying to block while the scheduler is disabled, otherwise the system ends up in an unusable state.</p>
+<p>SetScheduler Set the active state of the scheduler. When the scheduler is disabled, the <em>next thread</em> is never set; the currently running thread will run forever until the scheduler is enabled again. Care must be taken to ensure that we don't end up trying to block while the scheduler is disabled, otherwise the system ends up in an unusable state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bEnable_</td><td>true to enable, false to disable the scheduler </td></tr>
@@ -519,9 +508,164 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a44da71f0fcc9f36c755df14f8d6b3092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44da71f0fcc9f36c755df14f8d6b3092">&#9670;&nbsp;</a></span>m_aclPriorities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> Mark3::Scheduler::m_aclPriorities</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ThreadLists for all threads at all priorities. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00171">171</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7f2a67449633d319aaa836aaf26b58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f2a67449633d319aaa836aaf26b58f">&#9670;&nbsp;</a></span>m_bEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mark3::Scheduler::m_bEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_scheduler.html" title="The Scheduler Class. This class provides priority-based round-robin Thread scheduling for all active ...">Scheduler</a>'s state - enabled or disabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00162">162</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a3508bb4f1b5c9fb230433083d43686da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3508bb4f1b5c9fb230433083d43686da">&#9670;&nbsp;</a></span>m_bQueuedSchedule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mark3::Scheduler::m_bQueuedSchedule</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable representing whether or not there's a queued scheduler operation. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00165">165</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a4b3fe81b8d1a0cc8c16b6580a3c163b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3fe81b8d1a0cc8c16b6580a3c163b9">&#9670;&nbsp;</a></span>m_clPrioMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_mark3.html#a9ce7d17549480e5976278357f829239e">PriorityMap</a> Mark3::Scheduler::m_clPrioMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Priority bitmap lookup structure, 1-bit per thread priority. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00174">174</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a2e26a200abca5b481c7a1449e6a804e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e26a200abca5b481c7a1449e6a804e8">&#9670;&nbsp;</a></span>m_clStopList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mark3_1_1_thread_list.html">ThreadList</a> Mark3::Scheduler::m_clStopList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mark3_1_1_thread_list.html" title="The ThreadList Class. This class is used for building thread-management facilities, such as schedulers, and blocking objects. ">ThreadList</a> for all stopped threads. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00168">168</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a797a92cc8e9153b8580b700d748becdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797a92cc8e9153b8580b700d748becdb">&#9670;&nbsp;</a></span>m_uNumPriorities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Mark3::Scheduler::m_uNumPriorities = size_t { <a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a> }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00159">159</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="scheduler_8h_source.html">scheduler.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/<a class="el" href="scheduler_8cpp_source.html">scheduler.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="scheduler_8h_source.html">scheduler.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/<a class="el" href="scheduler_8cpp_source.html">scheduler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -529,7 +673,7 @@ static <a class="el" href="class_mark3_1_1_priority_map.html">PriorityMap</a>&#1
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_scheduler.html">Scheduler</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:17 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:42:00 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

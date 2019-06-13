@@ -83,7 +83,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>Schedule()
-: <a class="el" href="class_mark3_1_1_scheduler.html#a81143c3745758c064267e9a9c5a38796">Mark3::Scheduler</a>
+: <a class="el" href="class_mark3_1_1_co_scheduler.html#af2e589d925d5e6d644f831c9c1de6342">Mark3::CoScheduler</a>
+, <a class="el" href="class_mark3_1_1_scheduler.html#a81143c3745758c064267e9a9c5a38796">Mark3::Scheduler</a>
+</li>
+<li>SchedulerGuard()
+: <a class="el" href="class_mark3_1_1_scheduler_guard.html#aefae19005d92393d35ca2bd28b285320">Mark3::SchedulerGuard</a>
+</li>
+<li>SecondsToTicks()
+: <a class="el" href="class_mark3_1_1_timer.html#a22120e0586ae22b4a9a17277928ad0a6">Mark3::Timer</a>
 </li>
 <li>Send()
 : <a class="el" href="class_mark3_1_1_mailbox.html#a6ef55c0ec85d5fa5bf83802e52bc5be5">Mark3::Mailbox</a>
@@ -97,7 +104,11 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>Set()
 : <a class="el" href="class_mark3_1_1_event_flag.html#aa2832ebf201e867f5fe79f480e348aa4">Mark3::EventFlag</a>
-, <a class="el" href="class_mark3_1_1_priority_map.html#a3f4cf348c51865d25e267c91a3d2c3ed">Mark3::PriorityMap</a>
+, <a class="el" href="class_mark3_1_1_priority_map_l1.html#a6196e85b709d3185280f1611c3235453">Mark3::PriorityMapL1&lt; T, C &gt;</a>
+, <a class="el" href="class_mark3_1_1_priority_map_l2.html#a43a9979402d29a5474e4f10dfa10b5d2">Mark3::PriorityMapL2&lt; T, C &gt;</a>
+</li>
+<li>SetAllocatorFunctions()
+: <a class="el" href="class_mark3_1_1_auto_alloc.html#a3e501f0e1e292f91d1eba088d4e9098d">Mark3::AutoAlloc</a>
 </li>
 <li>SetCode()
 : <a class="el" href="class_mark3_1_1_message.html#a0223c44681f863955684135a6b8db4e7">Mark3::Message</a>
@@ -122,6 +133,11 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>SetExtendedContext()
 : <a class="el" href="class_mark3_1_1_thread.html#af33e7e9b984d73ae91aeba162a5a5857">Mark3::Thread</a>
+</li>
+<li>SetHead()
+: <a class="el" href="class_mark3_1_1_link_list.html#ab2fcc083f75f513df6000e96b621980a">Mark3::LinkList</a>
+, <a class="el" href="class_mark3_1_1_typed_circular_link_list.html#a65f2764373491ad0ea6968649275ffb4">Mark3::TypedCircularLinkList&lt; T &gt;</a>
+, <a class="el" href="class_mark3_1_1_typed_double_link_list.html#aeb6678aef9d05152e31d7a1187c91137">Mark3::TypedDoubleLinkList&lt; T &gt;</a>
 </li>
 <li>SetID()
 : <a class="el" href="class_mark3_1_1_thread.html#a0f8fc73877aacf246e1e929ec1617553">Mark3::Thread</a>
@@ -148,8 +164,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SetPanic()
 : <a class="el" href="class_mark3_1_1_kernel.html#a85f50bb33d0f791fb5bf5a85159a0bea">Mark3::Kernel</a>
 </li>
+<li>SetPrioMap()
+: <a class="el" href="class_mark3_1_1_co_list.html#ac525f45b76e0f65d4a149d812b88dcb1">Mark3::CoList</a>
+</li>
 <li>SetPriority()
-: <a class="el" href="class_mark3_1_1_thread.html#aea157379dc46ea7c7330cdda71328755">Mark3::Thread</a>
+: <a class="el" href="class_mark3_1_1_co_list.html#a5617f91c5d0dd8e300b843e6321a9e6c">Mark3::CoList</a>
+, <a class="el" href="class_mark3_1_1_coroutine.html#aef466961dc62d9ecc52b3db7c8626e01">Mark3::Coroutine</a>
+, <a class="el" href="class_mark3_1_1_thread.html#aea157379dc46ea7c7330cdda71328755">Mark3::Thread</a>
 , <a class="el" href="class_mark3_1_1_thread_list.html#abd3eb79a048728e00c1e1c2c150e2f3c">Mark3::ThreadList</a>
 </li>
 <li>SetPriorityBase()
@@ -161,8 +182,16 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SetScheduler()
 : <a class="el" href="class_mark3_1_1_scheduler.html#aac7400b7decb0969de691b4cc58adfbd">Mark3::Scheduler</a>
 </li>
+<li>SetStackGuardThreshold()
+: <a class="el" href="class_mark3_1_1_kernel.html#ac118796bc421fa761ba4fc5229d9f7ef">Mark3::Kernel</a>
+</li>
 <li>SetState()
 : <a class="el" href="class_mark3_1_1_thread.html#ae108a30bd6e8b4ff0905d7aaa313c637">Mark3::Thread</a>
+</li>
+<li>SetTail()
+: <a class="el" href="class_mark3_1_1_link_list.html#a79ac59187eb0f1517af2216fc1ea7d39">Mark3::LinkList</a>
+, <a class="el" href="class_mark3_1_1_typed_circular_link_list.html#afeb550667b7b0956bfae737a271340df">Mark3::TypedCircularLinkList&lt; T &gt;</a>
+, <a class="el" href="class_mark3_1_1_typed_double_link_list.html#a27283109ce7ebe843c7acd3d5c0b20ff">Mark3::TypedDoubleLinkList&lt; T &gt;</a>
 </li>
 <li>SetThreadContextSwitchCallout()
 : <a class="el" href="class_mark3_1_1_kernel.html#ac8020670fe9be1edeca81750ce2c3dc1">Mark3::Kernel</a>
@@ -185,6 +214,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>Start()
 : <a class="el" href="class_mark3_1_1_kernel.html#ab8bf2079a948096861689c4213d0b557">Mark3::Kernel</a>
+, <a class="el" href="class_mark3_1_1_kernel_s_w_i.html#a360133a56f7be6141666c3ed8ae10464">Mark3::KernelSWI</a>
 , <a class="el" href="class_mark3_1_1_kernel_timer.html#af1f30c21ffe0cd3972609d007b5d5d54">Mark3::KernelTimer</a>
 , <a class="el" href="class_mark3_1_1_profile_timer.html#a98d39e7451f48ce0af78fd6a1b3a8c15">Mark3::ProfileTimer</a>
 , <a class="el" href="class_mark3_1_1_thread.html#abbe943fc790be967f25601acbac48467">Mark3::Thread</a>
@@ -205,6 +235,15 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>StringSearch()
 : <a class="el" href="class_mark3_1_1_mem_util.html#a908eb8caad045a4ec9b264717792e1f3">Mark3::MemUtil</a>
 </li>
+<li>StringToDecimal16()
+: <a class="el" href="class_mark3_1_1_mem_util.html#a94ca58574ccf1664c1f488298be66423">Mark3::MemUtil</a>
+</li>
+<li>StringToDecimal32()
+: <a class="el" href="class_mark3_1_1_mem_util.html#a259e4cbac185a99a48252a694f5938d8">Mark3::MemUtil</a>
+</li>
+<li>StringToDecimal64()
+: <a class="el" href="class_mark3_1_1_mem_util.html#ae781e004289d8e0da1da0d38e5f755c1">Mark3::MemUtil</a>
+</li>
 <li>StringToDecimal8()
 : <a class="el" href="class_mark3_1_1_mem_util.html#a7d3b4e235da71d30ff2cabeb074655d2">Mark3::MemUtil</a>
 </li>
@@ -214,7 +253,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:18 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:42:01 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

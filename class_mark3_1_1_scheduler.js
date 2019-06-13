@@ -11,9 +11,10 @@ var class_mark3_1_1_scheduler =
     [ "Remove", "class_mark3_1_1_scheduler.html#a800d63ba4e1a4cd53de2270e03735b7c", null ],
     [ "Schedule", "class_mark3_1_1_scheduler.html#a81143c3745758c064267e9a9c5a38796", null ],
     [ "SetScheduler", "class_mark3_1_1_scheduler.html#aac7400b7decb0969de691b4cc58adfbd", null ],
-    [ "m_aclPriorities", "class_mark3_1_1_scheduler.html#af5d838c0db8fe09b891ba0ecfe9843bb", null ],
+    [ "m_aclPriorities", "class_mark3_1_1_scheduler.html#a44da71f0fcc9f36c755df14f8d6b3092", null ],
     [ "m_bEnabled", "class_mark3_1_1_scheduler.html#ac7f2a67449633d319aaa836aaf26b58f", null ],
     [ "m_bQueuedSchedule", "class_mark3_1_1_scheduler.html#a3508bb4f1b5c9fb230433083d43686da", null ],
     [ "m_clPrioMap", "class_mark3_1_1_scheduler.html#a4b3fe81b8d1a0cc8c16b6580a3c163b9", null ],
-    [ "m_clStopList", "class_mark3_1_1_scheduler.html#a2e26a200abca5b481c7a1449e6a804e8", null ]
+    [ "m_clStopList", "class_mark3_1_1_scheduler.html#a2e26a200abca5b481c7a1449e6a804e8", null ],
+    [ "m_uNumPriorities", "class_mark3_1_1_scheduler.html#a797a92cc8e9153b8580b700d748becdb", null ]
 ];

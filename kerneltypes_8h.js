@@ -10,5 +10,11 @@ var kerneltypes_8h =
       [ "Any_Clear", "kerneltypes_8h.html#adc5e0b796cede12fbafd7bfeddba2af6a7820046fadec5642f8ea1b403966bac6", null ],
       [ "Pending_Unblock", "kerneltypes_8h.html#adc5e0b796cede12fbafd7bfeddba2af6ad56d8d0f931e2c63805bc0752edae586", null ]
     ] ],
-    [ "ThreadState", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6", null ]
+    [ "ThreadState", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6", [
+      [ "Exit", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6afef46e5063ce3dc78b8ae64fa474241d", null ],
+      [ "Ready", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6ae7d31fc0602fb2ede144d18cdffd816b", null ],
+      [ "Blocked", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6a4ecc0d90eec1cea3e9db96583a1bb9c2", null ],
+      [ "Stop", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6a11a755d598c0c417f9a36758c3da7481", null ],
+      [ "Invalid", "kerneltypes_8h.html#a2bc1255f33ee5d3a777180fb962fd0e6a4bbb8f967da6d1a610596d7257179c2b", null ]
+    ] ]
 ];

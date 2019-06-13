@@ -1,5 +1,31 @@
 var searchData=
 [
-  ['sph_5f',['SPH_',['../threadport_8h.html#a2f0c1118a6d5b5be00896f34e9efb714',1,'threadport.h']]],
-  ['sr_5f',['SR_',['../threadport_8h.html#a07a145779d94a87fd61fa06a5e75ba37',1,'threadport.h']]]
+  ['panic_5factive_5fcoroutine_5fdescoped',['PANIC_ACTIVE_COROUTINE_DESCOPED',['../paniccodes_8h.html#a4316133f7a1a7d39d2ad83f62dcfa723',1,'paniccodes.h']]],
+  ['panic_5factive_5feventflag_5fdescoped',['PANIC_ACTIVE_EVENTFLAG_DESCOPED',['../paniccodes_8h.html#a6786572c403f89b029069a12e72e64c2',1,'paniccodes.h']]],
+  ['panic_5factive_5fmailbox_5fdescoped',['PANIC_ACTIVE_MAILBOX_DESCOPED',['../paniccodes_8h.html#aa9c26df22125d0a018518f0b70d6bc18',1,'paniccodes.h']]],
+  ['panic_5factive_5fmutex_5fdescoped',['PANIC_ACTIVE_MUTEX_DESCOPED',['../paniccodes_8h.html#a6c4f5f0de0da131410365da19ea06361',1,'paniccodes.h']]],
+  ['panic_5factive_5fnotify_5fdescoped',['PANIC_ACTIVE_NOTIFY_DESCOPED',['../paniccodes_8h.html#a427833b56fd1b152720a434cb4cd456c',1,'paniccodes.h']]],
+  ['panic_5factive_5fsemaphore_5fdescoped',['PANIC_ACTIVE_SEMAPHORE_DESCOPED',['../paniccodes_8h.html#a4f836f5ded49e190c93a173adbd039f8',1,'paniccodes.h']]],
+  ['panic_5factive_5ftimer_5fdescoped',['PANIC_ACTIVE_TIMER_DESCOPED',['../paniccodes_8h.html#ac126f39a6f0f08ccc3593f51faa6482d',1,'paniccodes.h']]],
+  ['panic_5fassert_5ffailed',['PANIC_ASSERT_FAILED',['../paniccodes_8h.html#afdd6b745ccdfa5c8779d551402fc16c3',1,'paniccodes.h']]],
+  ['panic_5fauto_5fheap_5fexhausted',['PANIC_AUTO_HEAP_EXHAUSTED',['../paniccodes_8h.html#ae50d86f710fb18c5b115d825617a8b67',1,'paniccodes.h']]],
+  ['panic_5flist_5funlink_5ffailed',['PANIC_LIST_UNLINK_FAILED',['../paniccodes_8h.html#af0f8be442e7e59b863e1405a3fc34764',1,'paniccodes.h']]],
+  ['panic_5fno_5fready_5fthreads',['PANIC_NO_READY_THREADS',['../paniccodes_8h.html#a7d03dc05b04b9b8450dfa844f54a0afd',1,'paniccodes.h']]],
+  ['panic_5fpowerman_5fexhausted',['PANIC_POWERMAN_EXHAUSTED',['../paniccodes_8h.html#a6f013fe30f712da57a4903ff7c46967a',1,'paniccodes.h']]],
+  ['panic_5frunning_5fthread_5fdescoped',['PANIC_RUNNING_THREAD_DESCOPED',['../paniccodes_8h.html#a8a56207d188990a0f9fa22dffc843f29',1,'paniccodes.h']]],
+  ['panic_5fstack_5fslack_5fviolated',['PANIC_STACK_SLACK_VIOLATED',['../paniccodes_8h.html#ac0aec146ef843de9d90466e629d91f12',1,'paniccodes.h']]],
+  ['port_5fcoroutine_5fpriorities',['PORT_COROUTINE_PRIORITIES',['../portcfg_8h.html#a41e4809e0adc2283d9fe9fa9194e0e11',1,'portcfg.h']]],
+  ['port_5fkernel_5fdefault_5fstack_5fsize',['PORT_KERNEL_DEFAULT_STACK_SIZE',['../portcfg_8h.html#ad4ccabec17039928304529ac99c56b71',1,'portcfg.h']]],
+  ['port_5fkernel_5ftimers_5fthread_5fstack',['PORT_KERNEL_TIMERS_THREAD_STACK',['../portcfg_8h.html#a46b72d36e9c4768666f8e942e3982594',1,'portcfg.h']]],
+  ['port_5fmin_5ftimer_5fticks',['PORT_MIN_TIMER_TICKS',['../portcfg_8h.html#a8c4705770d49a01fbedba4912dcef0a8',1,'portcfg.h']]],
+  ['port_5foverload_5fnew',['PORT_OVERLOAD_NEW',['../portcfg_8h.html#ac0d78580874cb60781daf4a54fc9a3c0',1,'portcfg.h']]],
+  ['port_5fprio_5fmap_5fword_5fsize',['PORT_PRIO_MAP_WORD_SIZE',['../portcfg_8h.html#a885c60586260e2a72e4f4fa19f2533e9',1,'portcfg.h']]],
+  ['port_5fprio_5ftype',['PORT_PRIO_TYPE',['../portcfg_8h.html#a88aee37d5fe4c10499287bb928850538',1,'portcfg.h']]],
+  ['port_5fpush_5fto_5fstack',['PORT_PUSH_TO_STACK',['../threadport_8h.html#ae60d71c73d8a5343c2e35908cbc5435d',1,'threadport.h']]],
+  ['port_5fstack_5fgrows_5fdown',['PORT_STACK_GROWS_DOWN',['../portcfg_8h.html#a7ab90c14973fe62a50f5aa7d1a4aef2c',1,'portcfg.h']]],
+  ['port_5fsystem_5ffreq',['PORT_SYSTEM_FREQ',['../portcfg_8h.html#a49e8015a9f203e27d21519381679e109',1,'portcfg.h']]],
+  ['port_5ftimer_5fcount_5ftype',['PORT_TIMER_COUNT_TYPE',['../portcfg_8h.html#a1ddc211de57ca39ba2846576ce64f2f9',1,'portcfg.h']]],
+  ['port_5ftimer_5ffreq',['PORT_TIMER_FREQ',['../portcfg_8h.html#a4daac8a48dae328c1e07f7fe773f76cf',1,'portcfg.h']]],
+  ['port_5ftop_5fof_5fstack',['PORT_TOP_OF_STACK',['../threadport_8h.html#a71b5f32916d486ca5ec91e8618d24626',1,'threadport.h']]],
+  ['port_5fuse_5fhw_5fclz',['PORT_USE_HW_CLZ',['../portcfg_8h.html#a279c32dca218242080336bc024efdd14',1,'portcfg.h']]]
 ];

@@ -87,24 +87,27 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_kernel_timer.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_kernel_timer.html" title="The KernelTimer class provides a timer interface used by all time-based scheduling/timer subsystems i...">KernelTimer</a> class provides a timer interface used by all time-based scheduling/timer subsystems in the kernel. This interface must be implemented by target-specific code in the porting layer.  
+ <a href="class_mark3_1_1_kernel_timer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="kerneltimer_8h_source.html">kerneltimer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a023a8a08b49953d93c158193c8d5c484"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_kernel_timer.html#a023a8a08b49953d93c158193c8d5c484">Config</a> (void)</td></tr>
-<tr class="memdesc:a023a8a08b49953d93c158193c8d5c484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Config.  <a href="#a023a8a08b49953d93c158193c8d5c484">More...</a><br /></td></tr>
+<tr class="memdesc:a023a8a08b49953d93c158193c8d5c484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Config Initializes the kernel timer before use.  <a href="#a023a8a08b49953d93c158193c8d5c484">More...</a><br /></td></tr>
 <tr class="separator:a023a8a08b49953d93c158193c8d5c484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f30c21ffe0cd3972609d007b5d5d54"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_kernel_timer.html#af1f30c21ffe0cd3972609d007b5d5d54">Start</a> (void)</td></tr>
-<tr class="memdesc:af1f30c21ffe0cd3972609d007b5d5d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start.  <a href="#af1f30c21ffe0cd3972609d007b5d5d54">More...</a><br /></td></tr>
+<tr class="memdesc:af1f30c21ffe0cd3972609d007b5d5d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Starts the kernel time (must be configured first)  <a href="#af1f30c21ffe0cd3972609d007b5d5d54">More...</a><br /></td></tr>
 <tr class="separator:af1f30c21ffe0cd3972609d007b5d5d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ef245e49439a032f1fe8142f3845d84"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_kernel_timer.html#a2ef245e49439a032f1fe8142f3845d84">Stop</a> (void)</td></tr>
-<tr class="memdesc:a2ef245e49439a032f1fe8142f3845d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop.  <a href="#a2ef245e49439a032f1fe8142f3845d84">More...</a><br /></td></tr>
+<tr class="memdesc:a2ef245e49439a032f1fe8142f3845d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop Shut down the kernel timer, used when no timers are scheduled.  <a href="#a2ef245e49439a032f1fe8142f3845d84">More...</a><br /></td></tr>
 <tr class="separator:a2ef245e49439a032f1fe8142f3845d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Hardware timer interface, used by all scheduling/timer subsystems. </p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_kernel_timer.html" title="The KernelTimer class provides a timer interface used by all time-based scheduling/timer subsystems i...">KernelTimer</a> class provides a timer interface used by all time-based scheduling/timer subsystems in the kernel. This interface must be implemented by target-specific code in the porting layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="kerneltimer_8h_source.html#l00032">32</a> of file <a class="el" href="kerneltimer_8h_source.html">kerneltimer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kerneltimer_8h_source.html#l00034">34</a> of file <a class="el" href="kerneltimer_8h_source.html">kerneltimer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a023a8a08b49953d93c158193c8d5c484"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a023a8a08b49953d93c158193c8d5c484">&#9670;&nbsp;</a></span>Config()</h2>
@@ -130,8 +133,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Config. </p>
-<p>Initializes the kernel timer before use </p>
+<p>Config Initializes the kernel timer before use. </p>
 
 <p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00060">60</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
 
@@ -161,8 +163,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Start. </p>
-<p>Starts the kernel time (must be configured first) </p>
+<p>Start Starts the kernel time (must be configured first) </p>
 
 <p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00076">76</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
 
@@ -192,16 +193,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Stop. </p>
-<p>Shut down the kernel timer, used when no timers are scheduled </p>
+<p>Stop Shut down the kernel timer, used when no timers are scheduled. </p>
 
 <p class="definition">Definition at line <a class="el" href="kerneltimer_8cpp_source.html#l00086">86</a> of file <a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="kerneltimer_8h_source.html">kerneltimer.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/arch/avr/atmega1284p/gcc/<a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="kerneltimer_8h_source.html">kerneltimer.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/arch/avr/atmega1284p/gcc/<a class="el" href="kerneltimer_8cpp_source.html">kerneltimer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -209,7 +209,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_kernel_timer.html">KernelTimer</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:16 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:58 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

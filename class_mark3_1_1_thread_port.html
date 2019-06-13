@@ -82,34 +82,43 @@ $(document).ready(function(){initNavTree('class_mark3_1_1_thread_port.html','');
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_mark3_1_1_thread_port-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Mark3::ThreadPort Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="class_mark3_1_1_thread_port.html" title="The ThreadPort Class defines the target-specific functions required by the kernel for threading...">ThreadPort</a> Class defines the target-specific functions required by the kernel for threading.  
+ <a href="class_mark3_1_1_thread_port.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ithreadport_8h_source.html">ithreadport.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a520671aebc7a15618c7a69c542c245a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_port.html#a520671aebc7a15618c7a69c542c245a4">Init</a> ()</td></tr>
-<tr class="memdesc:a520671aebc7a15618c7a69c542c245a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init.  <a href="#a520671aebc7a15618c7a69c542c245a4">More...</a><br /></td></tr>
+<tr class="memdesc:a520671aebc7a15618c7a69c542c245a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init Function to perform early init of the target environment prior to using OS primatives.  <a href="#a520671aebc7a15618c7a69c542c245a4">More...</a><br /></td></tr>
 <tr class="separator:a520671aebc7a15618c7a69c542c245a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acafc7e8ef75dbf116f99c26aa1dd74b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_port.html#acafc7e8ef75dbf116f99c26aa1dd74b2">StartThreads</a> ()</td></tr>
-<tr class="memdesc:acafc7e8ef75dbf116f99c26aa1dd74b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">StartThreads.  <a href="#acafc7e8ef75dbf116f99c26aa1dd74b2">More...</a><br /></td></tr>
+<tr class="memdesc:acafc7e8ef75dbf116f99c26aa1dd74b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">StartThreads Function to start the scheduler, initial threads, etc.  <a href="#acafc7e8ef75dbf116f99c26aa1dd74b2">More...</a><br /></td></tr>
 <tr class="separator:acafc7e8ef75dbf116f99c26aa1dd74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a0cbdaa5edb02b922456ccb4b4d966165"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_port.html#a0cbdaa5edb02b922456ccb4b4d966165">InitStack</a> (<a class="el" href="class_mark3_1_1_thread.html">Thread</a> *pstThread_)</td></tr>
-<tr class="memdesc:a0cbdaa5edb02b922456ccb4b4d966165"><td class="mdescLeft">&#160;</td><td class="mdescRight">InitStack.  <a href="#a0cbdaa5edb02b922456ccb4b4d966165">More...</a><br /></td></tr>
+<tr class="memdesc:a0cbdaa5edb02b922456ccb4b4d966165"><td class="mdescLeft">&#160;</td><td class="mdescRight">InitStack Initialize the thread's stack.  <a href="#a0cbdaa5edb02b922456ccb4b4d966165">More...</a><br /></td></tr>
 <tr class="separator:a0cbdaa5edb02b922456ccb4b4d966165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:adbc148eaddd341d7ae4d07c9e9e33bfd"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_thread_port.html#adbc148eaddd341d7ae4d07c9e9e33bfd">Thread</a></td></tr>
+<tr class="separator:adbc148eaddd341d7ae4d07c9e9e33bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class defining the architecture specific functions required by the kernel.</p>
+<div class="textblock"><p>The <a class="el" href="class_mark3_1_1_thread_port.html" title="The ThreadPort Class defines the target-specific functions required by the kernel for threading...">ThreadPort</a> Class defines the target-specific functions required by the kernel for threading. </p>
 <p>This is limited (at this point) to a function to start the scheduler, and a function to initialize the default stack-frame for a thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="ithreadport_8h_source.html#l00018">18</a> of file <a class="el" href="ithreadport_8h_source.html">ithreadport.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ithreadport_8h_source.html#l00035">35</a> of file <a class="el" href="ithreadport_8h_source.html">ithreadport.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a520671aebc7a15618c7a69c542c245a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a520671aebc7a15618c7a69c542c245a4">&#9670;&nbsp;</a></span>Init()</h2>
@@ -135,10 +144,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Init. </p>
-<p>Function to perform early init of the target environment prior to using OS primatives. </p>
+<p>Init Function to perform early init of the target environment prior to using OS primatives. </p>
 
-<p class="definition">Definition at line <a class="el" href="ithreadport_8h_source.html#l00027">27</a> of file <a class="el" href="ithreadport_8h_source.html">ithreadport.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ithreadport_8h_source.html#l00043">43</a> of file <a class="el" href="ithreadport_8h_source.html">ithreadport.h</a>.</p>
 
 </div>
 </div>
@@ -166,8 +174,7 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>InitStack. </p>
-<p>Initialize the thread's stack.</p>
+<p>InitStack Initialize the thread's stack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pstThread_</td><td>Pointer to the thread to initialize </td></tr>
@@ -175,7 +182,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00038">38</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00043">43</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
 
 </div>
 </div>
@@ -202,16 +209,40 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>StartThreads. </p>
-<p>Function to start the scheduler, initial threads, etc. </p>
+<p>StartThreads Function to start the scheduler, initial threads, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00095">95</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="threadport_8cpp_source.html#l00100">100</a> of file <a class="el" href="threadport_8cpp_source.html">threadport.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="adbc148eaddd341d7ae4d07c9e9e33bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc148eaddd341d7ae4d07c9e9e33bfd">&#9670;&nbsp;</a></span>Thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_mark3_1_1_thread.html">Thread</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ithreadport_8h_source.html#l00050">50</a> of file <a class="el" href="ithreadport_8h_source.html">ithreadport.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/github/mark3/kernel/src/public/<a class="el" href="ithreadport_8h_source.html">ithreadport.h</a></li>
-<li>/home/moslevin/projects/github/mark3/kernel/src/arch/avr/atmega1284p/gcc/<a class="el" href="threadport_8cpp_source.html">threadport.cpp</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/public/<a class="el" href="ithreadport_8h_source.html">ithreadport.h</a></li>
+<li>/home/moslevin/projects/m3-repo/kernel/src/arch/avr/atmega1284p/gcc/<a class="el" href="threadport_8cpp_source.html">threadport.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -219,7 +250,7 @@ Static Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_thread_port.html">ThreadPort</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:17 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:42:00 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blockingobject',['BlockingObject',['../class_mark3_1_1_blocking_object.html',1,'Mark3']]]
+  ['autoalloc',['AutoAlloc',['../class_mark3_1_1_auto_alloc.html',1,'Mark3']]]
 ];

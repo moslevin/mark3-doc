@@ -83,7 +83,11 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>m_aclPriorities
-: <a class="el" href="class_mark3_1_1_scheduler.html#af5d838c0db8fe09b891ba0ecfe9843bb">Mark3::Scheduler</a>
+: <a class="el" href="class_mark3_1_1_co_scheduler.html#a670f6979fe7c1cc693764bccc71e498e">Mark3::CoScheduler</a>
+, <a class="el" href="class_mark3_1_1_scheduler.html#a44da71f0fcc9f36c755df14f8d6b3092">Mark3::Scheduler</a>
+</li>
+<li>m_auXPriorityMap
+: <a class="el" href="class_mark3_1_1_priority_map_l2.html#a39951523611522c77a8cfae196c2d3ce">Mark3::PriorityMapL2&lt; T, C &gt;</a>
 </li>
 <li>m_bActive
 : <a class="el" href="class_mark3_1_1_profile_timer.html#a4e65f919548c2c84773134a4960e437e">Mark3::ProfileTimer</a>
@@ -94,11 +98,23 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_bExpired
 : <a class="el" href="class_mark3_1_1_thread.html#a4fbd3e590aa4ca00da807235934980d9">Mark3::Thread</a>
 </li>
+<li>m_bInTimer
+: <a class="el" href="class_mark3_1_1_quantum.html#a0588cb034f35a23d6e22a143354773be">Mark3::Quantum</a>
+</li>
+<li>m_bIsAcquired
+: <a class="el" href="class_mark3_1_1_lock_guard.html#af094dfca8be2e2b092173dfb72be9a06">Mark3::LockGuard</a>
+</li>
 <li>m_bIsPanic
 : <a class="el" href="class_mark3_1_1_kernel.html#abab2b15c5a023d5f943b33b858233d78">Mark3::Kernel</a>
 </li>
 <li>m_bIsStarted
 : <a class="el" href="class_mark3_1_1_kernel.html#a2070fe2a0f672ef7937334fa1f806bb3">Mark3::Kernel</a>
+</li>
+<li>m_bPending
+: <a class="el" href="class_mark3_1_1_notify.html#a9107aae718e8a0380408c5ab66b7c60a">Mark3::Notify</a>
+</li>
+<li>m_bQueued
+: <a class="el" href="class_mark3_1_1_coroutine.html#ab95f9102abfe972569c4e95e0c871b73">Mark3::Coroutine</a>
 </li>
 <li>m_bQueuedSchedule
 : <a class="el" href="class_mark3_1_1_scheduler.html#a3508bb4f1b5c9fb230433083d43686da">Mark3::Scheduler</a>
@@ -108,6 +124,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>m_bRecursive
 : <a class="el" href="class_mark3_1_1_mutex.html#a742045dc7082a4e694f698aabaae00a4">Mark3::Mutex</a>
+</li>
+<li>m_bSchedState
+: <a class="el" href="class_mark3_1_1_scheduler_guard.html#aa31e8902ab8e0bd14b30db35b4b2097f">Mark3::SchedulerGuard</a>
 </li>
 <li>m_bTimerActive
 : <a class="el" href="class_mark3_1_1_timer_list.html#ab1b3acaaab49c9c5b4876db42f947f28">Mark3::TimerList</a>
@@ -119,16 +138,18 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_mark3_1_1_reader_writer_lock.html#a3e0d49f4b8fd5369b398e500698e3f25">Mark3::ReaderWriterLock</a>
 </li>
 <li>m_clLinkList
-: <a class="el" href="class_mark3_1_1_message_queue.html#a0edf5bcc2fb5f3d7aca9755dd707f8ef">Mark3::MessageQueue</a>
+: <a class="el" href="class_mark3_1_1_message_queue.html#a38e5066244d20b29fc2a591091737664">Mark3::MessageQueue</a>
 </li>
 <li>m_clList
-: <a class="el" href="class_mark3_1_1_message_pool.html#a81e2a59e9dcdc79d6bece365c1ea1a3c">Mark3::MessagePool</a>
+: <a class="el" href="class_mark3_1_1_message_pool.html#a440e405088d0330f840b2b8294d23016">Mark3::MessagePool</a>
 </li>
 <li>m_clMutex
-: <a class="el" href="class_mark3_1_1_timer_list.html#aabb82181b44c94ef3cace7a85dc84882">Mark3::TimerList</a>
+: <a class="el" href="class_mark3_1_1_condition_variable.html#afae8d8be7df9d1fd24cdc5b179505fd6">Mark3::ConditionVariable</a>
+, <a class="el" href="class_mark3_1_1_timer_list.html#aabb82181b44c94ef3cace7a85dc84882">Mark3::TimerList</a>
 </li>
 <li>m_clPrioMap
-: <a class="el" href="class_mark3_1_1_scheduler.html#a4b3fe81b8d1a0cc8c16b6580a3c163b9">Mark3::Scheduler</a>
+: <a class="el" href="class_mark3_1_1_co_scheduler.html#aa4884e651954a9beac1b8eebf007ad67">Mark3::CoScheduler</a>
+, <a class="el" href="class_mark3_1_1_scheduler.html#a4b3fe81b8d1a0cc8c16b6580a3c163b9">Mark3::Scheduler</a>
 </li>
 <li>m_clReaderMutex
 : <a class="el" href="class_mark3_1_1_reader_writer_lock.html#aab7378859a0a0562c267f8e88dac5df7">Mark3::ReaderWriterLock</a>
@@ -137,13 +158,18 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_mark3_1_1_mailbox.html#a57e14b51e47905d54e03ca0a0e4d71d1">Mark3::Mailbox</a>
 </li>
 <li>m_clSemaphore
-: <a class="el" href="class_mark3_1_1_message_queue.html#ae71e5bcea36835fc0daeb7f9d77b6a5a">Mark3::MessageQueue</a>
+: <a class="el" href="class_mark3_1_1_condition_variable.html#a786c1a3c7783b45c6288df55934edcdd">Mark3::ConditionVariable</a>
+, <a class="el" href="class_mark3_1_1_message_queue.html#ae71e5bcea36835fc0daeb7f9d77b6a5a">Mark3::MessageQueue</a>
 </li>
 <li>m_clSendSem
 : <a class="el" href="class_mark3_1_1_mailbox.html#ad86cbf61cfd9faf81c26784f92d7ae02">Mark3::Mailbox</a>
 </li>
 <li>m_clStopList
-: <a class="el" href="class_mark3_1_1_scheduler.html#a2e26a200abca5b481c7a1449e6a804e8">Mark3::Scheduler</a>
+: <a class="el" href="class_mark3_1_1_co_scheduler.html#a3b905a013e9cfa92feae12af6af7e39f">Mark3::CoScheduler</a>
+, <a class="el" href="class_mark3_1_1_scheduler.html#a2e26a200abca5b481c7a1449e6a804e8">Mark3::Scheduler</a>
+</li>
+<li>m_clThreadListList
+: <a class="el" href="class_mark3_1_1_thread_list_list.html#ae96cd11014ad803d27d811547797c578">Mark3::ThreadListList</a>
 </li>
 <li>m_clTimer
 : <a class="el" href="class_mark3_1_1_thread.html#a1cceb461f2688e6db33070d94efb666a">Mark3::Thread</a>
@@ -160,6 +186,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_pau8Buffer
 : <a class="el" href="class_mark3_1_1_streamer.html#acb2ee751515eb8c9ffe734bc433c5223">Mark3::Streamer</a>
 </li>
+<li>m_pclActiveThread
+: <a class="el" href="class_mark3_1_1_quantum.html#a7988692369b4bcb86beb36be5d0751bb">Mark3::Quantum</a>
+</li>
 <li>m_pclCurrent
 : <a class="el" href="class_mark3_1_1_thread.html#a80c3364d2088b5ce1519d6cd0e386937">Mark3::Thread</a>
 </li>
@@ -169,13 +198,26 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_pclMap
 : <a class="el" href="class_mark3_1_1_thread_list.html#a55e682dd6665ab46ab48a897915e6ea0">Mark3::ThreadList</a>
 </li>
+<li>m_pclMutex
+: <a class="el" href="class_mark3_1_1_lock_guard.html#a3b5600852c897f813fde4f08e5fa9744">Mark3::LockGuard</a>
+</li>
 <li>m_pclOwner
-: <a class="el" href="class_mark3_1_1_mutex.html#ad57e3ccd9c705f264addacea53a1b0c2">Mark3::Mutex</a>
+: <a class="el" href="class_mark3_1_1_coroutine.html#a76e1dda4ea6c10c67b1a9fec7ee279f0">Mark3::Coroutine</a>
+, <a class="el" href="class_mark3_1_1_mutex.html#ad57e3ccd9c705f264addacea53a1b0c2">Mark3::Mutex</a>
 , <a class="el" href="class_mark3_1_1_thread.html#a93ab5dbe5e779f0dce2089588555dc94">Mark3::Thread</a>
 , <a class="el" href="class_mark3_1_1_timer.html#a2fd59289a84decd7d0f8db1e20547b00">Mark3::Timer</a>
 </li>
+<li>m_pclPrioMap
+: <a class="el" href="class_mark3_1_1_co_list.html#a5613fc4b410fa5c97c6728e8cdd02884">Mark3::CoList</a>
+</li>
 <li>m_pclTail
 : <a class="el" href="class_mark3_1_1_link_list.html#a79bbeddb6ce4b0e97c8fc4c73fcff2dc">Mark3::LinkList</a>
+</li>
+<li>m_pclTimerThread
+: <a class="el" href="class_mark3_1_1_quantum.html#a6e6e42b2902a8fb56e39a46b55017995">Mark3::Quantum</a>
+</li>
+<li>m_pfAllocator
+: <a class="el" href="class_mark3_1_1_auto_alloc.html#aeea50ef713bded849894ee643ef7c3cb">Mark3::AutoAlloc</a>
 </li>
 <li>m_pfCallback
 : <a class="el" href="class_mark3_1_1_timer.html#a597fbfcc66d1f734a2ceb2e166673149">Mark3::Timer</a>
@@ -185,6 +227,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>m_pfEntryPoint
 : <a class="el" href="class_mark3_1_1_thread.html#ad8165747733046191186cf30e6fa0853">Mark3::Thread</a>
+</li>
+<li>m_pfFree
+: <a class="el" href="class_mark3_1_1_auto_alloc.html#a25a0e91bd577780e27b834e838003106">Mark3::AutoAlloc</a>
+</li>
+<li>m_pfHandler
+: <a class="el" href="class_mark3_1_1_coroutine.html#a8192d3e0ba7b0e2ce31e060e5ba3bf77">Mark3::Coroutine</a>
 </li>
 <li>m_pfPanic
 : <a class="el" href="class_mark3_1_1_kernel.html#a3abd5ea6ec44142e004ec7d691295ed9">Mark3::Kernel</a>
@@ -206,6 +254,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>m_pvBuffer
 : <a class="el" href="class_mark3_1_1_mailbox.html#a537bd9aa6de3f583bfac0438d162c133">Mark3::Mailbox</a>
+</li>
+<li>m_pvContext
+: <a class="el" href="class_mark3_1_1_coroutine.html#a2924946d974bd84fb8c9c7327af9c528">Mark3::Coroutine</a>
 </li>
 <li>m_pvData
 : <a class="el" href="class_mark3_1_1_message.html#aa89176cd93e65e9909fd23873898b3de">Mark3::Message</a>
@@ -241,6 +292,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_u16Free
 : <a class="el" href="class_mark3_1_1_mailbox.html#a95f87c73aa978c5a8bf19f3e2d957967">Mark3::Mailbox</a>
 </li>
+<li>m_u16GuardThreshold
+: <a class="el" href="class_mark3_1_1_kernel.html#aa196467e578a8071762ab71b3e8ba7f7">Mark3::Kernel</a>
+</li>
 <li>m_u16Head
 : <a class="el" href="class_mark3_1_1_mailbox.html#aa6251d74711db4fdf01fc6c13e63e100">Mark3::Mailbox</a>
 , <a class="el" href="class_mark3_1_1_streamer.html#a2efa95378d4fa4b2472cbbb90aee1130">Mark3::Streamer</a>
@@ -267,6 +321,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_mark3_1_1_mailbox.html#a517796085da2d881adb0a1c175e39c6c">Mark3::Mailbox</a>
 , <a class="el" href="class_mark3_1_1_streamer.html#a7195f45ec7a54b86c9e28e9ec85e7333">Mark3::Streamer</a>
 </li>
+<li>m_u16TicksRemain
+: <a class="el" href="class_mark3_1_1_quantum.html#ae7325782fee38af52a35fec9e3352623">Mark3::Quantum</a>
+</li>
 <li>m_u16Value
 : <a class="el" href="class_mark3_1_1_semaphore.html#ab72e7bfcb11857eeaf46700bed664864">Mark3::Semaphore</a>
 </li>
@@ -285,6 +342,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_u32StartTicks
 : <a class="el" href="class_mark3_1_1_profile_timer.html#aa6c5a37c6682db59a87ebb30741d8df9">Mark3::ProfileTimer</a>
 </li>
+<li>m_u32Ticks
+: <a class="el" href="class_mark3_1_1_kernel.html#a899bb2934800fb4efd19b59aef6652a2">Mark3::Kernel</a>
+</li>
 <li>m_u32TimeLeft
 : <a class="el" href="class_mark3_1_1_timer.html#a32b4419df88f1c88f6318ab3d8667825">Mark3::Timer</a>
 </li>
@@ -295,9 +355,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_mark3_1_1_blocking_object.html#a53726cc6d69fa4e93e124dbe85d2b4cb">Mark3::BlockingObject</a>
 , <a class="el" href="class_mark3_1_1_timer.html#acc37da3715c4b424f478ab4f25e70d54">Mark3::Timer</a>
 </li>
-<li>m_u8MaxPri
-: <a class="el" href="class_mark3_1_1_mutex.html#a64ae6590ee4a0a33b758e7e189545a1b">Mark3::Mutex</a>
-</li>
 <li>m_u8ReadCount
 : <a class="el" href="class_mark3_1_1_reader_writer_lock.html#a26b446a7d7524bf62681d49f6dd292ba">Mark3::ReaderWriterLock</a>
 </li>
@@ -307,12 +364,62 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_u8ThreadID
 : <a class="el" href="class_mark3_1_1_thread.html#ad82c12f3ec05e46cb426bef5190412b3">Mark3::Thread</a>
 </li>
+<li>m_u8Waiters
+: <a class="el" href="class_mark3_1_1_condition_variable.html#a38085b80b290909e0be1c8a250e5d1c5">Mark3::ConditionVariable</a>
+</li>
+<li>m_uBlockingInitCookie
+: <a class="el" href="class_mark3_1_1_blocking_object.html#ae3af575d44d05275e826646249005bae">Mark3::BlockingObject</a>
+</li>
+<li>m_uBlockingInvalidCookie
+: <a class="el" href="class_mark3_1_1_blocking_object.html#a2295b065e64794eda0070a0bde2ae77b">Mark3::BlockingObject</a>
+</li>
+<li>m_uMaxPri
+: <a class="el" href="class_mark3_1_1_mutex.html#a457a21b7d3d4e040e266bda4e82ad1e7">Mark3::Mutex</a>
+</li>
+<li>m_uNumPriorities
+: <a class="el" href="class_mark3_1_1_scheduler.html#a797a92cc8e9153b8580b700d748becdb">Mark3::Scheduler</a>
+</li>
+<li>m_uPriority
+: <a class="el" href="class_mark3_1_1_co_list.html#ae2f62fef6f964cb9a4f8daae8b827b11">Mark3::CoList</a>
+, <a class="el" href="class_mark3_1_1_coroutine.html#afa1d9ed642d181b8d2354a96d01b89e4">Mark3::Coroutine</a>
+</li>
+<li>m_uTimerInitCookie
+: <a class="el" href="class_mark3_1_1_timer.html#af8bdf85e044b0d075feffab30bc68cde">Mark3::Timer</a>
+</li>
+<li>m_uTimerInvalidCookie
+: <a class="el" href="class_mark3_1_1_timer.html#aad055828c9408284c706db87c008ce74">Mark3::Timer</a>
+</li>
 <li>m_uXCurPriority
 : <a class="el" href="class_mark3_1_1_thread.html#af345befe5d1e4d2f4f00c972e719a1e8">Mark3::Thread</a>
+</li>
+<li>m_uXPrioMapBitMask
+: <a class="el" href="class_mark3_1_1_priority_map_l1.html#ac0b055d7c4e823d4566cbade294f89db">Mark3::PriorityMapL1&lt; T, C &gt;</a>
+, <a class="el" href="class_mark3_1_1_priority_map_l2.html#af99192d3e52e258cfe6c4bbf6743aa28">Mark3::PriorityMapL2&lt; T, C &gt;</a>
+</li>
+<li>m_uXPrioMapBits
+: <a class="el" href="class_mark3_1_1_priority_map_l1.html#aff2256937463d96349b7180cc0bffb04">Mark3::PriorityMapL1&lt; T, C &gt;</a>
+, <a class="el" href="class_mark3_1_1_priority_map_l2.html#ac72fc474e278fc0bbf7d084e8689df42">Mark3::PriorityMapL2&lt; T, C &gt;</a>
+</li>
+<li>m_uXPrioMapNumWords
+: <a class="el" href="class_mark3_1_1_priority_map_l2.html#a8cec9a6eaaaf893d46d9f99fa1d3e7fc">Mark3::PriorityMapL2&lt; T, C &gt;</a>
+</li>
+<li>m_uXPrioMapShiftLUT
+: <a class="el" href="class_mark3_1_1_priority_map_l1.html#abc1b232315cc6e917dd66eebc78ae4d0">Mark3::PriorityMapL1&lt; T, C &gt;</a>
+, <a class="el" href="class_mark3_1_1_priority_map_l2.html#a5771cca16de32b0cc023b8b35073ea79">Mark3::PriorityMapL2&lt; T, C &gt;</a>
+</li>
+<li>m_uXPrioMapWordShift
+: <a class="el" href="class_mark3_1_1_priority_map_l1.html#acae680d22c57bf272381d75f6d23ed81">Mark3::PriorityMapL1&lt; T, C &gt;</a>
+, <a class="el" href="class_mark3_1_1_priority_map_l2.html#a2d625ec98e5a08c881b29c79392925c0">Mark3::PriorityMapL2&lt; T, C &gt;</a>
 </li>
 <li>m_uXPriority
 : <a class="el" href="class_mark3_1_1_thread.html#ae20d3b2df96192e987303076843e64de">Mark3::Thread</a>
 , <a class="el" href="class_mark3_1_1_thread_list.html#a76395100a09874de47fc87f14a9cd8eb">Mark3::ThreadList</a>
+</li>
+<li>m_uXPriorityMap
+: <a class="el" href="class_mark3_1_1_priority_map_l1.html#af1b722d1691b8026f67b2cb1408f8b53">Mark3::PriorityMapL1&lt; T, C &gt;</a>
+</li>
+<li>m_uXPriorityMapL2
+: <a class="el" href="class_mark3_1_1_priority_map_l2.html#aaba7aee51cc8c84ee18284c1add724a1">Mark3::PriorityMapL2&lt; T, C &gt;</a>
 </li>
 </ul>
 
@@ -344,7 +451,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:18 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:42:01 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: /home/moslevin/projects/github/mark3/kernel/src/arch/avr/atmega1284p/gcc/public/portcfg.h File Reference</title>
+<title>Mark3 Realtime Kernel: /home/moslevin/projects/m3-repo/kernel/src/arch/avr/atmega1284p/gcc/public/portcfg.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,21 +95,29 @@ $(document).ready(function(){initNavTree('portcfg_8h.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a896e4fd7bab1ee46a8577d4c71d09805"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a>&#160;&#160;&#160;(16)</td></tr>
 <tr class="separator:a896e4fd7bab1ee46a8577d4c71d09805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6438e9e64e24257c60c44cc813dcf77c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a6438e9e64e24257c60c44cc813dcf77c">KERNEL_TIMERS_THREAD_PRIORITY</a>&#160;&#160;&#160;(<a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a> - 1)</td></tr>
+<tr class="separator:a6438e9e64e24257c60c44cc813dcf77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7d9668d4fe4d05aedc8e74b2a8f10b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a1a7d9668d4fe4d05aedc8e74b2a8f10b">THREAD_QUANTUM_DEFAULT</a>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:a1a7d9668d4fe4d05aedc8e74b2a8f10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3828b2b3cd67834c0f83950f3f442006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a3828b2b3cd67834c0f83950f3f442006">KERNEL_STACK_GUARD_DEFAULT</a>&#160;&#160;&#160;(32)</td></tr>
+<tr class="separator:a3828b2b3cd67834c0f83950f3f442006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e4809e0adc2283d9fe9fa9194e0e11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a41e4809e0adc2283d9fe9fa9194e0e11">PORT_COROUTINE_PRIORITIES</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="separator:a41e4809e0adc2283d9fe9fa9194e0e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1519396040c1c9c28f597ccfbae61843"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a1519396040c1c9c28f597ccfbae61843">AVR</a>&#160;&#160;&#160;(1)</td></tr>
 <tr class="separator:a1519396040c1c9c28f597ccfbae61843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bee6ac5affaf1f013a9d9de75054223"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a7bee6ac5affaf1f013a9d9de75054223">K_WORD</a>&#160;&#160;&#160;uint8_t</td></tr>
 <tr class="memdesc:a7bee6ac5affaf1f013a9d9de75054223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a data word.  <a href="#a7bee6ac5affaf1f013a9d9de75054223">More...</a><br /></td></tr>
 <tr class="separator:a7bee6ac5affaf1f013a9d9de75054223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f1521370f6c4e2e0967a888026ef93"><td class="memItemLeft" align="right" valign="top"><a id="ae6f1521370f6c4e2e0967a888026ef93"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#ae6f1521370f6c4e2e0967a888026ef93">K_ADDR</a>&#160;&#160;&#160;uint16_t</td></tr>
-<tr class="memdesc:ae6f1521370f6c4e2e0967a888026ef93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of an address (pointer size) <br /></td></tr>
+<tr class="memitem:ae6f1521370f6c4e2e0967a888026ef93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#ae6f1521370f6c4e2e0967a888026ef93">K_ADDR</a>&#160;&#160;&#160;uint16_t</td></tr>
+<tr class="memdesc:ae6f1521370f6c4e2e0967a888026ef93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of an address (pointer size)  <a href="#ae6f1521370f6c4e2e0967a888026ef93">More...</a><br /></td></tr>
 <tr class="separator:ae6f1521370f6c4e2e0967a888026ef93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3ea595a87f710979e2a2b3dcaee0b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#aca3ea595a87f710979e2a2b3dcaee0b7">K_INT</a>&#160;&#160;&#160;int32_t</td></tr>
+<tr class="separator:aca3ea595a87f710979e2a2b3dcaee0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88aee37d5fe4c10499287bb928850538"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a88aee37d5fe4c10499287bb928850538">PORT_PRIO_TYPE</a>&#160;&#160;&#160;uint8_t</td></tr>
 <tr class="memdesc:a88aee37d5fe4c10499287bb928850538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for bitmap in the PriorityMap class.  <a href="#a88aee37d5fe4c10499287bb928850538">More...</a><br /></td></tr>
 <tr class="separator:a88aee37d5fe4c10499287bb928850538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885c60586260e2a72e4f4fa19f2533e9"><td class="memItemLeft" align="right" valign="top"><a id="a885c60586260e2a72e4f4fa19f2533e9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a885c60586260e2a72e4f4fa19f2533e9">PORT_PRIO_MAP_WORD_SIZE</a>&#160;&#160;&#160;(1)</td></tr>
-<tr class="memdesc:a885c60586260e2a72e4f4fa19f2533e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of PORT_PRIO_TYPE in bytes <br /></td></tr>
+<tr class="memitem:a885c60586260e2a72e4f4fa19f2533e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a885c60586260e2a72e4f4fa19f2533e9">PORT_PRIO_MAP_WORD_SIZE</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memdesc:a885c60586260e2a72e4f4fa19f2533e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of PORT_PRIO_TYPE in bytes  <a href="#a885c60586260e2a72e4f4fa19f2533e9">More...</a><br /></td></tr>
 <tr class="separator:a885c60586260e2a72e4f4fa19f2533e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e8015a9f203e27d21519381679e109"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a49e8015a9f203e27d21519381679e109">PORT_SYSTEM_FREQ</a>&#160;&#160;&#160;((uint32_t)16000000)</td></tr>
 <tr class="memdesc:a49e8015a9f203e27d21519381679e109"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU Frequency in Hz.  <a href="#a49e8015a9f203e27d21519381679e109">More...</a><br /></td></tr>
@@ -126,11 +134,17 @@ Macros</h2></td></tr>
 <tr class="separator:a1ddc211de57ca39ba2846576ce64f2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4705770d49a01fbedba4912dcef0a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a8c4705770d49a01fbedba4912dcef0a8">PORT_MIN_TIMER_TICKS</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a8c4705770d49a01fbedba4912dcef0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d78580874cb60781daf4a54fc9a3c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#ac0d78580874cb60781daf4a54fc9a3c0">PORT_OVERLOAD_NEW</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:ac0d78580874cb60781daf4a54fc9a3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab90c14973fe62a50f5aa7d1a4aef2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a7ab90c14973fe62a50f5aa7d1a4aef2c">PORT_STACK_GROWS_DOWN</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a7ab90c14973fe62a50f5aa7d1a4aef2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279c32dca218242080336bc024efdd14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portcfg_8h.html#a279c32dca218242080336bc024efdd14">PORT_USE_HW_CLZ</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a279c32dca218242080336bc024efdd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespace_mark3.html">Mark3</a> Port Configuration. </p>
 <p>This file is used to configure the kernel for your specific target CPU in order to provide the optimal set of features for a given use case.</p>
-<p>!! NOTE: This file must ONLY be included from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a> </p>
+<p>!! NOTE: This file must ONLY be included from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a> </p>
 
 <p class="definition">Definition in file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -148,7 +162,42 @@ Macros</h2></td></tr>
 <p>Define a macro indicating the CPU architecture for which this port belongs.</p>
 <p>This may also be set by the toolchain, but that's not guaranteed. </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00049">49</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00055">55</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="ae6f1521370f6c4e2e0967a888026ef93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f1521370f6c4e2e0967a888026ef93">&#9670;&nbsp;</a></span>K_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define K_ADDR&#160;&#160;&#160;uint16_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of an address (pointer size) </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a6">lab9_dynamic_threads/main.cpp</a>.</dd>
+</dl>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00063">63</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="aca3ea595a87f710979e2a2b3dcaee0b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3ea595a87f710979e2a2b3dcaee0b7">&#9670;&nbsp;</a></span>K_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define K_INT&#160;&#160;&#160;int32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00064">64</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -166,9 +215,9 @@ Macros</h2></td></tr>
 
 <p>Size of a data word. </p>
 <p>Define types that map to the CPU Architecture's default data-word and address size. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab10_notifications_2main_8cpp-example.html#a1">lab10_notifications/main.cpp</a>, <a class="el" href="lab11_mailboxes_2main_8cpp-example.html#a1">lab11_mailboxes/main.cpp</a>, <a class="el" href="lab1_kernel_setup_2main_8cpp-example.html#a1">lab1_kernel_setup/main.cpp</a>, <a class="el" href="lab3_round_robin_2main_8cpp-example.html#a1">lab3_round_robin/main.cpp</a>, <a class="el" href="lab4_semaphores_2main_8cpp-example.html#a1">lab4_semaphores/main.cpp</a>, <a class="el" href="lab5_mutexes_2main_8cpp-example.html#a1">lab5_mutexes/main.cpp</a>, <a class="el" href="lab6_timers_2main_8cpp-example.html#a1">lab6_timers/main.cpp</a>, <a class="el" href="lab7_events_2main_8cpp-example.html#a1">lab7_events/main.cpp</a>, <a class="el" href="lab8_messages_2main_8cpp-example.html#a1">lab8_messages/main.cpp</a>, and <a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a1">lab9_dynamic_threads/main.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab10_notifications_2main_8cpp-example.html#a1">lab10_notifications/main.cpp</a>, <a class="el" href="lab11_mailboxes_2main_8cpp-example.html#a1">lab11_mailboxes/main.cpp</a>, <a class="el" href="lab1_kernel_setup_2main_8cpp-example.html#a1">lab1_kernel_setup/main.cpp</a>, <a class="el" href="lab2_coroutines_2main_8cpp-example.html#a1">lab2_coroutines/main.cpp</a>, <a class="el" href="lab3_round_robin_2main_8cpp-example.html#a1">lab3_round_robin/main.cpp</a>, <a class="el" href="lab4_semaphores_2main_8cpp-example.html#a1">lab4_semaphores/main.cpp</a>, <a class="el" href="lab5_mutexes_2main_8cpp-example.html#a1">lab5_mutexes/main.cpp</a>, <a class="el" href="lab6_timers_2main_8cpp-example.html#a1">lab6_timers/main.cpp</a>, <a class="el" href="lab7_events_2main_8cpp-example.html#a1">lab7_events/main.cpp</a>, <a class="el" href="lab8_messages_2main_8cpp-example.html#a1">lab8_messages/main.cpp</a>, and <a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a1">lab9_dynamic_threads/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00056">56</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00062">62</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -190,6 +239,55 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a3828b2b3cd67834c0f83950f3f442006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3828b2b3cd67834c0f83950f3f442006">&#9670;&nbsp;</a></span>KERNEL_STACK_GUARD_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KERNEL_STACK_GUARD_DEFAULT&#160;&#160;&#160;(32)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00041">41</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="a6438e9e64e24257c60c44cc813dcf77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6438e9e64e24257c60c44cc813dcf77c">&#9670;&nbsp;</a></span>KERNEL_TIMERS_THREAD_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KERNEL_TIMERS_THREAD_PRIORITY&#160;&#160;&#160;(<a class="el" href="portcfg_8h.html#a896e4fd7bab1ee46a8577d4c71d09805">KERNEL_NUM_PRIORITIES</a> - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00037">37</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="a41e4809e0adc2283d9fe9fa9194e0e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e4809e0adc2283d9fe9fa9194e0e11">&#9670;&nbsp;</a></span>PORT_COROUTINE_PRIORITIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_COROUTINE_PRIORITIES&#160;&#160;&#160;(8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the number of priorities supported by the coroutine scheduler. The number of coroutine priorities is limited by the memory of the host CPU. </p>
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00047">47</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
 <a id="ad4ccabec17039928304529ac99c56b71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4ccabec17039928304529ac99c56b71">&#9670;&nbsp;</a></span>PORT_KERNEL_DEFAULT_STACK_SIZE</h2>
 
@@ -202,9 +300,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Define the default/minimum size of a thread stack </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab10_notifications_2main_8cpp-example.html#a2">lab10_notifications/main.cpp</a>, <a class="el" href="lab11_mailboxes_2main_8cpp-example.html#a2">lab11_mailboxes/main.cpp</a>, <a class="el" href="lab1_kernel_setup_2main_8cpp-example.html#a2">lab1_kernel_setup/main.cpp</a>, <a class="el" href="lab3_round_robin_2main_8cpp-example.html#a2">lab3_round_robin/main.cpp</a>, <a class="el" href="lab4_semaphores_2main_8cpp-example.html#a2">lab4_semaphores/main.cpp</a>, <a class="el" href="lab5_mutexes_2main_8cpp-example.html#a2">lab5_mutexes/main.cpp</a>, <a class="el" href="lab6_timers_2main_8cpp-example.html#a2">lab6_timers/main.cpp</a>, <a class="el" href="lab7_events_2main_8cpp-example.html#a2">lab7_events/main.cpp</a>, <a class="el" href="lab8_messages_2main_8cpp-example.html#a2">lab8_messages/main.cpp</a>, and <a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a2">lab9_dynamic_threads/main.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="lab10_notifications_2main_8cpp-example.html#a2">lab10_notifications/main.cpp</a>, <a class="el" href="lab11_mailboxes_2main_8cpp-example.html#a2">lab11_mailboxes/main.cpp</a>, <a class="el" href="lab1_kernel_setup_2main_8cpp-example.html#a2">lab1_kernel_setup/main.cpp</a>, <a class="el" href="lab2_coroutines_2main_8cpp-example.html#a2">lab2_coroutines/main.cpp</a>, <a class="el" href="lab3_round_robin_2main_8cpp-example.html#a2">lab3_round_robin/main.cpp</a>, <a class="el" href="lab4_semaphores_2main_8cpp-example.html#a2">lab4_semaphores/main.cpp</a>, <a class="el" href="lab5_mutexes_2main_8cpp-example.html#a2">lab5_mutexes/main.cpp</a>, <a class="el" href="lab6_timers_2main_8cpp-example.html#a2">lab6_timers/main.cpp</a>, <a class="el" href="lab7_events_2main_8cpp-example.html#a2">lab7_events/main.cpp</a>, <a class="el" href="lab8_messages_2main_8cpp-example.html#a2">lab8_messages/main.cpp</a>, and <a class="el" href="lab9_dynamic_threads_2main_8cpp-example.html#a2">lab9_dynamic_threads/main.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00090">90</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00096">96</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +319,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the size of the kernel-timer thread stack (if one is configured) </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00095">95</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00101">101</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +336,42 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Minimum number of timer ticks for any delay or sleep, required to ensure that a timer cannot be initialized to a negative value. </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00106">106</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00112">112</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="ac0d78580874cb60781daf4a54fc9a3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d78580874cb60781daf4a54fc9a3c0">&#9670;&nbsp;</a></span>PORT_OVERLOAD_NEW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_OVERLOAD_NEW&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set this to 1 to overload the system's New/Free functions with the kernel's allocator functions. A user must configure the Kernel's allocator functions to point to a real heap implementation backed with real memory in order to use dynamic object creation. </p>
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00119">119</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="a885c60586260e2a72e4f4fa19f2533e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885c60586260e2a72e4f4fa19f2533e9">&#9670;&nbsp;</a></span>PORT_PRIO_MAP_WORD_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_PRIO_MAP_WORD_SIZE&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>size of PORT_PRIO_TYPE in bytes </p>
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00074">74</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -258,7 +391,24 @@ Macros</h2></td></tr>
 <p>Set a base datatype used to represent each element of the scheduler's priority bitmap.</p>
 <p>PORT_PRIO_MAP_WORD_SIZE should map to the <em>size</em> of an element of type PORT_PROI_TYPE. </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00067">67</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00073">73</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="a7ab90c14973fe62a50f5aa7d1a4aef2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab90c14973fe62a50f5aa7d1a4aef2c">&#9670;&nbsp;</a></span>PORT_STACK_GROWS_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_STACK_GROWS_DOWN&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set this to 1 if the stack grows down in the target architecture, or 0 if the stack grows up </p>
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00124">124</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +427,7 @@ Macros</h2></td></tr>
 <p>CPU Frequency in Hz. </p>
 <p>Define the running CPU frequency. This may be an integer constant, or an alias for another variable which holds the CPU's current running frequency. </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00075">75</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00081">81</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +446,7 @@ Macros</h2></td></tr>
 <p>Timer counter type. </p>
 <p>Define the native type corresponding to the kernel timer hardware's counter register. </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00100">100</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00106">106</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +466,40 @@ Macros</h2></td></tr>
 <p>Set the timer frequency. If running in tickless mode, this is simply the frequency at which the free-running kernel timer increments.</p>
 <p>In tick-based mode, this is the frequency at which the fixed-frequency kernel tick interrupt occurs. </p>
 
-<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00085">85</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00091">91</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="a279c32dca218242080336bc024efdd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279c32dca218242080336bc024efdd14">&#9670;&nbsp;</a></span>PORT_USE_HW_CLZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_USE_HW_CLZ&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set this to 1 if the target CPU/toolchain supports an optimized Count-leading-zeros instruction, or count-leading-zeros intrinsic. If such functionality is not available, a general-purpose implementation will be used. </p>
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00131">131</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
+
+</div>
+</div>
+<a id="a1a7d9668d4fe4d05aedc8e74b2a8f10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7d9668d4fe4d05aedc8e74b2a8f10b">&#9670;&nbsp;</a></span>THREAD_QUANTUM_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_QUANTUM_DEFAULT&#160;&#160;&#160;(4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="portcfg_8h_source.html#l00039">39</a> of file <a class="el" href="portcfg_8h_source.html">portcfg.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +509,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dc43877d82dd332f9fb2071fcca799d6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_3dd30a497388ee684638f120a124721c.html">src</a></li><li class="navelem"><a class="el" href="dir_92743408a41bb08453a7c583adc761b3.html">arch</a></li><li class="navelem"><a class="el" href="dir_e545c6747f0a62c90efb0107f5bdce45.html">avr</a></li><li class="navelem"><a class="el" href="dir_15d36ccd0d5c99a3927df5e66e3d21e0.html">atmega1284p</a></li><li class="navelem"><a class="el" href="dir_bf83e40eaac91a1884d1f182836d1220.html">gcc</a></li><li class="navelem"><a class="el" href="dir_50512cbb6c8e7be845908a3436e62f24.html">public</a></li><li class="navelem"><a class="el" href="portcfg_8h.html">portcfg.h</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

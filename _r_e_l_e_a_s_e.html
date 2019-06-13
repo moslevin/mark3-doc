@@ -83,7 +83,35 @@ $(document).ready(function(){initNavTree('_r_e_l_e_a_s_e.html','');});
 <div class="title">Release Notes </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="RELR7"></a>
+<div class="textblock"><h1><a class="anchor" id="RELR10"></a>
+R10 Release</h1>
+<ul>
+<li>New: Coroutines + Cooperative scheduler</li>
+<li>New: Critical section APIs defined in kernel lib</li>
+<li>New: RAII critical section (CriticalGuard object)</li>
+<li>New: RAII scheduler-disabled context (SchedulerGuard object)</li>
+<li>Kernel code updated to use RAII critical sections instead of CS_ENTER/CS_EXIT macros</li>
+<li>Updated documentation</li>
+</ul>
+<h1><a class="anchor" id="RELR9"></a>
+R9 Release</h1>
+<ul>
+<li>New: templated linked-lists to avoid explicit casting used in list traversal</li>
+<li>New: ThreadListList class to efficiently track all threads in the system</li>
+<li>Remove use of C-style casts in kernel</li>
+<li>Remove use of 0 as nullptr in kernel</li>
+<li>Refactor code to use constexpr instead of C-style preprocessor defines where possible</li>
+<li>Refactor priority-map class as a set of template classes, reducing use of macros and defines</li>
+<li>Fix a "disappearing thread" bug where an inopportune context switch could cause a thread to get lost</li>
+<li>Docs no longer build by default</li>
+</ul>
+<h1><a class="anchor" id="RELR8"></a>
+R8 Release</h1>
+<ul>
+<li>Structural changes to separate the kernel from the rest of Mark3-repo</li>
+<li>Cleanup and reformatting</li>
+</ul>
+<h1><a class="anchor" id="RELR7"></a>
 R7 (Full Throttle) Release</h1>
 <ul>
 <li>Re-focusing project on kernel, integrating with 3rd party code instead of 1st party middleware</li>
@@ -105,7 +133,7 @@ R7 (Full Throttle) Release</h1>
 <li>Removed fake idle-thread feature, since it doesn't support all targets</li>
 <li>Unit tests and examples will run on any target with a BSP</li>
 <li>Moved AVR-specific code out of the kernel (kernelaware debugging support)</li>
-<li>Remove most build-time configuration flags from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration. ">mark3cfg.h</a>, and remove associated ifdefs throughout the code.</li>
+<li>Remove most build-time configuration flags from <a class="el" href="mark3cfg_8h.html" title="Mark3 Kernel Configuration This file is used to configure the kernel for your specific application in...">mark3cfg.h</a>, and remove associated ifdefs throughout the code.</li>
 <li>Support qemu-system-arm's lm3s6965 evb target, with semihosting</li>
 <li>Support qemu-system-arm's rasbpi3 evb target, with semihosting</li>
 <li>Incrase test coverage</li>
@@ -207,7 +235,7 @@ R1 - 1st Release Candidate</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

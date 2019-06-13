@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mark3 Realtime Kernel: /home/moslevin/projects/github/mark3/kernel/src/public/profile.h File Reference</title>
+<title>Mark3 Realtime Kernel: /home/moslevin/projects/m3-repo/kernel/src/public/profile.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('profile_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>High-precision profiling timers.  
+<p>High-precision profiling timers Enables the profiling and instrumentation of performance-critical code. Multiple timers can be used simultaneously to enable system-wide performance metrics to be computed in a lightweight manner.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="kerneltypes_8h_source.html">kerneltypes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mark3cfg_8h_source.html">mark3cfg.h</a>&quot;</code><br />
@@ -107,8 +107,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>High-precision profiling timers. </p>
-<p>Enables the profiling and instrumentation of performance-critical code. Multiple timers can be used simultaneously to enable system-wide performance metrics to be computed in a lightweight manner.</p>
+<div class="textblock"><p>High-precision profiling timers Enables the profiling and instrumentation of performance-critical code. Multiple timers can be used simultaneously to enable system-wide performance metrics to be computed in a lightweight manner. </p>
 <p>Usage:</p>
 <div class="fragment"><div class="line">ProfileTimer clMyTimer;</div><div class="line"><span class="keywordtype">int</span> i;</div><div class="line"></div><div class="line">clMyTimer.Init();</div><div class="line"></div><div class="line"><span class="comment">// Profile the same block of code ten times</span></div><div class="line"><span class="keywordflow">for</span> (i = 0; i &lt; 10; i++)</div><div class="line">{</div><div class="line">    clMyTimer.Start();</div><div class="line">    ...</div><div class="line">    <span class="comment">//Block of code to profile</span></div><div class="line">    ...</div><div class="line">    clMyTimer.Stop();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Get the average execution time of all iterations</span></div><div class="line">u32AverageTimer = clMyTimer.GetAverage();</div><div class="line"></div><div class="line"><span class="comment">// Get the execution time from the last iteration</span></div><div class="line">u32LastTimer = clMyTimer.GetCurrent();</div></div><!-- fragment --> 
 <p class="definition">Definition in file <a class="el" href="profile_8h_source.html">profile.h</a>.</p>
@@ -118,7 +117,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_dc43877d82dd332f9fb2071fcca799d6.html">kernel</a></li><li class="navelem"><a class="el" href="dir_3dd30a497388ee684638f120a124721c.html">src</a></li><li class="navelem"><a class="el" href="dir_0c9f3f866ba20950106a72043561edc7.html">public</a></li><li class="navelem"><a class="el" href="profile_8h.html">profile.h</a></li>
-    <li class="footer">Generated on Thu Mar 7 2019 19:45:15 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Wed Jun 12 2019 21:41:57 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
