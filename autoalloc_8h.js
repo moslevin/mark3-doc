@@ -16,6 +16,7 @@ var autoalloc_8h =
       [ "Timer", "autoalloc_8h.html#a8176a7c3d3bf80720b7a22126053bb87aefb4777327e6f704fb1519c1882f93ec", null ],
       [ "ConditionVariable", "autoalloc_8h.html#a8176a7c3d3bf80720b7a22126053bb87ae1a12d4bd0bbad4f98a03932ccd1953d", null ],
       [ "ReaderWriterLock", "autoalloc_8h.html#a8176a7c3d3bf80720b7a22126053bb87a874e92fcb96b80eb1a75ca9a81be4e91", null ],
+      [ "Coroutine", "autoalloc_8h.html#a8176a7c3d3bf80720b7a22126053bb87a8b3b92897b925f638c075494bbe41f9d", null ],
       [ "User", "autoalloc_8h.html#a8176a7c3d3bf80720b7a22126053bb87a8f9bfe9d1345237cb3b2b205864da075", null ],
       [ "Raw", "autoalloc_8h.html#a8176a7c3d3bf80720b7a22126053bb87a65e65c8ab0d8609ce12fc68a03cb8e00", null ]
     ] ]

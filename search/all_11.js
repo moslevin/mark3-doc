@@ -63,9 +63,5 @@ var searchData=
   ['streamer_2eh',['streamer.h',['../streamer_8h.html',1,'']]],
   ['stringlength',['StringLength',['../class_mark3_1_1_mem_util.html#a5564d5e955a2c47c087ade617b75a56e',1,'Mark3::MemUtil']]],
   ['stringsearch',['StringSearch',['../class_mark3_1_1_mem_util.html#a908eb8caad045a4ec9b264717792e1f3',1,'Mark3::MemUtil']]],
-  ['stringtodecimal16',['StringToDecimal16',['../class_mark3_1_1_mem_util.html#a94ca58574ccf1664c1f488298be66423',1,'Mark3::MemUtil']]],
-  ['stringtodecimal32',['StringToDecimal32',['../class_mark3_1_1_mem_util.html#a259e4cbac185a99a48252a694f5938d8',1,'Mark3::MemUtil']]],
-  ['stringtodecimal64',['StringToDecimal64',['../class_mark3_1_1_mem_util.html#ae781e004289d8e0da1da0d38e5f755c1',1,'Mark3::MemUtil']]],
-  ['stringtodecimal8',['StringToDecimal8',['../class_mark3_1_1_mem_util.html#a7d3b4e235da71d30ff2cabeb074655d2',1,'Mark3::MemUtil']]],
   ['sub',['Sub',['../namespace_mark3_1_1_atomic.html#a929fa25cf65156990863e50f920b363f',1,'Mark3::Atomic']]]
 ];

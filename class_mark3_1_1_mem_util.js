@@ -7,10 +7,6 @@ var class_mark3_1_1_mem_util =
     [ "CompareStrings", "class_mark3_1_1_mem_util.html#a030d4f61833015a0e1b5d50aa603f1c3", null ],
     [ "CopyMemory", "class_mark3_1_1_mem_util.html#a9e849d15c4dabb8e3317066b3b2ee7ec", null ],
     [ "CopyString", "class_mark3_1_1_mem_util.html#aa08bbea08aad58163fd159e2bf5b8b24", null ],
-    [ "DecimalToHex", "class_mark3_1_1_mem_util.html#a45f5a44d5f6e24e045de0c8925d9574a", null ],
-    [ "DecimalToHex", "class_mark3_1_1_mem_util.html#a4729e2a8f582b26dbda4bf5b6ae2b0db", null ],
-    [ "DecimalToHex", "class_mark3_1_1_mem_util.html#a6be5503af546b66abbad2bf554680343", null ],
-    [ "DecimalToHex", "class_mark3_1_1_mem_util.html#a4fb43217f2850c2a55e95d662507ffa8", null ],
     [ "DecimalToString", "class_mark3_1_1_mem_util.html#a4c184f916a998844b0d3fc3ae94a273a", null ],
     [ "DecimalToString", "class_mark3_1_1_mem_util.html#a2cc9a8cf2cd29ee98f2b98547167a7dd", null ],
     [ "DecimalToString", "class_mark3_1_1_mem_util.html#a0fedae01cd46720df94e1c5be32fdb58", null ],
@@ -18,9 +14,5 @@ var class_mark3_1_1_mem_util =
     [ "SetMemory", "class_mark3_1_1_mem_util.html#a68f6bb8e4ebaabd7b745ba3df9d35059", null ],
     [ "StringLength", "class_mark3_1_1_mem_util.html#a5564d5e955a2c47c087ade617b75a56e", null ],
     [ "StringSearch", "class_mark3_1_1_mem_util.html#a908eb8caad045a4ec9b264717792e1f3", null ],
-    [ "StringToDecimal16", "class_mark3_1_1_mem_util.html#a94ca58574ccf1664c1f488298be66423", null ],
-    [ "StringToDecimal32", "class_mark3_1_1_mem_util.html#a259e4cbac185a99a48252a694f5938d8", null ],
-    [ "StringToDecimal64", "class_mark3_1_1_mem_util.html#ae781e004289d8e0da1da0d38e5f755c1", null ],
-    [ "StringToDecimal8", "class_mark3_1_1_mem_util.html#a7d3b4e235da71d30ff2cabeb074655d2", null ],
     [ "Tokenize", "class_mark3_1_1_mem_util.html#a081c0f34b305351e84e91df65fd3e40e", null ]
 ];

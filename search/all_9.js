@@ -23,7 +23,7 @@ var searchData=
   ['kernel_5fpanic',['Kernel_Panic',['../mark3c_8cpp.html#ac66ec772dc15c2959954463607bd66af',1,'Kernel_Panic(uint16_t u16Cause_):&#160;mark3c.cpp'],['../mark3c_8h.html#ac66ec772dc15c2959954463607bd66af',1,'Kernel_Panic(uint16_t u16Cause_):&#160;mark3c.cpp']]],
   ['kernel_5fround_5frobin',['KERNEL_ROUND_ROBIN',['../mark3cfg_8h.html#a61e988048a4a5e586b52d691e118fea0',1,'mark3cfg.h']]],
   ['kernel_5fsetdebugprintfunction',['Kernel_SetDebugPrintFunction',['../mark3c_8cpp.html#a7e3ed6831493a5587bdddec35daab6be',1,'Kernel_SetDebugPrintFunction(kernel_debug_print_t pfPrintFunction_):&#160;mark3c.cpp'],['../mark3c_8h.html#a7e3ed6831493a5587bdddec35daab6be',1,'Kernel_SetDebugPrintFunction(kernel_debug_print_t pfPrintFunction_):&#160;mark3c.cpp']]],
-  ['kernel_5fsetpanic',['Kernel_SetPanic',['../mark3c_8cpp.html#a93688b2575f9efce731f285d0c5c8378',1,'Kernel_SetPanic(PanicFunc pfPanic_):&#160;mark3c.cpp'],['../mark3c_8h.html#afd9f3a627ec0b676fef1b7e624b841bf',1,'Kernel_SetPanic(panic_func_t pfPanic_):&#160;mark3c.cpp']]],
+  ['kernel_5fsetpanic',['Kernel_SetPanic',['../mark3c_8cpp.html#afd9f3a627ec0b676fef1b7e624b841bf',1,'Kernel_SetPanic(panic_func_t pfPanic_):&#160;mark3c.cpp'],['../mark3c_8h.html#afd9f3a627ec0b676fef1b7e624b841bf',1,'Kernel_SetPanic(panic_func_t pfPanic_):&#160;mark3c.cpp']]],
   ['kernel_5fsetstackguardthreshold',['Kernel_SetStackGuardThreshold',['../mark3c_8cpp.html#a0cf5499f37a1471e0052583dee2136da',1,'mark3c.cpp']]],
   ['kernel_5fstack_5fcheck',['KERNEL_STACK_CHECK',['../mark3cfg_8h.html#a1090f2d5486be4d6861413884ebbbca7',1,'mark3cfg.h']]],
   ['kernel_5fstack_5fguard_5fdefault',['KERNEL_STACK_GUARD_DEFAULT',['../portcfg_8h.html#a3828b2b3cd67834c0f83950f3f442006',1,'portcfg.h']]],

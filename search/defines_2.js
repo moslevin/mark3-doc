@@ -1,6 +1,7 @@
 var searchData=
 [
   ['declare_5fconditionvariable',['DECLARE_CONDITIONVARIABLE',['../mark3c_8h.html#a92ed6718d1575f2f69b9d12e5274e410',1,'mark3c.h']]],
+  ['declare_5fcoroutine',['DECLARE_COROUTINE',['../mark3c_8h.html#a5493599addac07c552d96a1b8629f659',1,'mark3c.h']]],
   ['declare_5fmailbox',['DECLARE_MAILBOX',['../mark3c_8h.html#ac9b085398ce93ba46e408cf41fa63c00',1,'mark3c.h']]],
   ['declare_5fmessage',['DECLARE_MESSAGE',['../mark3c_8h.html#ae7f714408b598d79937a1d4fe0b2081f',1,'mark3c.h']]],
   ['declare_5fmessagepool',['DECLARE_MESSAGEPOOL',['../mark3c_8h.html#ac4c1cbcb7f00f31d66e357377eb1eb3e',1,'mark3c.h']]],

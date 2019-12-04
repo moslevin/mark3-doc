@@ -7,5 +7,5 @@ var searchData=
   ['when_20to_20use_20an_20rtos_3f',['When to use an RTOS?',['../_w_h_e_n_r_t_o_s.html',1,'']]],
   ['why_20mark3_3f',['Why Mark3?',['../_w_h_y_m_a_r_k3.html',1,'']]],
   ['word_5fround',['WORD_ROUND',['../mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499',1,'mark3c.h']]],
-  ['write',['Write',['../class_mark3_1_1_streamer.html#a259c99cba9b86e6a87eba30491a60b07',1,'Mark3::Streamer::Write(uint8_t u8Data_)'],['../class_mark3_1_1_streamer.html#a73f9cf73c8545dbd975d4468d623503e',1,'Mark3::Streamer::Write(uint8_t *pu8Data_, uint16_t u16Len_)']]]
+  ['write',['Write',['../class_mark3_1_1_streamer.html#a259c99cba9b86e6a87eba30491a60b07',1,'Mark3::Streamer::Write(uint8_t u8Data_)'],['../class_mark3_1_1_streamer.html#afbc363e806b4922b1dfc1aa3df88d37b',1,'Mark3::Streamer::Write(const uint8_t *pu8Data_, uint16_t u16Len_)']]]
 ];

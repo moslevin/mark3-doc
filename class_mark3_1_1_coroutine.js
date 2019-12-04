@@ -4,6 +4,7 @@ var class_mark3_1_1_coroutine =
     [ "Activate", "class_mark3_1_1_coroutine.html#ae891e31778dcc780a5a554a463c1138a", null ],
     [ "GetPriority", "class_mark3_1_1_coroutine.html#a6fc68e9194b91a65b76eb7ce245ef0c1", null ],
     [ "Init", "class_mark3_1_1_coroutine.html#a914fca577e6c0877fb484d828696e012", null ],
+    [ "operator new", "class_mark3_1_1_coroutine.html#a80dee9894421328682c1928e5ff527f5", null ],
     [ "Run", "class_mark3_1_1_coroutine.html#af55d41852be46a9774eef829a456b5e5", null ],
     [ "SetPriority", "class_mark3_1_1_coroutine.html#aef466961dc62d9ecc52b3db7c8626e01", null ],
     [ "m_bQueued", "class_mark3_1_1_coroutine.html#ab95f9102abfe972569c4e95e0c871b73", null ],

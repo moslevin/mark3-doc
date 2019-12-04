@@ -51,9 +51,5 @@ var searchData=
   ['stop',['Stop',['../class_mark3_1_1_kernel_timer.html#a2ef245e49439a032f1fe8142f3845d84',1,'Mark3::KernelTimer::Stop()'],['../class_mark3_1_1_profile_timer.html#a7b71ad73642f0ba8f3d82d7e15ddc7f9',1,'Mark3::ProfileTimer::Stop()'],['../class_mark3_1_1_thread.html#afd9e3f8a37b023eb6bcbff547e3cc7e4',1,'Mark3::Thread::Stop()'],['../class_mark3_1_1_timer.html#a77a777a31a07e19adcb01fff7f112579',1,'Mark3::Timer::Stop()']]],
   ['stringlength',['StringLength',['../class_mark3_1_1_mem_util.html#a5564d5e955a2c47c087ade617b75a56e',1,'Mark3::MemUtil']]],
   ['stringsearch',['StringSearch',['../class_mark3_1_1_mem_util.html#a908eb8caad045a4ec9b264717792e1f3',1,'Mark3::MemUtil']]],
-  ['stringtodecimal16',['StringToDecimal16',['../class_mark3_1_1_mem_util.html#a94ca58574ccf1664c1f488298be66423',1,'Mark3::MemUtil']]],
-  ['stringtodecimal32',['StringToDecimal32',['../class_mark3_1_1_mem_util.html#a259e4cbac185a99a48252a694f5938d8',1,'Mark3::MemUtil']]],
-  ['stringtodecimal64',['StringToDecimal64',['../class_mark3_1_1_mem_util.html#ae781e004289d8e0da1da0d38e5f755c1',1,'Mark3::MemUtil']]],
-  ['stringtodecimal8',['StringToDecimal8',['../class_mark3_1_1_mem_util.html#a7d3b4e235da71d30ff2cabeb074655d2',1,'Mark3::MemUtil']]],
   ['sub',['Sub',['../namespace_mark3_1_1_atomic.html#a929fa25cf65156990863e50f920b363f',1,'Mark3::Atomic']]]
 ];

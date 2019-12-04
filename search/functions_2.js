@@ -25,5 +25,10 @@ var searchData=
   ['copydata',['CopyData',['../class_mark3_1_1_mailbox.html#af0c784ebeb522c70ed9817a27a2c6d87',1,'Mark3::Mailbox']]],
   ['copymemory',['CopyMemory',['../class_mark3_1_1_mem_util.html#a9e849d15c4dabb8e3317066b3b2ee7ec',1,'Mark3::MemUtil']]],
   ['copystring',['CopyString',['../class_mark3_1_1_mem_util.html#aa08bbea08aad58163fd159e2bf5b8b24',1,'Mark3::MemUtil']]],
+  ['coroutine_5factivate',['Coroutine_Activate',['../mark3c_8cpp.html#ab4e8247bead4292ae80991ee37bc833f',1,'mark3c.cpp']]],
+  ['coroutine_5fgetpriority',['Coroutine_GetPriority',['../mark3c_8cpp.html#a8c6444d69003d6de51896292f943e175',1,'mark3c.cpp']]],
+  ['coroutine_5finit',['Coroutine_Init',['../mark3c_8cpp.html#adbdf4aa6c569cb0a07c96fdae23439c7',1,'mark3c.cpp']]],
+  ['coroutine_5frun',['Coroutine_Run',['../mark3c_8cpp.html#a0ace508ca7e6d240a69417adbc049792',1,'mark3c.cpp']]],
+  ['coroutine_5fsetpriority',['Coroutine_SetPriority',['../mark3c_8cpp.html#a73f1293bdbf9ba1470bf6813f0c52c3f',1,'mark3c.cpp']]],
   ['criticalguard',['CriticalGuard',['../class_mark3_1_1_critical_guard.html#aa5a785c76bccaf54b54fc3a751255e41',1,'Mark3::CriticalGuard']]]
 ];

@@ -34,7 +34,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "Mark3::LinkListNode", "class_mark3_1_1_link_list_node.html", [
-      [ "Mark3::ThreadList", "class_mark3_1_1_thread_list.html", null ],
       [ "Mark3::TypedLinkListNode< T >", "class_mark3_1_1_typed_link_list_node.html", null ],
       [ "Mark3::TypedLinkListNode< Coroutine >", "class_mark3_1_1_typed_link_list_node.html", [
         [ "Mark3::Coroutine", "class_mark3_1_1_coroutine.html", null ]
@@ -44,6 +43,9 @@ var hierarchy =
       ] ],
       [ "Mark3::TypedLinkListNode< Thread >", "class_mark3_1_1_typed_link_list_node.html", [
         [ "Mark3::Thread", "class_mark3_1_1_thread.html", null ]
+      ] ],
+      [ "Mark3::TypedLinkListNode< ThreadList >", "class_mark3_1_1_typed_link_list_node.html", [
+        [ "Mark3::ThreadList", "class_mark3_1_1_thread_list.html", null ]
       ] ],
       [ "Mark3::TypedLinkListNode< Timer >", "class_mark3_1_1_typed_link_list_node.html", [
         [ "Mark3::Timer", "class_mark3_1_1_timer.html", null ]

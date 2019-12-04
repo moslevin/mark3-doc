@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a259c99cba9b86e6a87eba30491a60b07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_streamer.html#a259c99cba9b86e6a87eba30491a60b07">Write</a> (uint8_t u8Data_)</td></tr>
 <tr class="memdesc:a259c99cba9b86e6a87eba30491a60b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write. Write a byte of data into the stream.  <a href="#a259c99cba9b86e6a87eba30491a60b07">More...</a><br /></td></tr>
 <tr class="separator:a259c99cba9b86e6a87eba30491a60b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f9cf73c8545dbd975d4468d623503e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_streamer.html#a73f9cf73c8545dbd975d4468d623503e">Write</a> (uint8_t *pu8Data_, uint16_t u16Len_)</td></tr>
-<tr class="memdesc:a73f9cf73c8545dbd975d4468d623503e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write. Write a maximum number of bytes to the stream.  <a href="#a73f9cf73c8545dbd975d4468d623503e">More...</a><br /></td></tr>
-<tr class="separator:a73f9cf73c8545dbd975d4468d623503e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc363e806b4922b1dfc1aa3df88d37b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_streamer.html#afbc363e806b4922b1dfc1aa3df88d37b">Write</a> (const uint8_t *pu8Data_, uint16_t u16Len_)</td></tr>
+<tr class="memdesc:afbc363e806b4922b1dfc1aa3df88d37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write. Write a maximum number of bytes to the stream.  <a href="#afbc363e806b4922b1dfc1aa3df88d37b">More...</a><br /></td></tr>
+<tr class="separator:afbc363e806b4922b1dfc1aa3df88d37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2d94d6b0014bae5127327bec24a164e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mark3_1_1_streamer.html#ac2d94d6b0014bae5127327bec24a164e">Claim</a> (uint8_t **pu8Addr_)</td></tr>
 <tr class="memdesc:ac2d94d6b0014bae5127327bec24a164e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Claim. Claim a byte of data for writing, without actually writing into it. When the writer is ready to write into the data byte as a result of another operation, it can then populate the byte.  <a href="#ac2d94d6b0014bae5127327bec24a164e">More...</a><br /></td></tr>
 <tr class="separator:ac2d94d6b0014bae5127327bec24a164e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -476,8 +476,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a73f9cf73c8545dbd975d4468d623503e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73f9cf73c8545dbd975d4468d623503e">&#9670;&nbsp;</a></span>Write() <span class="overload">[2/2]</span></h2>
+<a id="afbc363e806b4922b1dfc1aa3df88d37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc363e806b4922b1dfc1aa3df88d37b">&#9670;&nbsp;</a></span>Write() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -485,7 +485,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">uint16_t Mark3::Streamer::Write </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>pu8Data_</em>, </td>
         </tr>
         <tr>
@@ -674,8 +674,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/moslevin/projects/m3-repo/kernel/lib/streamer/public/<a class="el" href="streamer_8h_source.html">streamer.h</a></li>
-<li>/home/moslevin/projects/m3-repo/kernel/lib/streamer/<a class="el" href="streamer_8cpp_source.html">streamer.cpp</a></li>
+<li>/mnt/c/Users/moslevin/m3-repo2/kernel/lib/streamer/public/<a class="el" href="streamer_8h_source.html">streamer.h</a></li>
+<li>/mnt/c/Users/moslevin/m3-repo2/kernel/lib/streamer/<a class="el" href="streamer_8cpp_source.html">streamer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -683,7 +683,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_mark3.html">Mark3</a></li><li class="navelem"><a class="el" href="class_mark3_1_1_streamer.html">Streamer</a></li>
-    <li class="footer">Generated on Wed Jun 12 2019 21:42:00 for Mark3 Realtime Kernel by
+    <li class="footer">Generated on Tue Dec 3 2019 20:59:52 for Mark3 Realtime Kernel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

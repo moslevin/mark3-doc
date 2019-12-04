@@ -30,6 +30,7 @@ var searchData=
   ['getstackguardthreshold',['GetStackGuardThreshold',['../class_mark3_1_1_kernel.html#ac987796a77163f0b4c179557dd34063c',1,'Mark3::Kernel']]],
   ['getstacksize',['GetStackSize',['../class_mark3_1_1_thread.html#ae014bfd5802f391dcbe2b477f62e2de1',1,'Mark3::Thread']]],
   ['getstackslack',['GetStackSlack',['../class_mark3_1_1_thread.html#a1295a5aa56b6e7312e96171cc6d0ee88',1,'Mark3::Thread']]],
+  ['getstacktop',['GetStackTop',['../class_mark3_1_1_thread.html#a8f380a62c963f3694c6e2a96edad22fb',1,'Mark3::Thread']]],
   ['getstate',['GetState',['../class_mark3_1_1_thread.html#a1cc7f1b2907f8b28d2b259452bfe177d',1,'Mark3::Thread']]],
   ['getstoplist',['GetStopList',['../class_mark3_1_1_co_scheduler.html#a5a3dd37dd5a22e5a8e040257b86dbe5a',1,'Mark3::CoScheduler::GetStopList()'],['../class_mark3_1_1_scheduler.html#ad44e51925dd9d69cd37b2fd572ab4a09',1,'Mark3::Scheduler::GetStopList()']]],
   ['gettail',['GetTail',['../class_mark3_1_1_link_list.html#abf0da4ba770e0e99fec3bf8269d1a9c4',1,'Mark3::LinkList::GetTail()'],['../class_mark3_1_1_typed_double_link_list.html#a5329c54112a97e90d51b3538f70b96c2',1,'Mark3::TypedDoubleLinkList::GetTail()'],['../class_mark3_1_1_typed_circular_link_list.html#a1c6c3006b89eb346ab5c7253e2ffedc8',1,'Mark3::TypedCircularLinkList::GetTail()']]],

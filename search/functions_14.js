@@ -4,5 +4,5 @@ var searchData=
   ['wait_5fi',['Wait_i',['../class_mark3_1_1_event_flag.html#acf044d068edeffb8972559594704e491',1,'Mark3::EventFlag']]],
   ['wakeme',['WakeMe',['../class_mark3_1_1_event_flag.html#a41950799a29689831cf180e490c580c9',1,'Mark3::EventFlag::WakeMe()'],['../class_mark3_1_1_semaphore.html#a33bdb9e3bfbde0af56f7ce6131bc36b2',1,'Mark3::Semaphore::WakeMe()'],['../class_mark3_1_1_mutex.html#ae1bb0044f050fd5291f46d63d5750422',1,'Mark3::Mutex::WakeMe()'],['../class_mark3_1_1_notify.html#af0d1676d3d039f63db81374bdcccd8b2',1,'Mark3::Notify::WakeMe()']]],
   ['wakenext',['WakeNext',['../class_mark3_1_1_semaphore.html#a37b00668730d7323310a263f8af93475',1,'Mark3::Semaphore::WakeNext()'],['../class_mark3_1_1_mutex.html#a9feea16cc3808e9d20644a683eaedf5f',1,'Mark3::Mutex::WakeNext()']]],
-  ['write',['Write',['../class_mark3_1_1_streamer.html#a259c99cba9b86e6a87eba30491a60b07',1,'Mark3::Streamer::Write(uint8_t u8Data_)'],['../class_mark3_1_1_streamer.html#a73f9cf73c8545dbd975d4468d623503e',1,'Mark3::Streamer::Write(uint8_t *pu8Data_, uint16_t u16Len_)']]]
+  ['write',['Write',['../class_mark3_1_1_streamer.html#a259c99cba9b86e6a87eba30491a60b07',1,'Mark3::Streamer::Write(uint8_t u8Data_)'],['../class_mark3_1_1_streamer.html#afbc363e806b4922b1dfc1aa3df88d37b',1,'Mark3::Streamer::Write(const uint8_t *pu8Data_, uint16_t u16Len_)']]]
 ];

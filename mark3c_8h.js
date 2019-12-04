@@ -1,7 +1,9 @@
 var mark3c_8h =
 [
     [ "CONDITIONVARIABLE_SIZE", "mark3c_8h.html#af2b0dbef82671d84e1adaf9338a0ad13", null ],
+    [ "COROUTINE_SIZE", "mark3c_8h.html#ac4f4c2fdc23f6c313c7930afcd3157a8", null ],
     [ "DECLARE_CONDITIONVARIABLE", "mark3c_8h.html#a92ed6718d1575f2f69b9d12e5274e410", null ],
+    [ "DECLARE_COROUTINE", "mark3c_8h.html#a5493599addac07c552d96a1b8629f659", null ],
     [ "DECLARE_MAILBOX", "mark3c_8h.html#ac9b085398ce93ba46e408cf41fa63c00", null ],
     [ "DECLARE_MESSAGE", "mark3c_8h.html#ae7f714408b598d79937a1d4fe0b2081f", null ],
     [ "DECLARE_MESSAGEPOOL", "mark3c_8h.html#ac4c1cbcb7f00f31d66e357377eb1eb3e", null ],
@@ -26,6 +28,8 @@ var mark3c_8h =
     [ "TOKEN_2", "mark3c_8h.html#aa9f6ae5f5c335ee008fc06dad87656d1", null ],
     [ "WORD_ROUND", "mark3c_8h.html#a31792a6bdd6bbc9b4716e3f31663e499", null ],
     [ "ConditionVariable_t", "mark3c_8h.html#ab25bcecf2df3b14b253b20dc8baae655", null ],
+    [ "coroutine_callback_t", "mark3c_8h.html#acdc97d11d1f6cd00ba8fd8ee46935256", null ],
+    [ "Coroutine_t", "mark3c_8h.html#aede854bc7e05c5f8e070dfb4e456de3b", null ],
     [ "kernel_debug_print_t", "mark3c_8h.html#aec70612f5e35622bf42e62944afe2517", null ],
     [ "Mailbox_t", "mark3c_8h.html#ae7f5d36c7b28af6ff6411c1bce719938", null ],
     [ "Message_t", "mark3c_8h.html#a6904117e9c4205913da5d85a4744948d", null ],

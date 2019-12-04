@@ -10,6 +10,7 @@ var searchData=
   ['all_5fclear',['All_Clear',['../namespace_mark3.html#adc5e0b796cede12fbafd7bfeddba2af6ab5b1745d83665844515240789a478f73',1,'Mark3']]],
   ['all_5fset',['All_Set',['../namespace_mark3.html#adc5e0b796cede12fbafd7bfeddba2af6a8dbfca29299f0e53cc134bff8ae50a67',1,'Mark3']]],
   ['alloc_5fconditionvariable',['Alloc_ConditionVariable',['../mark3c_8cpp.html#abcb420e01e1cd0181506b0d43283d603',1,'mark3c.cpp']]],
+  ['alloc_5fcoroutine',['Alloc_Coroutine',['../mark3c_8cpp.html#a8691baec747e24a9bce43a5673d4b757',1,'mark3c.cpp']]],
   ['alloc_5feventflag',['Alloc_EventFlag',['../mark3c_8cpp.html#a386fd488239ed6b756f72850cd6ae196',1,'mark3c.cpp']]],
   ['alloc_5fmailbox',['Alloc_Mailbox',['../mark3c_8cpp.html#a33c9a7b6a8db7a64056df410ff5a5356',1,'Alloc_Mailbox(void):&#160;mark3c.cpp'],['../mark3c_8h.html#a33c9a7b6a8db7a64056df410ff5a5356',1,'Alloc_Mailbox(void):&#160;mark3c.cpp']]],
   ['alloc_5fmemory',['Alloc_Memory',['../mark3c_8cpp.html#a899d618c9a9d1c8b222d518cfa2d06de',1,'Alloc_Memory(uint16_t u16Size_):&#160;mark3c.cpp'],['../mark3c_8h.html#a27464468b1dd0ec1a3730cf1db975c5c',1,'Alloc_Memory(size_t eSize_):&#160;mark3c.h']]],
